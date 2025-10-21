@@ -72,6 +72,7 @@ System configuration has been modified. Save? [yes/no]:yes
 ---
 
 ## DHCP Stateful
+# `Correjir SSH y verificar gateway y servidor dhcp`
 <details> 
     <summary>
         Configuraciones Switch S4
