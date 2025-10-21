@@ -99,7 +99,7 @@ S4(config-vlan)# name Native
 S4(config-vlan)# exit
 S4(config)# interface vlan 30
 S4(config-if)# no ip address
-S4(config-if)# ipv6 address 2001:db8:3c4d:55::4/64
+S4(config-if)# ipv6 address 2001:db8:3c4d:30::4/64
 S4(config-if)# no shutdown
 S4(config-if)# exit
 S4(config)# interface range f 0/1-24
@@ -201,7 +201,7 @@ S5(config-vlan)# exit
 S5(config)# interface vlan 30
 S5(config-if)# no ip address
 S5(config-if)# ipv6 enable
-S5(config-if)# ipv6 address 2001:db8:3c4d:55::5/64
+S5(config-if)# ipv6 address 2001:db8:3c4d:30::5/64
 S5(config-if)# no shutdown
 S5(config-if)# exit
 S5(config)# interface range f 0/1-24
@@ -303,7 +303,7 @@ S6(config-vlan)# exit
 S6(config)# interface vlan 30
 S6(config-if)# no ip address
 S6(config-if)# ipv6 enable
-S6(config-if)# ipv6 address 2001:db8:3c4d:55::6/64
+S6(config-if)# ipv6 address 2001:db8:3c4d:30::6/64
 S6(config-if)# no shutdown
 S6(config-if)# exit
 S6(config)# interface range f 0/1-24
