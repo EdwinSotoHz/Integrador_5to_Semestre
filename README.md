@@ -72,7 +72,7 @@ System configuration has been modified. Save? [yes/no]:yes
 ---
 
 ## DHCP Stateful
-# `Correjir SSH y verificar gateway y servidor dhcp`
+# `Correjir SSH y verificar Gateway`
 <details> 
     <summary>
         Configuraciones Switch S4
@@ -440,6 +440,14 @@ R3(config-subif)# ipv6 dhcp server DHCP-STATEFUL-40
 R3(config-subif)# standby version 2
 R3(config-subif)# standby 40 ipv6 autoconfig
 R3(config-subif)# exit
+R3(config)# username admin password admin
+R3(config)# ip domain-name itsoeh.edu
+R3(config)# crypto key generate rsa
+How many bits in the modulus [512]: 1024
+R3(config)# line vty 0 15
+R3(config-line)# transport input all
+R3(config-line)# login local
+R3(config-line)# exit
     </pre>
 </details>
 
@@ -520,6 +528,14 @@ R4(config-subif)# standby 40 priority 150
 R4(config-subif)# standby 40 preempt
 R4(config-subif)# standby 40 ipv6 autoconfig
 R4(config-subif)# exit
+R4(config)# username admin password admin
+R4(config)# ip domain-name itsoeh.edu
+R4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 1024
+R4(config)# line vty 0 15
+R4(config-line)# transport input all
+R4(config-line)# login local
+R4(config-line)# exit
     </pre>
 </details>
 
