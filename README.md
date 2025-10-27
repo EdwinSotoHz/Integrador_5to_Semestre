@@ -6,63 +6,75 @@
     <summary>
         Configuraciones Switch S1
     </summary>
-```ruby
+
+```bash
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
 ######################################################################################################
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Switch S2
     </summary>
-```ruby
+
+```bash
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
 ######################################################################################################
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Switch S3
     </summary>
-```ruby
+
+```bash
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
 ######################################################################################################
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Router R1
     </summary>
-```ruby
+
+```bash
 7
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Router R2
     </summary>
-```ruby
+
+```bash
 7
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Router RA
     </summary>
-```ruby
+
+```bash
 Pendiente
 ```
+
 </details>
 
 ---
@@ -72,7 +84,8 @@ Pendiente
     <summary>
         Configuraciones Switch S4
     </summary>
-```ruby
+
+```bash
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
@@ -172,13 +185,15 @@ S4(config-line)# transport input all
 S4(config-line)# login local
 S4(config-line)# exit
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Switch S5
     </summary>
-```ruby
+
+```bash
 S5# sdm prefer dual-ipv4-and-ipv6 default
 S5# reload
 System configuration has been modified. Save? [yes/no]: yes
@@ -279,13 +294,15 @@ S5(config-line)# transport input all
 S5(config-line)# login local
 S5(config-line)# exit
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Switch S6
     </summary>
-```ruby
+
+```bash
 S6# sdm prefer dual-ipv4-and-ipv6 default
 S6# reload
 System configuration has been modified. Save? [yes/no]: yes
@@ -380,13 +397,15 @@ S6(config-line)# transport input all
 S6(config-line)# login local
 S6(config-line)# exit
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Router R3
     </summary>
-```ruby
+
+```bash
 R3# enable
 R3# configure terminal
 R3(config)# hostname R3
@@ -470,13 +489,15 @@ R3(config-line)# transport input all
 R3(config-line)# login local
 R3(config-line)# exit
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Router R4
     </summary>
-```ruby
+
+```bash
 R4# enable
 R4# configure terminal
 R4(config)# hostname R4
@@ -568,15 +589,18 @@ R4(config-line)# transport input all
 R4(config-line)# login local
 R4(config-line)# exit
 ```
+
 </details>
 
 <details> 
     <summary>
         Configuraciones Router RB
     </summary>
-```ruby
+
+```bash
 Pendiente
 ```
+
 </details>
 
 ---
