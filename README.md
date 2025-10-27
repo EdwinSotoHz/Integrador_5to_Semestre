@@ -6,7 +6,7 @@
     <summary>
         Configuraciones Switch S1
     </summary>
-```bash
+```ruby
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
@@ -18,7 +18,7 @@ System configuration has been modified. Save? [yes/no]:yes
     <summary>
         Configuraciones Switch S2
     </summary>
-```bash
+```ruby
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
@@ -30,7 +30,7 @@ System configuration has been modified. Save? [yes/no]:yes
     <summary>
         Configuraciones Switch S3
     </summary>
-```bash
+```ruby
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
@@ -42,7 +42,7 @@ System configuration has been modified. Save? [yes/no]:yes
     <summary>
         Configuraciones Router R1
     </summary>
-```bash
+```ruby
 7
 ```
 </details>
@@ -51,7 +51,7 @@ System configuration has been modified. Save? [yes/no]:yes
     <summary>
         Configuraciones Router R2
     </summary>
-```bash
+```ruby
 7
 ```
 </details>
@@ -60,7 +60,7 @@ System configuration has been modified. Save? [yes/no]:yes
     <summary>
         Configuraciones Router RA
     </summary>
-```bash
+```ruby
 Pendiente
 ```
 </details>
@@ -68,12 +68,11 @@ Pendiente
 ---
 
 ## DHCP Stateful
-### `Correjir SSH y verificar Gateway de los switch para poder conectarse por otra subred`
 <details> 
     <summary>
         Configuraciones Switch S4
     </summary>
-```bash
+```ruby
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
@@ -179,7 +178,7 @@ S4(config-line)# exit
     <summary>
         Configuraciones Switch S5
     </summary>
-```bash
+```ruby
 S5# sdm prefer dual-ipv4-and-ipv6 default
 S5# reload
 System configuration has been modified. Save? [yes/no]: yes
@@ -286,7 +285,7 @@ S5(config-line)# exit
     <summary>
         Configuraciones Switch S6
     </summary>
-```bash
+```ruby
 S6# sdm prefer dual-ipv4-and-ipv6 default
 S6# reload
 System configuration has been modified. Save? [yes/no]: yes
@@ -387,7 +386,7 @@ S6(config-line)# exit
     <summary>
         Configuraciones Router R3
     </summary>
-```bash
+```ruby
 R3# enable
 R3# configure terminal
 R3(config)# hostname R3
@@ -477,7 +476,7 @@ R3(config-line)# exit
     <summary>
         Configuraciones Router R4
     </summary>
-```bash
+```ruby
 R4# enable
 R4# configure terminal
 R4(config)# hostname R4
@@ -575,7 +574,7 @@ R4(config-line)# exit
     <summary>
         Configuraciones Router RB
     </summary>
-```bash
+```ruby
 Pendiente
 ```
 </details>
