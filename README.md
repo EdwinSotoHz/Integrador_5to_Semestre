@@ -1,9 +1,29 @@
 # Integrador_5to_Semestre
 <details> 
     <summary>
-        Puertos 
+        Topología Física 
     </summary>
 <img src="assets/img/image.png" height="500px" />
+</details>
+
+<details> 
+    <summary>
+        Topología Lógica 
+    </summary>
+<img src="assets/img/image01.png" height="500px" />
+</details>
+
+<details> 
+    <summary>
+        Extras
+    </summary>
+
+Borrar la configuración guardada en NVRAM.
+
+```ini
+Switch# erase startup-config
+```
+
 </details>
 
 ---
@@ -21,6 +41,9 @@ System configuration has been modified. Save? [yes/no]:yes
 
 S1# enable
 S1# configure terminal
+S1(config)# line console 0
+S1(config-line)# logging synchronous
+S1(config-line)# exit
 S1(config)# hostname S1
 S1(config)# enable password cisco
 S1(config)# enable secret tics
@@ -138,6 +161,9 @@ System configuration has been modified. Save? [yes/no]:yes
 
 S2# enable
 S2# configure terminal
+S2(config)# line console 0
+S2(config-line)# logging synchronous
+S2(config-line)# exit
 S2(config)# hostname S2
 S2(config)# enable password cisco
 S2(config)# enable secret tics
@@ -262,6 +288,9 @@ System configuration has been modified. Save? [yes/no]:yes
 
 S3# enable
 S3# configure terminal
+S3(config)# line console 0
+S3(config-line)# logging synchronous
+S3(config-line)# exit
 S3(config)# hostname S3
 S3(config)# enable password cisco
 S3(config)# enable secret tics
@@ -380,6 +409,9 @@ S3(config-line)# exit
 ```ini
 R1> enable
 R1# configure terminal
+R1(config)# line console 0
+R1(config-line)# logging synchronous
+R1(config-line)# exit
 R1(config)# hostname R1
 R1(config)# enable password cisco
 R1(config)# enable secret tics
@@ -395,7 +427,7 @@ R1(config-dhcp)# address prefix 2001:db8:cafe:15::/64
 R1(config-dhcp)# domain-name tics.edu.mx
 R1(config-dhcp)# exit
 R1(config)# ipv6 dhcp pool DHCP-STATELESS-45
-R1(config-dhcp)# address prefix 2001:db8:cafe:25::/64
+R1(config-dhcp)# address prefix 2001:db8:cafe:45::/64
 R1(config-dhcp)# domain-name tics.edu.mx
 R1(config-dhcp)# exit
 R1(config)# ipv6 dhcp pool DHCP-STATELESS-55
@@ -423,7 +455,7 @@ R1(config-if)# exit
 R1(config)# interface g0/1.45
 R1(config-if)# encapsulation dot1Q 45
 R1(config-if)# no ip address
-R1(config-if)# ipv6 address 2001:db8:cafe:25::/64 eui-64
+R1(config-if)# ipv6 address 2001:db8:cafe:45::/64 eui-64
 R1(config-if)# ipv6 enable
 R1(config-if)# ipv6 nd other-config-flag
 R1(config-if)# ipv6 dhcp server DHCP-STATELESS-45
@@ -481,6 +513,9 @@ R1(config-line)# exit
 ```ini
 R2> enable
 R2# configure terminal
+R2(config)# line console 0
+R2(config-line)# logging synchronous
+R2(config-line)# exit
 R2(config)# hostname R2
 R2(config)# enable password cisco
 R2(config)# enable secret tics
@@ -496,7 +531,7 @@ R2(config-dhcp)# address prefix 2001:db8:cafe:15::/64
 R2(config-dhcp)# domain-name tics.edu.mx
 R2(config-dhcp)# exit
 R2(config)# ipv6 dhcp pool DHCP-STATELESS-45
-R2(config-dhcp)# address prefix 2001:db8:cafe:25::/64
+R2(config-dhcp)# address prefix 2001:db8:cafe:45::/64
 R2(config-dhcp)# domain-name tics.edu.mx
 R2(config-dhcp)# exit
 R2(config)# ipv6 dhcp pool DHCP-STATELESS-55
@@ -522,7 +557,7 @@ R2(config-if)# exit
 R2(config)# interface g0/1.45
 R2(config-if)# encapsulation dot1Q 45
 R2(config-if)# no ip address
-R2(config-if)# ipv6 address 2001:db8:cafe:25::/64 eui-64
+R2(config-if)# ipv6 address 2001:db8:cafe:45::/64 eui-64
 R2(config-if)# ipv6 enable
 R2(config-if)# ipv6 nd other-config-flag
 R2(config-if)# no shutdown
@@ -593,6 +628,9 @@ System configuration has been modified. Save? [yes/no]:yes
 
 S4# enable
 S4# configure terminal
+S4(config)# line console 0
+S4(config-line)# logging synchronous
+S4(config-line)# exit
 S4(config)# hostname S4
 S4(config)# enable password cisco
 S4(config)# enable secret tics
@@ -617,6 +655,7 @@ S4(config-if)# no shutdown
 S4(config-if)# exit
 
 S4(config)# ipv6 route ::/0 <GUA interfaz .30 Router Activo>
+
 S4(config)# interface range f 0/1-24
 S4(config-if-range)# switchport mode access
 S4(config-if-range)# switchport access vlan 40
@@ -715,6 +754,9 @@ System configuration has been modified. Save? [yes/no]: yes
 
 S5# enable
 S5# configure terminal
+S5(config)# line console 0
+S5(config-line)# logging synchronous
+S5(config-line)# exit
 S5(config)# hostname S5
 S5(config)# enable password cisco
 S5(config)# enable secret tics
@@ -740,6 +782,7 @@ S5(config-if)# no shutdown
 S5(config-if)# exit
 
 S5(config)# ipv6 route ::/0 <GUA interfaz .30 Router Activo>
+
 S5(config)# interface range f 0/1-24
 S5(config-if-range)# switchport mode access
 S5(config-if-range)# switchport access vlan 40
@@ -839,6 +882,9 @@ System configuration has been modified. Save? [yes/no]: yes
 
 S6# enable
 S6# configure terminal
+S6(config)# line console 0
+S6(config-line)# logging synchronous
+S6(config-line)# exit
 S6(config)# hostname S6
 S6(config)# enable password cisco
 S6(config)# enable secret tics
@@ -864,6 +910,7 @@ S6(config-if)# no shutdown
 S6(config-if)# exit
 
 S6(config)# ipv6 route ::/0 <GUA interfaz .30 Router Activo>
+
 S6(config)# interface range f 0/1-24
 S6(config-if-range)# switchport mode access
 S6(config-if-range)# switchport access vlan 40
@@ -950,6 +997,9 @@ S6(config-line)# exit
 ```ini
 R3# enable
 R3# configure terminal
+Switch(config)# line console 0
+Switch(config-line)# logging synchronous
+S1(config-line)# exit
 R3(config)# hostname R3
 R3(config)# enable password cisco
 R3(config)# enable secret tics
@@ -1047,6 +1097,9 @@ R3(config-line)# exit
 ```ini
 R4# enable
 R4# configure terminal
+R4(config)# line console 0
+R4(config-line)# logging synchronous
+R4(config-line)# exit
 R4(config)# hostname R4
 R4(config)# enable password cisco
 R4(config)# enable secret tics
