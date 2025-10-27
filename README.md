@@ -7,7 +7,7 @@
         Configuraciones Switch S1
     </summary>
 
-```yaml
+```bash
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
@@ -21,7 +21,7 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Switch S2
     </summary>
 
-```yaml
+```bash
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
@@ -35,7 +35,7 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Switch S3
     </summary>
 
-```yaml
+```bash
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
@@ -49,7 +49,7 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Router R1
     </summary>
 
-```yaml
+```bash
 7
 ```
 
@@ -60,7 +60,7 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Router R2
     </summary>
 
-```yaml
+```bash
 7
 ```
 
@@ -71,7 +71,7 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Router RA
     </summary>
 
-```yaml
+```bash
 Pendiente
 ```
 
@@ -85,7 +85,7 @@ Pendiente
         Configuraciones Switch S4
     </summary>
 
-```yaml
+```bash
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
@@ -193,7 +193,7 @@ S4(config-line)# exit
         Configuraciones Switch S5
     </summary>
 
-```yaml
+```bash
 S5# sdm prefer dual-ipv4-and-ipv6 default
 S5# reload
 System configuration has been modified. Save? [yes/no]: yes
@@ -302,7 +302,7 @@ S5(config-line)# exit
         Configuraciones Switch S6
     </summary>
 
-```yaml
+```bash
 S6# sdm prefer dual-ipv4-and-ipv6 default
 S6# reload
 System configuration has been modified. Save? [yes/no]: yes
@@ -405,7 +405,7 @@ S6(config-line)# exit
         Configuraciones Router R3
     </summary>
 
-```yaml
+```bash
 R3# enable
 R3# configure terminal
 R3(config)# hostname R3
@@ -497,7 +497,7 @@ R3(config-line)# exit
         Configuraciones Router R4
     </summary>
 
-```yaml
+```bash
 R4# enable
 R4# configure terminal
 R4(config)# hostname R4
@@ -597,10 +597,513 @@ R4(config-line)# exit
         Configuraciones Router RB
     </summary>
 
-```yaml
+```bash
 Pendiente
 ```
 
 </details>
 
+Nota: 
+- Configurar S4, S5, S6, Active y Standby
+- El switch puede no reconocer la MAC virtual del HSRP (si se configura después de conectar el host), debido a la configuración de port-security. Hasta que se reinicia el puerto o se borra la tabla CAM, no se actualiza dicha dirección.
+- Cuando el router activo establece su rol, los hosts actualizan su tabla ARP/NDP. Los hosts usan la dirección del router físico activo
+- En PK funciona al cerrar el lab (no sé por qué)
+- `ipv6 route ::/0 <IPv6>` necesita la GUA del  
+- El ssh de los routers funciona con la global de cualquier subinterfaz
+- El ssh de los switch funciona con la global de la SVI 30
+- El tiempo establecido en la seguridad de los puertos del switch fue puesto para no tener que reiniciar los puertos a cada rato (en el integrado colocarlo a 2 minutos)
 ---
+
+
+
+
+
+
+
+
+
+```bash
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```c
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```cpp
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```cs
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```csharp
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```css
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```html
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```http
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```ini
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```json
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```js
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```json
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```jsx
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```less
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```lua
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```makefile
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```markdown
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```objectivec
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```php
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```plaintext
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```python
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```ruby
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```scss
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```sql
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```swift
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```typescript
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
+
+```yaml
+S4(config)# interface g 0/1
+S4(config-if)# switchport mode trunk
+S4(config-if)# switchport trunk allowed vlan 10,20,30,40
+S4(config-if)# switchport trunk native vlan 40
+S4(config-if)# no shutdown
+S4(config-if)# exit
+S4(config)# username admin password admin
+S4(config)# ip domain-name itsoeh.edu
+S4(config)# crypto key generate rsa
+How many bits in the modulus [512]: 
+    1024
+S4(config)# line vty 0 15
+S4(config-line)# transport input all
+S4(config-line)# login local
+S4(config-line)# exit
+```
