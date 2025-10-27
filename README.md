@@ -7,11 +7,11 @@
         Configuraciones Switch S1
     </summary>
 
-```bash
+```ini
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
-######################################################################################################
+#############################################################################################
 ```
 
 </details>
@@ -21,11 +21,11 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Switch S2
     </summary>
 
-```bash
+```ini
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
-######################################################################################################
+#############################################################################################
 ```
 
 </details>
@@ -35,11 +35,11 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Switch S3
     </summary>
 
-```bash
+```ini
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
-######################################################################################################
+#############################################################################################
 ```
 
 </details>
@@ -49,7 +49,7 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Router R1
     </summary>
 
-```bash
+```ini
 7
 ```
 
@@ -60,7 +60,7 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Router R2
     </summary>
 
-```bash
+```ini
 7
 ```
 
@@ -71,7 +71,7 @@ System configuration has been modified. Save? [yes/no]:yes
         Configuraciones Router RA
     </summary>
 
-```bash
+```ini
 Pendiente
 ```
 
@@ -85,11 +85,11 @@ Pendiente
         Configuraciones Switch S4
     </summary>
 
-```bash
+```ini
 Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
 Switch# reload
 System configuration has been modified. Save? [yes/no]:yes
-######################################################################################################
+#############################################################################################
 S4# enable
 S4# configure terminal
 S4(config)# hostname S4
@@ -193,11 +193,11 @@ S4(config-line)# exit
         Configuraciones Switch S5
     </summary>
 
-```makefile
+```ini
 S5# sdm prefer dual-ipv4-and-ipv6 default
 S5# reload
 System configuration has been modified. Save? [yes/no]: yes
-######################################################################################################
+#############################################################################################
 S5# enable
 S5# configure terminal
 S5(config)# hostname S5
@@ -306,7 +306,7 @@ S5(config-line)# exit
 S6# sdm prefer dual-ipv4-and-ipv6 default
 S6# reload
 System configuration has been modified. Save? [yes/no]: yes
-######################################################################################################
+#############################################################################################
 S6# enable
 S6# configure terminal
 S6(config)# hostname S6
@@ -405,7 +405,7 @@ S6(config-line)# exit
         Configuraciones Router R3
     </summary>
 
-```bash
+```ini
 R3# enable
 R3# configure terminal
 R3(config)# hostname R3
@@ -497,7 +497,7 @@ R3(config-line)# exit
         Configuraciones Router R4
     </summary>
 
-```bash
+```ini
 R4# enable
 R4# configure terminal
 R4(config)# hostname R4
@@ -597,7 +597,7 @@ R4(config-line)# exit
         Configuraciones Router RB
     </summary>
 
-```bash
+```ini
 Pendiente
 ```
 
