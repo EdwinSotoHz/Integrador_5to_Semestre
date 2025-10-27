@@ -1,4 +1,10 @@
 # Integrador_5to_Semestre
+<details> 
+    <summary>
+        Puertos 
+    </summary>
+<img src="assets/img/image.png" height="500px" />
+</details>
 
 ---
 ## DHCP Stateless
