@@ -767,9 +767,9 @@ S4(config-line)# exit
     </summary>
 
 ```ini
-S5# sdm prefer dual-ipv4-and-ipv6 default
-S5# reload
-System configuration has been modified. Save? [yes/no]: yes
+Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
+Switch# reload
+System configuration has been modified. Save? [yes/no]:yes
 #############################################################################################
 
 S5# enable
@@ -895,9 +895,9 @@ S5(config-line)# exit
     </summary>
 
 ```ini
-S6# sdm prefer dual-ipv4-and-ipv6 default
-S6# reload
-System configuration has been modified. Save? [yes/no]: yes
+Switch(config)# sdm prefer dual-ipv4-and-ipv6 default
+Switch# reload
+System configuration has been modified. Save? [yes/no]:yes
 #############################################################################################
 
 S6# enable
