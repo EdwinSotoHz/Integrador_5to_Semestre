@@ -131,7 +131,7 @@ S1(config-if)# no shutdown
 S1(config-if)# exit
 
 S1(config)# interface range f0/1-3
-S1(config-if-range)# channel-group 1 mode active
+S1(config-if-range)# channel-group 1 mode on
 S1(config-if-range)# no shutdown
 S1(config-if-range)# exit
 
@@ -143,7 +143,7 @@ S1(config-if)# no shutdown
 S1(config-if)# exit
 
 S1(config)# interface range f0/4-6
-S1(config-if-range)# channel-group 2 mode auto
+S1(config-if-range)# channel-group 2 mode desirable
 S1(config-if-range)# no shutdown
 S1(config-if-range)# exit
 
@@ -480,9 +480,9 @@ R1(config-if)# ipv6 nd other-config-flag
 R1(config-if)# ipv6 dhcp server DHCP-STATELESS-45
 R1(config-if)# no shutdown
 R1(config-if)# standby version 2
+R1(config-if)# standby 45 ipv6 autoconfig
 R1(config-if)# standby 45 priority 150
 R1(config-if)# standby 45 preempt
-R1(config-if)# standby 45 ipv6 autoconfig
 R1(config-if)# exit
 R1(config)# interface g0/1.55
 R1(config-if)# encapsulation dot1Q 55
@@ -603,8 +603,8 @@ R2(config-if)# ipv6 enable
 R2(config-if)# ipv6 nd other-config-flag
 R2(config-if)# no shutdown
 R2(config-if)# standby version 2
-R2(config-if)# standby 65 priority 100
 R2(config-if)# standby 65 ipv6 autoconfig
+R2(config-if)# standby 65 priority 100
 R2(config-if)# exit
 
 R2(config)# username admin password admin
