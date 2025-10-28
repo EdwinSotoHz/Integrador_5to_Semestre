@@ -442,19 +442,15 @@ R1(config-if)# exit
 R1(config)# ipv6 unicast-routing
 
 R1(config)# ipv6 dhcp pool DHCP-STATELESS-15
-R1(config-dhcp)# address prefix 2001:db8:cafe:15::/64
 R1(config-dhcp)# domain-name tics.edu.mx
 R1(config-dhcp)# exit
 R1(config)# ipv6 dhcp pool DHCP-STATELESS-45
-R1(config-dhcp)# address prefix 2001:db8:cafe:45::/64
 R1(config-dhcp)# domain-name tics.edu.mx
 R1(config-dhcp)# exit
 R1(config)# ipv6 dhcp pool DHCP-STATELESS-55
-R1(config-dhcp)# address prefix 2001:db8:cafe:55::/64
 R1(config-dhcp)# domain-name tics.edu.mx
 R1(config-dhcp)# exit
 R1(config)# ipv6 dhcp pool DHCP-STATELESS-65
-R1(config-dhcp)# address prefix 2001:db8:cafe:65::/64
 R1(config-dhcp)# domain-name tics.edu.mx
 R1(config-dhcp)# exit
 
@@ -546,19 +542,15 @@ R2(config-if)# exit
 R2(config)# ipv6 unicast-routing
 
 R2(config)# ipv6 dhcp pool DHCP-STATELESS-15
-R2(config-dhcp)# address prefix 2001:db8:cafe:15::/64
 R2(config-dhcp)# domain-name tics.edu.mx
 R2(config-dhcp)# exit
 R2(config)# ipv6 dhcp pool DHCP-STATELESS-45
-R2(config-dhcp)# address prefix 2001:db8:cafe:45::/64
 R2(config-dhcp)# domain-name tics.edu.mx
 R2(config-dhcp)# exit
 R2(config)# ipv6 dhcp pool DHCP-STATELESS-55
-R2(config-dhcp)# address prefix 2001:db8:cafe:55::/64
 R2(config-dhcp)# domain-name tics.edu.mx
 R2(config-dhcp)# exit
 R2(config)# ipv6 dhcp pool DHCP-STATELESS-65
-R2(config-dhcp)# address prefix 2001:db8:cafe:65::/64
 R2(config-dhcp)# domain-name tics.edu.mx
 R2(config-dhcp)# exit
 
