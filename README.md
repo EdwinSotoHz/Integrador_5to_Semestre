@@ -17,12 +17,31 @@
     <summary>
         Extras
     </summary>
-
 Borrar la configuración guardada en NVRAM.
 
 ```ini
 Switch# erase startup-config
 ```
+Test vlan 30
+
+```ini
+interface f 0/15
+ switchport mode access
+ switchport access vlan 30
+ no shut
+ exit
+ ```
+
+Test Routers-Switch
+
+```ini
+interface g 0/0
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ switchport trunk native vlan 40
+ no shutdown
+ exit
+ ```
 
 </details>
 
@@ -49,10 +68,10 @@ S1(config)# enable password cisco
 S1(config)# enable secret tics
 
 S1(config)# vlan 15
-S1(config-vlan)# name Docentes
-S1(config-vlan)# exit
-S1(config)# vlan 45
 S1(config-vlan)# name Estudiantes
+S1(config-vlan)# exit 
+S1(config)# vlan 45
+S1(config-vlan)# name Docentes
 S1(config-vlan)# exit
 S1(config)# vlan 55
 S1(config-vlan)# name Admin
@@ -64,7 +83,7 @@ S1(config-vlan)# exit
 S1(config)# interface vlan 55
 S1(config-if)# no ip address
 S1(config-if)# ipv6 enable
-S1(config-if)# ipv6 address 2001:db8:cafe:55::3/64
+S1(config-if)# ipv6 address 2001:db8:cafe:55::1/64
 S1(config-if)# no shutdown
 S1(config-if)# exit
 
@@ -169,10 +188,10 @@ S2(config)# enable password cisco
 S2(config)# enable secret tics
 
 S2(config)# vlan 15
-S2(config-vlan)# name Docentes
-S2(config-vlan)# exit
-S2(config)# vlan 45
 S2(config-vlan)# name Estudiantes
+S2(config-vlan)# exit 
+S2(config)# vlan 45
+S2(config-vlan)# name Docentes
 S2(config-vlan)# exit
 S2(config)# vlan 55
 S2(config-vlan)# name Admin
@@ -296,10 +315,10 @@ S3(config)# enable password cisco
 S3(config)# enable secret tics
 
 S3(config)# vlan 15
-S3(config-vlan)# name Docentes
-S3(config-vlan)# exit
-S3(config)# vlan 45
 S3(config-vlan)# name Estudiantes
+S3(config-vlan)# exit 
+S3(config)# vlan 45
+S3(config-vlan)# name Docentes
 S3(config-vlan)# exit
 S3(config)# vlan 55
 S3(config-vlan)# name Admin
@@ -310,7 +329,7 @@ S3(config-vlan)# exit
 
 S3(config)# interface vlan 55
 S3(config-if)# no ip address
-S3(config-if)# ipv6 address 2001:db8:cafe:55::1/64
+S3(config-if)# ipv6 address 2001:db8:cafe:55::3/64
 S3(config-if)# no shutdown
 S3(config-if)# exit
 
@@ -636,10 +655,10 @@ S4(config)# enable password cisco
 S4(config)# enable secret tics
 
 S4(config)# vlan 10
-S4(config-vlan)# name Docentes
-S4(config-vlan)# exit
-S4(config)# vlan 20
 S4(config-vlan)# name Estudiantes
+S4(config-vlan)# exit 
+S4(config)# vlan 20
+S4(config-vlan)# name Docentes
 S4(config-vlan)# exit
 S4(config)# vlan 30
 S4(config-vlan)# name Admin
@@ -654,6 +673,7 @@ S4(config-if)# ipv6 address 2001:db8:3c4d:30::4/64
 S4(config-if)# no shutdown
 S4(config-if)# exit
 
+# No colocar este comando hasta configurar el router
 S4(config)# ipv6 route ::/0 <GUA interfaz .30 Router Activo>
 
 S4(config)# interface range f 0/1-24
@@ -762,10 +782,10 @@ S5(config)# enable password cisco
 S5(config)# enable secret tics
 
 S5(config)# vlan 10
-S5(config-vlan)# name Docentes
-S5(config-vlan)# exit
-S5(config)# vlan 20
 S5(config-vlan)# name Estudiantes
+S5(config-vlan)# exit 
+S5(config)# vlan 20
+S5(config-vlan)# name Docentes
 S5(config-vlan)# exit
 S5(config)# vlan 30
 S5(config-vlan)# name Admin
@@ -890,10 +910,10 @@ S6(config)# enable password cisco
 S6(config)# enable secret tics
 
 S6(config)# vlan 10
-S6(config-vlan)# name Docentes
-S6(config-vlan)# exit
-S6(config)# vlan 20
 S6(config-vlan)# name Estudiantes
+S6(config-vlan)# exit 
+S6(config)# vlan 20
+S6(config-vlan)# name Docentes
 S6(config-vlan)# exit
 S6(config)# vlan 30
 S6(config-vlan)# name Admin
@@ -1072,8 +1092,8 @@ R3(config-if)# ipv6 nd managed-config-flag
 R3(config-if)# ipv6 nd prefix default no-autoconfig
 R3(config-if)# no shutdown
 R3(config-if)# standby version 2
-R3(config-if)# standby 40 priority 100
 R3(config-if)# standby 40 ipv6 autoconfig
+R3(config-if)# standby 40 priority 100
 R3(config-if)# exit
 
 R3(config)# username admin password admin
@@ -1151,9 +1171,9 @@ R4(config-if)# ipv6 nd prefix default no-autoconfig
 R4(config-if)# ipv6 dhcp server DHCP-STATEFUL-20
 R4(config-if)# no shutdown
 R4(config-if)# standby version 2
+R4(config-if)# standby 20 ipv6 autoconfig
 R4(config-if)# standby 20 priority 150
 R4(config-if)# standby 20 preempt
-R4(config-if)# standby 20 ipv6 autoconfig
 R4(config-if)# exit
 R4(config)# interface g 0/1.30
 R4(config-if)# encapsulation dot1Q 30
@@ -1213,6 +1233,7 @@ Nota:
 - El switch puede no reconocer la MAC virtual del HSRP (si se configura después de conectar el host), debido a la configuración de port-security. Hasta que se reinicia el puerto o se borra la tabla CAM, no se actualiza dicha dirección.
 - Cuando el router activo establece su rol, los hosts actualizan su tabla ARP/NDP. Los hosts usan la dirección del router físico activo
 - En PK funciona al cerrar el lab (no sé por qué)
+- Talvez desconectar el Router standby despues de que se hayan comunicado resuelva el problema del gateway (PK)
 - `ipv6 route ::/0 <IPv6>` necesita la GUA del  
 - El ssh de los routers funciona con la global de cualquier subinterfaz
 - El ssh de los switch funciona con la global de la SVI 30
