@@ -1,0 +1,554 @@
+################## S4 ##################
+sdm prefer dual-ipv4-and-ipv6 default
+reload
+System configuration has been modified. Save? [yes/no]:yes
+
+enable
+configure terminal
+
+hostname S4
+enable password cisco
+enable secret tics
+
+vlan 10
+ name Estudiantes
+ exit
+vlan 20
+ name Docentes
+ exit
+vlan 30
+ name Admin
+ exit
+vlan 40
+ name Native
+ exit
+
+interface vlan 30
+ no ip address
+ ipv6 address 2001:db8:3c4d:30::4/64
+ no shutdown
+ exit
+
+ipv6 route ::/0 <GUA interfaz .30 Router Activo>
+
+interface range f 0/1-24
+ switchport mode access
+ switchport access vlan 40
+ shutdown
+ exit
+
+interface range g 0/1-2
+ switchport mode access
+ switchport access vlan 40
+ exit
+
+interface range f 0/7,f 0/8
+ switchport mode access
+ switchport access vlan 10
+ sw port-security 
+ sw port-security maximum 1
+ sw port-security mac-address sticky
+ sw port-security violation shutdown
+ no shutdown
+ exit
+
+interface range f 0/9,f 0/12
+ switchport mode access
+ switchport access vlan 20
+ sw port-security 
+ sw port-security maximum 1
+ sw port-security mac-address sticky
+ sw port-security violation shutdown
+ no shutdown
+ exit
+
+interface f 0/24
+ switchport mode access
+ switchport access vlan 40
+ sw port-security 
+ sw port-security maximum 1
+ sw port-security mac-address sticky
+ sw port-security violation shutdown
+ no shutdown
+ exit
+
+interface range f 0/1-3
+ channel-group 1 mode on
+ no shutdown
+ exit
+interface port-channel 1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ switchport trunk native vlan 40
+ no shutdown
+ exit
+
+interface range f 0/4-6
+ channel-group 2 mode desirable
+ no shutdown
+ exit
+interface port-channel 2
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ switchport trunk native vlan 40
+ no shutdown
+ exit
+
+interface g 0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ switchport trunk native vlan 40
+ no shutdown
+ exit
+
+username admin password admin
+ip domain-name itsoeh.edu
+crypto key generate rsa
+    1024
+line vty 0 15 
+ transport input all
+ login local
+ exit
+
+
+################## S5 ##################
+sdm prefer dual-ipv4-and-ipv6 default
+reload
+System configuration has been modified. Save? [yes/no]:yes
+
+enable
+configure terminal
+
+hostname S5
+enable password cisco
+enable secret tics
+
+vlan 10
+ name Estudiantes
+ exit
+vlan 20
+ name Docentes
+ exit
+vlan 30
+ name Admin
+ exit
+vlan 40
+ name Native
+ exit
+
+interface vlan 30
+ no ip address
+ ipv6 enable
+ ipv6 address 2001:db8:3c4d:30::5/64
+ no shutdown
+ exit
+
+ipv6 route ::/0 <GUA interfaz .30 Router Activo>
+
+interface range f 0/1-24
+ switchport mode access
+ switchport access vlan 40
+ shutdown
+ exit
+
+interface range g 0/1-2
+ switchport mode access
+ switchport access vlan 40
+ exit
+
+interface range f 0/7,f 0/8
+ switchport mode access
+ switchport access vlan 10
+ sw port-security 
+ sw port-security maximum 1
+ sw port-security mac-address sticky
+ sw port-security violation shutdown
+ no shutdown
+ exit
+
+interface range f 0/9,f 0/12
+ switchport mode access
+ switchport access vlan 20
+ sw port-security 
+ sw port-security maximum 1
+ sw port-security mac-address sticky
+ sw port-security violation shutdown
+ no shutdown
+ exit
+
+interface f 0/24
+ switchport mode access
+ switchport access vlan 40
+ sw port-security 
+ sw port-security maximum 1
+ sw port-security mac-address sticky
+ sw port-security violation shutdown
+ no shutdown
+ exit
+
+interface range f 0/1-3
+ channel-group 1 mode passive
+ no shutdown
+ exit
+interface port-channel 1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ switchport trunk native vlan 40
+ no shutdown
+ exit
+
+interface range f 0/4-6
+ channel-group 2 mode on
+ no shutdown
+ exit
+interface port-channel 2
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ switchport trunk native vlan 40
+ no shutdown
+ exit
+
+interface g 0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ switchport trunk native vlan 40
+ no shutdown
+ exit
+
+username admin password admin
+ip domain-name itsoeh.edu
+crypto key generate rsa
+    1024
+line vty 0 15 
+ transport input all
+ login local
+ exit
+
+################## S6 ##################
+sdm prefer dual-ipv4-and-ipv6 default
+reload
+System configuration has been modified. Save? [yes/no]:yes
+
+enable
+configure terminal
+
+hostname S6
+enable password cisco
+enable secret tics
+
+vlan 10
+ name Estudiantes
+ exit
+vlan 20
+ name Docentes
+ exit
+vlan 30
+ name Admin
+ exit
+vlan 40
+ name Native
+ exit
+
+interface vlan 30
+ no ip address
+ ipv6 enable
+ ipv6 address 2001:db8:3c4d:30::6/64
+ no shutdown
+ exit
+
+ipv6 route ::/0 <GUA interfaz .30 Router Activo>
+
+interface range f 0/1-24
+ switchport mode access
+ switchport access vlan 40
+ shutdown
+ exit
+interface range g 0/1-2
+ switchport mode access
+ switchport access vlan 40
+ exit
+
+interface range f 0/7,f 0/8
+ switchport mode access
+ switchport access vlan 10
+ sw port-security 
+ sw port-security maximum 1
+ sw port-security mac-address sticky
+ sw port-security violation shutdown
+ no shutdown
+ exit
+
+interface range f 0/9,f 0/12
+ switchport mode access
+ switchport access vlan 20
+ sw port-security 
+ sw port-security maximum 1
+ sw port-security mac-address sticky
+ sw port-security violation shutdown
+ no shutdown
+ exit
+
+interface f 0/24
+ switchport mode access
+ switchport access vlan 40
+ sw port-security 
+ sw port-security maximum 1
+ sw port-security mac-address sticky
+ sw port-security violation shutdown
+ no shutdown
+ exit
+
+interface range f 0/1-3
+ channel-group 1 mode on
+ no shutdown
+ exit
+interface port-channel 1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ switchport trunk native vlan 40
+ no shutdown
+ exit
+ 
+interface range f 0/4-6
+ channel-group 2 mode desirable
+ no shutdown
+ exit
+interface port-channel 2
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ switchport trunk native vlan 40
+ no shutdown
+ exit
+
+username admin password admin
+ip domain-name itsoeh.edu
+crypto key generate rsa
+    1024
+line vty 0 15 
+ transport input all
+ login local
+ exit
+
+################## R3 ##################
+enable
+configure terminal
+
+hostname R3
+enable password cisco
+enable secret tics
+
+interface g 0/1
+ no shutdown
+ exit
+
+ipv6 unicast-routing
+ipv6 dhcp pool DHCP-STATEFUL-10
+ address prefix 2001:db8:3c4d:10::/64
+ domain-name tics.edu.mx
+ exit
+ipv6 dhcp pool DHCP-STATEFUL-20
+ address prefix 2001:db8:3c4d:20::/64
+ domain-name tics.edu.mx
+ exit
+ipv6 dhcp pool DHCP-STATEFUL-30
+ address prefix 2001:db8:3c4d:30::/64
+ domain-name tics.edu.mx
+ exit
+ipv6 dhcp pool DHCP-STATEFUL-40
+ address prefix 2001:db8:3c4d:40::/64
+ domain-name tics.edu.mx
+ exit
+
+interface g 0/1.10
+ encapsulation dot1Q 10
+ no ip address
+ ipv6 address 2001:db8:3c4d:10::/64 eui-64
+ ipv6 enable
+ ipv6 nd managed-config-flag
+ ipv6 nd prefix default no-autoconfig
+ no shutdown
+ standby version 2
+ standby 10 ipv6 autoconfig
+ standby 10 priority 100
+ exit
+interface g 0/1.20
+ encapsulation dot1Q 20
+ no ip address
+ ipv6 address 2001:db8:3c4d:20::/64 eui-64
+ ipv6 enable
+ ipv6 nd managed-config-flag
+ ipv6 nd prefix default no-autoconfig
+ no shutdown
+ standby version 2
+ standby 20 ipv6 autoconfig
+ standby 20 priority 100
+ exit
+interface g 0/1.30
+ encapsulation dot1Q 30
+ no ip address
+ ipv6 address 2001:db8:3c4d:30::/64 eui-64
+ ipv6 enable
+ ipv6 nd managed-config-flag
+ ipv6 nd prefix default no-autoconfig
+ no shutdown
+ standby version 2
+ standby 30 ipv6 autoconfig
+ standby 30 priority 100
+ exit
+interface g 0/1.40
+ encapsulation dot1Q 40 native
+ no ip address
+ ipv6 address 2001:db8:3c4d:40::/64 eui-64
+ ipv6 enable
+ ipv6 nd managed-config-flag
+ ipv6 nd prefix default no-autoconfig
+ no shutdown
+ standby version 2
+ standby 40 priority 100
+ standby 40 ipv6 autoconfig
+ exit
+
+username admin password admin
+ip domain-name itsoeh.edu
+crypto key generate rsa
+    1024
+line vty 0 15 
+ transport input all
+ login local
+ exit
+
+################## R4 ##################
+enable
+configure terminal
+
+hostname R4
+enable password cisco
+enable secret tics
+
+interface g 0/1
+ no shutdown
+ exit
+
+ipv6 unicast-routing
+ipv6 dhcp pool DHCP-STATEFUL-10
+ address prefix 2001:db8:3c4d:10::/64
+ domain-name tics.edu.mx
+ exit
+ipv6 dhcp pool DHCP-STATEFUL-20
+ address prefix 2001:db8:3c4d:20::/64
+ domain-name tics.edu.mx
+ exit
+ipv6 dhcp pool DHCP-STATEFUL-30
+ address prefix 2001:db8:3c4d:30::/64
+ domain-name tics.edu.mx
+ exit
+ipv6 dhcp pool DHCP-STATEFUL-40
+ address prefix 2001:db8:3c4d:40::/64
+ domain-name tics.edu.mx
+ exit
+
+interface g 0/1.10
+ encapsulation dot1Q 10
+ no ip address
+ ipv6 address 2001:db8:3c4d:10::/64 eui-64
+ ipv6 enable
+ ipv6 nd managed-config-flag
+ ipv6 nd prefix default no-autoconfig
+ ipv6 dhcp server DHCP-STATEFUL-10
+ no shutdown
+ standby version 2
+ standby 10 ipv6 autoconfig
+ standby 10 priority 150
+ standby 10 preempt
+ exit
+interface g 0/1.20
+ encapsulation dot1Q 20
+ no ip address
+ ipv6 address 2001:db8:3c4d:20::/64 eui-64
+ ipv6 enable
+ ipv6 nd managed-config-flag
+ ipv6 nd prefix default no-autoconfig
+ ipv6 dhcp server DHCP-STATEFUL-20
+ no shutdown
+ standby version 2
+ standby 20 priority 150
+ standby 20 preempt
+ standby 20 ipv6 autoconfig
+ exit
+interface g 0/1.30
+ encapsulation dot1Q 30
+ no ip address
+ ipv6 address 2001:db8:3c4d:30::/64 eui-64
+ ipv6 enable
+ ipv6 nd managed-config-flag
+ ipv6 nd prefix default no-autoconfig
+ ipv6 dhcp server DHCP-STATEFUL-30
+ no shutdown
+ standby version 2
+ standby 30 ipv6 autoconfig
+ standby 30 priority 150
+ standby 30 preempt
+ exit
+interface g 0/1.40
+ encapsulation dot1Q 40 native
+ no ip address
+ ipv6 address 2001:db8:3c4d:40::/64 eui-64
+ ipv6 enable
+ ipv6 nd managed-config-flag
+ ipv6 nd prefix default no-autoconfig
+ ipv6 dhcp server DHCP-STATEFUL-40
+ no shutdown
+ standby version 2
+ standby 40 ipv6 autoconfig
+ standby 40 priority 150
+ standby 40 preempt
+ exit
+
+username admin password admin
+ip domain-name itsoeh.edu
+crypto key generate rsa
+    1024
+line vty 0 15 
+ transport input all
+ login local
+ exit
+
+
+Nota: 
+- Configurar S4, S5, S6, Active y Standby
+- El switch puede no reconocer la MAC virtual del HSRP (si se configura después de conectar el host), debido a la configuración de port-security. Hasta que se reinicia el puerto o se borra la tabla CAM, no se actualiza dicha dirección.
+- Cuando el router activo establece su rol, los hosts actualizan su tabla ARP/NDP. Los hosts usan la dirección del router físico activo
+- En PK funciona al cerrar el lab (no sé por qué)
+- `ipv6 route ::/0 <IPv6>` necesita la GUA del  
+- El ssh de los routers funciona con la global de cualquier subinterfaz
+- El ssh de los switch funciona con la global de la SVI 30
+- El tiempo establecido en la segurdad de los puertos del switch fue puesto para no tener que reiniciar los puertos a cada rato (en el integrado colocarlo a 2 minutos)
+
+
+ipv6 route ::/0 2001:DB8:3C4D:30:201:96FF:FE2A:D19C
+
+ switchport port-security aging time 1
+ switchport port-security aging type absolute
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+interface f 0/15
+ switchport mode access
+ switchport access vlan 30
+ no shut
+ exit
+
+Ver el gateway:
+do show standby brief
+
+link-local del router activo es el default gateway de los switches en la vlan 30 ej: FE80::201:96FF:FE2A:D19C
+
+do sh ipv6 int g0/1.30
+
+ipv6 route ::/0 FE80::201:96FF:FE2A:D19C%Vlan30
+ipv6 route ::/0 2001:db8:3c4d:10::1
+ipv6 route ::/0 2001:db8:3c4d:10::1
+ipv6 route ::/0 2001:DB8:3C4D:30:201:96FF:FE2A:D19C
+
+En el standby
+ipv6 nd ra suppress
