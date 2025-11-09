@@ -1,6 +1,6 @@
 <details> 
     <summary>
-        <h2> Switch S4 </h2>
+        <h4> Switch S4 </h4>
     </summary>
 
 Configuración inicial de preferencia IPv6
@@ -156,7 +156,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h2> Switch S5 </h2>
+        <h4> Switch S5 </h4>
     </summary>
 
 Configuración inicial de preferencia IPv6
@@ -314,7 +314,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h2> Switch S6 </h2>
+        <h4> Switch S6 </h4>
     </summary>
 
 Configuración inicial de preferencia IPv6
@@ -461,7 +461,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        Router R3
+        <h4> Router R3 </h4>
     </summary>
 
 Configuración básica de consola y seguridad
@@ -588,7 +588,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        Router R4
+        <h4> Router R4 </h4>
     </summary>
 
 Configuración básica de consola y seguridad
@@ -723,7 +723,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        Configuraciones Router RA
+        <h4> Router RA </h4>
     </summary>
 
 ```diff
