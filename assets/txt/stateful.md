@@ -1,5 +1,5 @@
 ## DHCP Stateless
-<details> 
+<details width="650"> 
     <summary>
         Switch S4
     </summary>
@@ -155,7 +155,7 @@ line vty 0 15
 ```
 </details>
 
-<details> 
+<details width="650"> 
     <summary>
         Switch S5
     </summary>
@@ -313,7 +313,7 @@ line vty 0 15
 
 </details>
 
-<details> 
+<details width="650"> 
     <summary>
         Switch S6
     </summary>
@@ -460,7 +460,7 @@ line vty 0 15
 
 </details>
 
-<details> 
+<details width="650"> 
     <summary>
         Router R3
     </summary>
@@ -587,7 +587,7 @@ line vty 0 15
 
 </details>
 
-<details> 
+<details width="650"> 
     <summary>
         Router R4
     </summary>
@@ -722,7 +722,7 @@ line vty 0 15
 
 </details>
 
-<details> 
+<details width="650"> 
     <summary>
         Configuraciones Router RA
     </summary>
