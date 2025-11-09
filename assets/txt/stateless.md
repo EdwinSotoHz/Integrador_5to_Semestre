@@ -1,7 +1,7 @@
 ## DHCP Stateless
 <details> 
     <summary>
-        <h4> Switch S1 <h4>
+        ### Switch S1
     </summary>
 
 Configuración inicial de preferencia IPv6
@@ -147,7 +147,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h4> Switch S2 <h4>
+        ### Switch S2
     </summary>
 
 Configuración inicial de preferencia IPv6
@@ -305,7 +305,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h4> Switch S3 <h4>
+        ### Switch S3
     </summary>
 
 Configuración inicial de preferencia IPv6
@@ -462,7 +462,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h4> Router R1 <h4>
+        ### Router R1
     </summary>
 
 Configuración básica de consola y seguridad
@@ -589,7 +589,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h4> Router R2 <h4>
+        ### Router R2
     </summary>
 
 Configuración básica de consola y seguridad
@@ -712,7 +712,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h4> Router RA <h4>
+        ### Router RA
     </summary>
 
 ```diff
