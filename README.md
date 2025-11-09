@@ -31,32 +31,16 @@
     <summary>
         Extras
     </summary>
+
 Borrar la configuración guardada en NVRAM.
 
 ```ini
 Switch# erase startup-config
 ```
 
-Test VLAN 30 Administrativa 
-
-```ini
-interface f 0/15
- switchport mode access
- switchport access vlan 30
- no shut
- exit
-```
-
-Test VLAN 55 Administrativa 
-
-```ini
-interface f 0/15
- switchport mode access
- switchport access vlan 55
- no shut
- exit
-```
-
+Configuraciones rápiadas:
+- [Stateless](assets/txt/stateless.md)
+- [Stateful](assets/txt/stateful.md)
 
 </details>
 
