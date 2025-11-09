@@ -4,15 +4,15 @@
         Switch S4
     </summary>
 Configuración inicial de preferencia IPv6 S4
-<pre>
+```ini
 sdm prefer dual-ipv4-and-ipv6 default
 reload
 System configuration has been modified. Save? [yes/no]:yes
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-</pre>
+```
 
 Configuración básica de consola y seguridad S4
-<pre>
+```ini
 enable
 configure terminal
 
@@ -25,10 +25,10 @@ enable password cisco
 enable secret tics
 banner motd # Solo acceso autorizado S4 #
 service password-encryption
-</pre>
+```
 
 Creación de VLANs para diferentes grupos S4
-<pre>
+```ini
 vlan 10
  name Estudiantes
  exit
@@ -41,19 +41,19 @@ vlan 30
 vlan 40
  name Native
  exit
-</pre>
+```
 
 Configuración de interfaz de administración IPv6 S4
-<pre>
+```ini
 interface vlan 30
  no ip address
  ipv6 address 2001:db8:3c4d:30::4/64
  no shutdown
  exit
-</pre>
+```
 
 Configuración inicial de puertos a VLAN nativa S4
-<pre>
+```ini
 interface range f 0/1-24
  switchport mode access
  switchport access vlan 40
@@ -64,10 +64,10 @@ interface range g 0/1-2
  switchport mode access
  switchport access vlan 40
  exit
-</pre>
+```
 
 Puertos de acceso para estudiantes con seguridad de puerto S4
-<pre>
+```ini
 interface range f 0/7,f 0/8
  switchport mode access
  switchport access vlan 10
@@ -77,10 +77,10 @@ interface range f 0/7,f 0/8
  switchport port-security violation shutdown
  no shutdown
  exit
-</pre>
+```
 
 Puertos de acceso para docentes con seguridad de puerto S4
-<pre>
+```ini
 interface range f 0/9,f 0/12
  switchport mode access
  switchport access vlan 20
@@ -90,10 +90,10 @@ interface range f 0/9,f 0/12
  switchport port-security violation shutdown
  no shutdown
  exit
-</pre>
+```
 
 Puerto de administración con seguridad S4
-<pre>
+```ini
 interface f 0/24
  switchport mode access
  switchport access vlan 40
@@ -103,10 +103,10 @@ interface f 0/24
  switchport port-security violation shutdown
  no shutdown
  exit
-</pre>
+```
 
 EtherChannel 1 modo on para agregación de enlaces S4
-<pre>
+```ini
 interface range f 0/1-3
  channel-group 1 mode on
  no shutdown
@@ -117,10 +117,10 @@ interface port-channel 1
  switchport trunk native vlan 40
  no shutdown
  exit
-</pre>
+```
 
 EtherChannel 2 modo desirable para agregación de enlaces S4
-<pre>
+```ini
 interface range f 0/4-6
  channel-group 2 mode desirable
  no shutdown
@@ -131,20 +131,20 @@ interface port-channel 2
  switchport trunk native vlan 40
  no shutdown
  exit
-</pre>
+```
 
 Interfaz gigabit troncal hacia router S4
-<pre>
+```ini
 interface g 0/1
  switchport mode trunk
  switchport trunk allowed vlan 10,20,30,40
  switchport trunk native vlan 40
  no shutdown
  exit
-</pre>
+```
 
 Configuración de acceso SSH con autenticación local S4
-<pre>
+```ini
 username admin password admin
 ip domain-name itsoeh.edu
 crypto key generate rsa
@@ -153,7 +153,7 @@ line vty 0 15
  transport input ssh
  login local
  exit
-</pre>
+```
 </details>
 
 <details> 
@@ -161,15 +161,15 @@ line vty 0 15
         Switch S5
     </summary>
 Configuración inicial de preferencia IPv6 S5
-<pre>
+```ini
 sdm prefer dual-ipv4-and-ipv6 default
 reload
 System configuration has been modified. Save? [yes/no]:yes
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-</pre>
+```
 
 Configuración básica de consola y seguridad S5
-<pre>
+```ini
 enable
 configure terminal
 
@@ -182,10 +182,10 @@ enable password cisco
 enable secret tics
 banner motd # Solo acceso autorizado S5 #
 service password-encryption
-</pre>
+```
 
 Creación de VLANs para diferentes grupos S5
-<pre>
+```ini
 vlan 10
  name Estudiantes
  exit
@@ -198,20 +198,20 @@ vlan 30
 vlan 40
  name Native
  exit
-</pre>
+```
 
 Configuración de interfaz de administración IPv6 S5
-<pre>
+```ini
 interface vlan 30
  no ip address
  ipv6 enable
  ipv6 address 2001:db8:3c4d:30::5/64
  no shutdown
  exit
-</pre>
+```
 
 Configuración inicial de puertos a VLAN nativa S5
-<pre>
+```ini
 interface range f 0/1-24
  switchport mode access
  switchport access vlan 40
@@ -222,10 +222,10 @@ interface range g 0/1-2
  switchport mode access
  switchport access vlan 40
  exit
-</pre>
+```
 
 Puertos de acceso para estudiantes con seguridad de puerto S5
-<pre>
+```ini
 interface range f 0/7,f 0/8
  switchport mode access
  switchport access vlan 10
@@ -235,10 +235,10 @@ interface range f 0/7,f 0/8
  switchport port-security violation shutdown
  no shutdown
  exit
-</pre>
+```
 
 Puertos de acceso para docentes con seguridad de puerto S5
-<pre>
+```ini
 interface range f 0/9,f 0/12
  switchport mode access
  switchport access vlan 20
@@ -248,10 +248,10 @@ interface range f 0/9,f 0/12
  switchport port-security violation shutdown
  no shutdown
  exit
-</pre>
+```
 
 Puerto de administración con seguridad S5
-<pre>
+```ini
 interface f 0/24
  switchport mode access
  switchport access vlan 40
@@ -261,10 +261,10 @@ interface f 0/24
  switchport port-security violation shutdown
  no shutdown
  exit
-</pre>
+```
 
 EtherChannel 1 modo passive para LACP S5
-<pre>
+```ini
 interface range f 0/1-3
  channel-group 1 mode passive
  no shutdown
@@ -275,10 +275,10 @@ interface port-channel 1
  switchport trunk native vlan 40
  no shutdown
  exit
-</pre>
+```
 
 EtherChannel 2 modo on para agregación de enlaces S5
-<pre>
+```ini
 interface range f 0/4-6
  channel-group 2 mode on
  no shutdown
@@ -289,20 +289,20 @@ interface port-channel 2
  switchport trunk native vlan 40
  no shutdown
  exit
-</pre>
+```
 
 Interfaz gigabit troncal hacia router S5
-<pre>
+```ini
 interface g 0/1
  switchport mode trunk
  switchport trunk allowed vlan 10,20,30,40
  switchport trunk native vlan 40
  no shutdown
  exit
-</pre>
+```
 
 Configuración de acceso SSH con autenticación local S5
-<pre>
+```ini
 username admin password admin
 ip domain-name itsoeh.edu
 crypto key generate rsa
@@ -311,7 +311,7 @@ line vty 0 15
  transport input ssh
  login local
  exit
-</pre>
+```
 
 </details>
 
@@ -320,15 +320,15 @@ line vty 0 15
         Switch S6
     </summary>
 Configuración inicial de preferencia IPv6 S6
-<pre>
+```ini
 sdm prefer dual-ipv4-and-ipv6 default
 reload
 System configuration has been modified. Save? [yes/no]:yes
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-</pre>
+```
 
 Configuración básica de consola y seguridad S6
-<pre>
+```ini
 enable
 configure terminal
 
@@ -341,10 +341,10 @@ enable password cisco
 enable secret tics
 banner motd # Solo acceso autorizado S6 #
 service password-encryption
-</pre>
+```
 
 Creación de VLANs para diferentes grupos S6
-<pre>
+```ini
 vlan 10
  name Estudiantes
  exit
@@ -357,20 +357,20 @@ vlan 30
 vlan 40
  name Native
  exit
-</pre>
+```
 
 Configuración de interfaz de administración IPv6 S6
-<pre>
+```ini
 interface vlan 30
  no ip address
  ipv6 enable
  ipv6 address 2001:db8:3c4d:30::6/64
  no shutdown
  exit
-</pre>
+```
 
 Configuración inicial de puertos a VLAN nativa S6
-<pre>
+```ini
 interface range f 0/1-24
  switchport mode access
  switchport access vlan 40
@@ -380,10 +380,10 @@ interface range g 0/1-2
  switchport mode access
  switchport access vlan 40
  exit
-</pre>
+```
 
 Puertos de acceso para estudiantes con seguridad de puerto S6
-<pre>
+```ini
 interface range f 0/7,f 0/8
  switchport mode access
  switchport access vlan 10
@@ -393,10 +393,10 @@ interface range f 0/7,f 0/8
  switchport port-security violation shutdown
  no shutdown
  exit
-</pre>
+```
 
 Puertos de acceso para docentes con seguridad de puerto S6
-<pre>
+```ini
 interface range f 0/9,f 0/12
  switchport mode access
  switchport access vlan 20
@@ -406,10 +406,10 @@ interface range f 0/9,f 0/12
  switchport port-security violation shutdown
  no shutdown
  exit
-</pre>
+```
 
 Puerto de administración con seguridad S6
-<pre>
+```ini
 interface f 0/24
  switchport mode access
  switchport access vlan 40
@@ -419,10 +419,10 @@ interface f 0/24
  switchport port-security violation shutdown
  no shutdown
  exit
-</pre>
+```
 
 EtherChannel 1 modo on para agregación de enlaces S6
-<pre>
+```ini
 interface range f 0/1-3
  channel-group 1 mode on
  no shutdown
@@ -433,10 +433,10 @@ interface port-channel 1
  switchport trunk native vlan 40
  no shutdown
  exit
-</pre>
+```
 
 EtherChannel 2 modo desirable para agregación de enlaces S6
-<pre>
+```ini
 interface range f 0/4-6
  channel-group 2 mode desirable
  no shutdown
@@ -447,10 +447,10 @@ interface port-channel 2
  switchport trunk native vlan 40
  no shutdown
  exit
-</pre>
+```
 
 Configuración de acceso SSH con autenticación local S6
-<pre>
+```ini
 username admin password admin
 ip domain-name itsoeh.edu
 crypto key generate rsa
@@ -459,7 +459,7 @@ line vty 0 15
  transport input ssh
  login local
  exit
-</pre>
+```
 
 </details>
 
@@ -468,7 +468,7 @@ line vty 0 15
         Router R3
     </summary>
 Configuración básica de consola y seguridad R3
-<pre>
+```ini
 enable
 configure terminal
 
@@ -481,17 +481,17 @@ enable password cisco
 enable secret tics
 banner motd # Solo acceso autorizado R3 #
 service password-encryption
-</pre>
+```
 
 Habilitación de interfaz física R3
-<pre>
+```ini
 interface g 0/1
  no shutdown
  exit
-</pre>
+```
 
 Activación de routing IPv6 y pools DHCP stateful R3
-<pre>
+```ini
 ipv6 unicast-routing
 ipv6 dhcp pool DHCP-STATEFUL-10
  address prefix 2001:db8:3c4d:10::/64
@@ -509,10 +509,10 @@ ipv6 dhcp pool DHCP-STATEFUL-40
  address prefix 2001:db8:3c4d:40::/64
  domain-name tics.edu.mx
  exit
-</pre>
+```
 
 Subinterfaz VLAN 10 con HSRP y configuración stateful R3
-<pre>
+```ini
 interface g 0/1.10
  encapsulation dot1Q 10
  no ip address
@@ -525,10 +525,10 @@ interface g 0/1.10
  standby 10 ipv6 autoconfig
  standby 10 priority 100
  exit
-</pre>
+```
 
 Subinterfaz VLAN 20 con HSRP y configuración stateful R3
-<pre>
+```ini
 interface g 0/1.20
  encapsulation dot1Q 20
  no ip address
@@ -541,10 +541,10 @@ interface g 0/1.20
  standby 20 ipv6 autoconfig
  standby 20 priority 100
  exit
-</pre>
+```
 
 Subinterfaz VLAN 30 con HSRP y configuración stateful R3
-<pre>
+```ini
 interface g 0/1.30
  encapsulation dot1Q 30
  no ip address
@@ -557,10 +557,10 @@ interface g 0/1.30
  standby 30 ipv6 autoconfig
  standby 30 priority 100
  exit
-</pre>
+```
 
 Subinterfaz VLAN nativa 40 con HSRP y configuración stateful R3
-<pre>
+```ini
 interface g 0/1.40
  encapsulation dot1Q 40 native
  no ip address
@@ -573,10 +573,10 @@ interface g 0/1.40
  standby 40 priority 100
  standby 40 ipv6 autoconfig
  exit
-</pre>
+```
 
 Configuración de acceso SSH con autenticación local R3
-<pre>
+```ini
 username admin password admin
 ip domain-name itsoeh.edu
 crypto key generate rsa
@@ -585,7 +585,7 @@ line vty 0 15
  transport input ssh
  login local
  exit
-</pre>
+```
 
 </details>
 
@@ -594,7 +594,7 @@ line vty 0 15
         Router R4
     </summary>
 Configuración básica de consola y seguridad R4
-<pre>
+```ini
 enable
 configure terminal
 
@@ -607,17 +607,17 @@ enable password cisco
 enable secret tics
 banner motd # Solo acceso autorizado R4 #
 service password-encryption
-</pre>
+```
 
 Habilitación de interfaz física R4
-<pre>
+```ini
 interface g 0/1
  no shutdown
  exit
-</pre>
+```
 
 Activación de routing IPv6 y pools DHCP stateful R4
-<pre>
+```ini
 ipv6 unicast-routing
 ipv6 dhcp pool DHCP-STATEFUL-10
  address prefix 2001:db8:3c4d:10::/64
@@ -635,10 +635,10 @@ ipv6 dhcp pool DHCP-STATEFUL-40
  address prefix 2001:db8:3c4d:40::/64
  domain-name tics.edu.mx
  exit
-</pre>
+```
 
 Subinterfaz VLAN 10 con HSRP activo y servidor DHCP R4
-<pre>
+```ini
 interface g 0/1.10
  encapsulation dot1Q 10
  no ip address
@@ -653,10 +653,10 @@ interface g 0/1.10
  standby 10 priority 150
  standby 10 preempt
  exit
-</pre>
+```
 
 Subinterfaz VLAN 20 con HSRP activo y servidor DHCP R4
-<pre>
+```ini
 interface g 0/1.20
  encapsulation dot1Q 20
  no ip address
@@ -671,10 +671,10 @@ interface g 0/1.20
  standby 20 preempt
  standby 20 ipv6 autoconfig
  exit
-</pre>
+```
 
 Subinterfaz VLAN 30 con HSRP activo y servidor DHCP R4
-<pre>
+```ini
 interface g 0/1.30
  encapsulation dot1Q 30
  no ip address
@@ -689,10 +689,10 @@ interface g 0/1.30
  standby 30 priority 150
  standby 30 preempt
  exit
-</pre>
+```
 
 Subinterfaz VLAN nativa 40 con HSRP activo y servidor DHCP R4
-<pre>
+```ini
 interface g 0/1.40
  encapsulation dot1Q 40 native
  no ip address
@@ -707,10 +707,10 @@ interface g 0/1.40
  standby 40 priority 150
  standby 40 preempt
  exit
-</pre>
+```
 
 Configuración de acceso SSH con autenticación local R4
-<pre>
+```ini
 username admin password admin
 ip domain-name itsoeh.edu
 crypto key generate rsa
@@ -719,7 +719,7 @@ line vty 0 15
  transport input ssh
  login local
  exit
-</pre>
+```
 
 </details>
 
@@ -735,10 +735,10 @@ line vty 0 15
 </details>
 
 Configuración de prueba para VLAN administrativa 30 (Switchs)
-<pre>
-    interface f 0/15
-    switchport mode access
-    switchport access vlan 30
-    no shut
-    exit
-</pre>
+```ini
+interface f 0/15
+ switchport mode access
+ switchport access vlan 30
+ no shut
+ exit
+```
