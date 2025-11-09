@@ -3,12 +3,11 @@
     <summary>
         Switch S4
     </summary>
+
 Configuración inicial de preferencia IPv6 S4
 ```ini
 sdm prefer dual-ipv4-and-ipv6 default
 reload
-System configuration has been modified. Save? [yes/no]:yes
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ```
 
 Configuración básica de consola y seguridad S4
@@ -160,12 +159,11 @@ line vty 0 15
     <summary>
         Switch S5
     </summary>
+
 Configuración inicial de preferencia IPv6 S5
 ```ini
 sdm prefer dual-ipv4-and-ipv6 default
 reload
-System configuration has been modified. Save? [yes/no]:yes
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ```
 
 Configuración básica de consola y seguridad S5
@@ -319,12 +317,11 @@ line vty 0 15
     <summary>
         Switch S6
     </summary>
+
 Configuración inicial de preferencia IPv6 S6
 ```ini
 sdm prefer dual-ipv4-and-ipv6 default
 reload
-System configuration has been modified. Save? [yes/no]:yes
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ```
 
 Configuración básica de consola y seguridad S6
@@ -467,6 +464,7 @@ line vty 0 15
     <summary>
         Router R3
     </summary>
+
 Configuración básica de consola y seguridad R3
 ```ini
 enable
@@ -593,6 +591,7 @@ line vty 0 15
     <summary>
         Router R4
     </summary>
+
 Configuración básica de consola y seguridad R4
 ```ini
 enable
