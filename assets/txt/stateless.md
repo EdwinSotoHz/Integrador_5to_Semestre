@@ -4,13 +4,11 @@
         <h3> Switch S1 </h3>
     </summary>
 
-Configuración inicial de preferencia IPv6
 ```ini
 sdm prefer dual-ipv4-and-ipv6 default
 reload
 ```
 
-Configuración básica de consola y seguridad
 ```ini
 enable
 configure terminal
@@ -26,7 +24,6 @@ banner motd # Solo acceso autorizado S1 #
 service password-encryption
 ```
 
-Creación de VLANs para diferentes grupos
 ```ini
 vlan 15
  name Estudiantes
@@ -42,7 +39,6 @@ vlan 65
  exit
 ```
 
-Configuración de interfaz de administración IPv6
 ```ini
 interface vlan 55
  no ip address
@@ -51,7 +47,6 @@ interface vlan 55
  exit
 ```
 
-Configuración inicial de puertos a VLAN nativa
 ```ini
 interface range f 0/1-24
  switchport mode access
@@ -65,7 +60,6 @@ interface range g 0/1-2
  exit
 ```
 
-Puertos de acceso para estudiantes con seguridad de puerto
 ```ini
 interface range f 0/7,f 0/8
  switchport mode access
@@ -78,7 +72,6 @@ interface range f 0/7,f 0/8
  exit
 ```
 
-Puertos de acceso para docentes con seguridad de puerto
 ```ini
 interface range f 0/9,f 0/12
  switchport mode access
@@ -91,7 +84,6 @@ interface range f 0/9,f 0/12
  exit
 ```
 
-Puerto de administración con seguridad
 ```ini
 interface f 0/24
  switchport mode access
@@ -104,7 +96,6 @@ interface f 0/24
  exit
 ```
 
-EtherChannel 1 modo on para agregación de enlaces
 ```ini
 interface range f 0/1-3
  channel-group 1 mode on
@@ -118,7 +109,6 @@ interface port-channel 1
  exit
 ```
 
-EtherChannel 2 modo desirable para agregación de enlaces
 ```ini
 interface range f 0/4-6
  channel-group 2 mode desirable
@@ -132,7 +122,6 @@ interface port-channel 2
  exit
 ```
 
-Configuración de acceso SSH con autenticación local
 ```ini
 username admin password admin
 ip domain-name itsoeh.edu
@@ -150,13 +139,11 @@ line vty 0 15
         <h3> Switch S2 </h3>
     </summary>
 
-Configuración inicial de preferencia IPv6
 ```ini
 sdm prefer dual-ipv4-and-ipv6 default
 reload
 ```
 
-Configuración básica de consola y seguridad
 ```ini
 enable
 configure terminal
@@ -172,7 +159,6 @@ banner motd # Solo acceso autorizado S2 #
 service password-encryption
 ```
 
-Creación de VLANs para diferentes grupos
 ```ini
 vlan 15
  name Estudiantes
@@ -188,7 +174,6 @@ vlan 65
  exit
 ```
 
-Configuración de interfaz de administración IPv6
 ```ini
 interface vlan 55
  no ip address
@@ -198,7 +183,6 @@ interface vlan 55
  exit
 ```
 
-Configuración inicial de puertos a VLAN nativa
 ```ini
 interface range f 0/1-24
  switchport mode access
@@ -212,7 +196,6 @@ interface range g 0/1-2
  exit
 ```
 
-Puertos de acceso para estudiantes con seguridad de puerto
 ```ini
 interface range f 0/7,f 0/8
  switchport mode access
@@ -225,7 +208,6 @@ interface range f 0/7,f 0/8
  exit
 ```
 
-Puertos de acceso para docentes con seguridad de puerto
 ```ini
 interface range f 0/9,f 0/12
  switchport mode access
@@ -238,7 +220,6 @@ interface range f 0/9,f 0/12
  exit
 ```
 
-Puerto de administración con seguridad
 ```ini
 interface f 0/24
  switchport mode access
@@ -251,7 +232,6 @@ interface f 0/24
  exit
 ```
 
-EtherChannel 1 modo passive para LACP
 ```ini
 interface range f 0/1-3
  channel-group 1 mode passive
@@ -265,7 +245,6 @@ interface port-channel 1
  exit
 ```
 
-EtherChannel 2 modo on para agregación de enlaces
 ```ini
 interface range f 0/4-6
  channel-group 2 mode on
@@ -279,7 +258,6 @@ interface port-channel 2
  exit
 ```
 
-Interfaz gigabit troncal hacia router
 ```ini
 interface g 0/1
  switchport mode trunk
@@ -289,7 +267,6 @@ interface g 0/1
  exit
 ```
 
-Configuración de acceso SSH con autenticación local
 ```ini
 username admin password admin
 ip domain-name itsoeh.edu
@@ -308,13 +285,11 @@ line vty 0 15
         <h3> Switch S3 </h3>
     </summary>
 
-Configuración inicial de preferencia IPv6
 ```ini
 sdm prefer dual-ipv4-and-ipv6 default
 reload
 ```
 
-Configuración básica de consola y seguridad
 ```ini
 enable
 configure terminal
@@ -330,7 +305,6 @@ banner motd # Solo acceso autorizado S3 #
 service password-encryption
 ```
 
-Creación de VLANs para diferentes grupos
 ```ini
 vlan 15
  name Estudiantes
@@ -346,7 +320,6 @@ vlan 65
  exit
 ```
 
-Configuración de interfaz de administración IPv6
 ```ini
 interface vlan 55
  no ip address
@@ -356,7 +329,6 @@ interface vlan 55
  exit
 ```
 
-Configuración inicial de puertos a VLAN nativa
 ```ini
 interface range f 0/1-24
  switchport mode access
@@ -369,7 +341,6 @@ interface range g 0/1-2
  exit
 ```
 
-Puertos de acceso para estudiantes con seguridad de puerto
 ```ini
 interface range f 0/7,f 0/8
  switchport mode access
@@ -382,7 +353,6 @@ interface range f 0/7,f 0/8
  exit
 ```
 
-Puertos de acceso para docentes con seguridad de puerto
 ```ini
 interface range f 0/9,f 0/12
  switchport mode access
@@ -395,7 +365,6 @@ interface range f 0/9,f 0/12
  exit
 ```
 
-Puerto de administración con seguridad
 ```ini
 interface f 0/24
  switchport mode access
@@ -408,7 +377,6 @@ interface f 0/24
  exit
 ```
 
-EtherChannel 1 modo on para agregación de enlaces
 ```ini
 interface range f 0/1-3
  channel-group 1 mode on
@@ -422,7 +390,6 @@ interface port-channel 1
  exit
 ```
 
-EtherChannel 2 modo desirable para agregación de enlaces
 ```ini
 interface range f 0/4-6
  channel-group 2 mode desirable
@@ -436,7 +403,6 @@ interface port-channel 2
  exit
 ```
 
-Interfaz gigabit troncal hacia router
 ```ini
 interface g0/1
  switchport mode trunk
@@ -446,7 +412,6 @@ interface g0/1
  exit
 ```
 
-Configuración de acceso SSH con autenticación local
 ```ini
 username admin password admin
 ip domain-name itsoeh.edu
@@ -465,7 +430,6 @@ line vty 0 15
         <h3> Router R1 </h3>
     </summary>
 
-Configuración básica de consola y seguridad
 ```ini
 enable
 configure terminal
@@ -481,14 +445,12 @@ banner motd # Solo acceso autorizado R1 #
 service password-encryption
 ```
 
-Habilitación de interfaz física
 ```ini
 interface g 0/1
  no shutdown
  exit
 ```
 
-Activación de routing IPv6 y pools DHCP stateless
 ```ini
 ipv6 unicast-routing
 ipv6 dhcp pool DHCP-STATELESS-15
@@ -505,7 +467,6 @@ ipv6 dhcp pool DHCP-STATELESS-65
  exit
 ```
 
-Subinterfaz VLAN 15 con HSRP activo y configuración stateless
 ```ini
 interface g 0/1.15
  encapsulation dot1Q 15
@@ -522,7 +483,6 @@ interface g 0/1.15
  exit
 ```
 
-Subinterfaz VLAN 45 con HSRP activo y configuración stateless
 ```ini
 interface g 0/1.45
  encapsulation dot1Q 45
@@ -539,7 +499,6 @@ interface g 0/1.45
  exit
 ```
 
-Subinterfaz VLAN 55 con HSRP activo y configuración stateless
 ```ini
 interface g 0/1.55
  encapsulation dot1Q 55
@@ -556,7 +515,6 @@ interface g 0/1.55
  exit
 ```
 
-Subinterfaz VLAN nativa 65 con HSRP activo y configuración stateless
 ```ini
 interface g 0/1.65
  encapsulation dot1Q 65 native
@@ -573,7 +531,6 @@ interface g 0/1.65
  exit
 ```
 
-Configuración de acceso SSH con autenticación local
 ```ini
 username admin password admin
 ip domain-name itsoeh.edu
@@ -592,7 +549,6 @@ line vty 0 15
         <h3> Router R2 </h3>
     </summary>
 
-Configuración básica de consola y seguridad
 ```ini
 enable
 configure terminal
@@ -608,14 +564,12 @@ banner motd # Solo acceso autorizado R2 #
 service password-encryption
 ```
 
-Habilitación de interfaz física
 ```ini
 interface g 0/1
  no shutdown
  exit
 ```
 
-Activación de routing IPv6 y pools DHCP stateless
 ```ini
 ipv6 unicast-routing
 ipv6 dhcp pool DHCP-STATELESS-15
@@ -632,7 +586,6 @@ ipv6 dhcp pool DHCP-STATELESS-65
  exit
 ```
 
-Subinterfaz VLAN 15 con HSRP standby y configuración stateless
 ```ini
 interface g 0/1.15
  encapsulation dot1Q 15
@@ -648,7 +601,6 @@ interface g 0/1.15
  exit
 ```
 
-Subinterfaz VLAN 45 con HSRP standby y configuración stateless
 ```ini
 interface g 0/1.45
  encapsulation dot1Q 45
@@ -664,7 +616,6 @@ interface g 0/1.45
  exit
 ```
 
-Subinterfaz VLAN 55 con HSRP standby y configuración stateless
 ```ini
 interface g 0/1.55
  encapsulation dot1Q 55
@@ -680,7 +631,6 @@ interface g 0/1.55
  exit
 ```
 
-Subinterfaz VLAN nativa 65 con HSRP standby y configuración stateless
 ```ini
 interface g 0/1.65
  encapsulation dot1Q 65 native
@@ -696,7 +646,6 @@ interface g 0/1.65
  exit
 ```
 
-Configuración de acceso SSH con autenticación local
 ```ini
 username admin password admin
 ip domain-name itsoeh.edu
