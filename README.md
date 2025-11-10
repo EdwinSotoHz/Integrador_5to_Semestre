@@ -58,6 +58,7 @@ Direccionamiento:
   </tr>
 </table>
 
+
 <table>
   <tr>
    <td colspan="2" >Stateful
@@ -88,7 +89,8 @@ Direccionamiento:
    </td>
   </tr>
 </table>
-
+</details>
+ 
 <details> 
     <summary>
         Extras
