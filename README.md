@@ -90,7 +90,7 @@ Direccionamiento:
   </tr>
 </table>
 </details>
- 
+
 <details> 
     <summary>
         Extras
@@ -102,7 +102,7 @@ Borrar la configuración guardada en NVRAM.
 Switch# erase startup-config
 ```
 
-Configuraciones rápiadas:
+Configuraciones rápidas:
 - [Stateless](assets/txt/stateless.md)
 - [Stateful](assets/txt/stateful.md)
 
