@@ -1670,7 +1670,7 @@ R4(config-line)# exit
         <tr>
             <td>
                 Mostrar interfaces configuradas:
-                <pre><code>do sh ip int br</code></pre>
+                <pre><code>do sh ipv6 int br</code></pre>
             </td>
             <td>
                 <img src="assets/img/sh_r03.png" alt="Imagen interfaces configuradas" width="700">
