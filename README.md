@@ -1602,7 +1602,7 @@ R4(config-line)# exit
                 <pre><code>do sh et su</code></pre>
             </td>
             <td>
-                <img src="assets/img/sh_s01.png" alt="Imagen puertos EtherChannel" width="600">
+                <img src="assets/img/sh_s01.png" alt="Imagen puertos EtherChannel" width="700">
             </td>
         </tr>
         <tr>
@@ -1611,7 +1611,7 @@ R4(config-line)# exit
                 <pre><code>do sh sp</code></pre>
             </td>
             <td>
-                <img src="assets/img/sh_s02.png" alt="Imagen STP" width="600">
+                <img src="assets/img/sh_s02.png" alt="Imagen STP" width="700">
             </td>
         </tr>
         <tr>
@@ -1620,7 +1620,7 @@ R4(config-line)# exit
                 <pre><code>do sh port</code></pre>
             </td>
             <td>
-                <img src="assets/img/sh_s03.png" alt="Imagen seguridad puertos" width="600">
+                <img src="assets/img/sh_s03.png" alt="Imagen seguridad puertos" width="700">
             </td>
         </tr>
         <tr>
@@ -1629,7 +1629,7 @@ R4(config-line)# exit
                 <pre><code>do sh vlan br</code></pre>
             </td>
             <td>
-                <img src="assets/img/sh_s04.png" alt="Imagen VLANs configuradas" width="600">
+                <img src="assets/img/sh_s04.png" alt="Imagen VLANs configuradas" width="700">
             </td>
         </tr>
         <tr>
@@ -1638,7 +1638,7 @@ R4(config-line)# exit
                 <pre><code>do sh ipv6 int br</code></pre>
             </td>
             <td>
-                <img src="assets/img/sh_s05.png" alt="Imagen interfaces configuradas" width="600">
+                <img src="assets/img/sh_s05.png" alt="Imagen interfaces configuradas" width="700">
             </td>
         </tr>
     </table>
@@ -1655,7 +1655,7 @@ R4(config-line)# exit
                 <pre><code>do sh standby br</code></pre>
             </td>
             <td>
-                <img src="assets/img/sh_r01.png" alt="Imagen HSRPv2" width="600">
+                <img src="assets/img/sh_r01.png" alt="Imagen HSRPv2" width="700">
             </td>
         </tr>
         <tr>
@@ -1664,7 +1664,7 @@ R4(config-line)# exit
                 <pre><code>do sh ipv6 dh po</code></pre>
             </td>
             <td>
-                <img src="assets/img/sh_r02.png" alt="Imagen DHCPv6 pools" width="600">
+                <img src="assets/img/sh_r02.png" alt="Imagen DHCPv6 pools" width="700">
             </td>
         </tr>
         <tr>
@@ -1673,7 +1673,7 @@ R4(config-line)# exit
                 <pre><code>do sh ip int br</code></pre>
             </td>
             <td>
-                <img src="assets/img/sh_r03.png" alt="Imagen interfaces configuradas" width="600">
+                <img src="assets/img/sh_r03.png" alt="Imagen interfaces configuradas" width="700">
             </td>
         </tr>
         <tr>
@@ -1682,7 +1682,7 @@ R4(config-line)# exit
                 <pre><code>do sh ipv6 dhcp bind</code></pre>
             </td>
             <td>
-                <img src="assets/img/sh_r04.png" alt="Imagen DHCPv6 estado" width="600">
+                <img src="assets/img/sh_r04.png" alt="Imagen DHCPv6 estado" width="700">
             </td>
         </tr>
     </table>
