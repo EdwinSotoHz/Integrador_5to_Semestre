@@ -25,7 +25,69 @@
         Topología Lógica 
     </summary>
 <img src="assets/img/image02.png" height="500px" />
-</details>
+
+Direccionamiento:
+<table>
+  <tr>
+   <td colspan="2" >Stateless
+   </td>
+  </tr>
+  <tr>
+   <td>Dispositivo
+   </td>
+   <td>Dirección
+   </td>
+  </tr>
+  <tr>
+   <td>S1
+   </td>
+   <td>2001:db8:cafe:55::1
+   </td>
+  </tr>
+  <tr>
+   <td>S2
+   </td>
+   <td>2001:db8:cafe:55::2
+   </td>
+  </tr>
+  <tr>
+   <td>S3
+   </td>
+   <td>2001:db8:cafe:55::3
+   </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+   <td colspan="2" >Stateful
+   </td>
+  </tr>
+  <tr>
+   <td>Dispositivo
+   </td>
+   <td>Dirección
+   </td>
+  </tr>
+  <tr>
+   <td>S1
+   </td>
+   <td>2001:db8:3c4d:30::4
+   </td>
+  </tr>
+  <tr>
+   <td>S2
+   </td>
+   <td>2001:db8:3c4d:30::5
+   </td>
+  </tr>
+  <tr>
+   <td>S3
+   </td>
+   <td>2001:db8:3c4d:30::6
+   </td>
+  </tr>
+</table>
 
 <details> 
     <summary>
