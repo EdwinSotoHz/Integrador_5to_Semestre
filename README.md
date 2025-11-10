@@ -1713,3 +1713,17 @@ R4(config-line)# exit
         </tr>
     </table>
 </details>
+
+<details> 
+    <summary>
+        🦈 Wireshark
+    </summary>
+    <table>
+        <tr>
+            <td>
+                Router Advertisement:
+                <pre><code>icmpv6.type == 134</code></pre>
+            </td>
+        </tr>
+    </table>
+</details>
