@@ -1553,7 +1553,7 @@ R4(config-line)# exit
         <tr>
             <td>
                 Mostrar seguridad de los puertos:
-                <pre><code>do sh po se</code></pre>
+                <pre><code>do sh port</code></pre>
             </td>
             <td>
                 <img src="assets/img/sh_s03.png" alt="Imagen seguridad puertos" width="600">
