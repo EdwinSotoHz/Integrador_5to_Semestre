@@ -27,6 +27,7 @@
 <img src="assets/img/image02.png" height="500px" />
 
 ### Direccionamiento:
+
 <table>
   <tr>
    <td colspan="2" ><strong>🟪 StatelessLAN</strong>
@@ -43,7 +44,7 @@
    </td>
   </tr>
   <tr>
-   <td><strong>R1</strong>
+   <td rowspan="4" ><strong>R1</strong>
    </td>
    <td>G0/1.15
    </td>
@@ -51,31 +52,25 @@
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.25
    </td>
    <td>2001:db8:cafe:25::1/64
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.55
    </td>
    <td>2001:db8:cafe:55::1/64
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.65
    </td>
    <td>2001:db8:cafe:65::1/64
    </td>
   </tr>
   <tr>
-   <td><strong>R2</strong>
+   <td rowspan="4" ><strong>R2</strong>
    </td>
    <td>G0/1.15
    </td>
@@ -83,24 +78,18 @@
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.25
    </td>
    <td>2001:db8:cafe:25::2/64
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.55
    </td>
    <td>2001:db8:cafe:55::2/64
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.65
    </td>
    <td>2001:db8:cafe:65::2/64
@@ -150,7 +139,7 @@
    </td>
   </tr>
   <tr>
-   <td><strong>R3</strong>
+   <td rowspan="4" ><strong>R3</strong>
    </td>
    <td>G0/1.10
    </td>
@@ -158,31 +147,25 @@
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.20
    </td>
    <td>2001:db8:3c4d:20::1/64
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.30
    </td>
    <td>2001:db8:3c4d:30::1/64
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.40
    </td>
    <td>2001:db8:3c4d:40::1/64
    </td>
   </tr>
   <tr>
-   <td><strong>R4</strong>
+   <td rowspan="4" ><strong>R4</strong>
    </td>
    <td>G0/1.10
    </td>
@@ -190,24 +173,18 @@
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.20
    </td>
    <td>2001:db8:3c4d:20::2/64
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.30
    </td>
    <td>2001:db8:3c4d:30::2/64
    </td>
   </tr>
   <tr>
-   <td>
-   </td>
    <td>G0/1.40
    </td>
    <td>2001:db8:3c4d:40::2/64
@@ -269,14 +246,6 @@
    </td>
   </tr>
   <tr>
-   <td><strong>RA</strong>
-   </td>
-   <td>S0/1/1
-   </td>
-   <td>2001:db8:cafe:110::1/64
-   </td>
-  </tr>
-  <tr>
    <td><strong>R2</strong>
    </td>
    <td>S0/1/0
@@ -285,8 +254,14 @@
    </td>
   </tr>
   <tr>
-   <td><strong>RA</strong>
+   <td rowspan="2" ><strong>RA</strong>
    </td>
+   <td>S0/1/1
+   </td>
+   <td>2001:db8:cafe:110::1/64
+   </td>
+  </tr>
+  <tr>
    <td>S0/1/0
    </td>
    <td>2001:db8:cafe:120::1/64
@@ -316,14 +291,6 @@
    </td>
   </tr>
   <tr>
-   <td><strong>RB</strong>
-   </td>
-   <td>S0/1/1
-   </td>
-   <td>2001:db8:3c4d:110::1/64
-   </td>
-  </tr>
-  <tr>
    <td><strong>R3</strong>
    </td>
    <td>S0/1/1
@@ -332,19 +299,25 @@
    </td>
   </tr>
   <tr>
-   <td><strong>RB</strong>
-   </td>
-   <td>S0/1/0
-   </td>
-   <td>2001:db8:3c4d:120::1/64
-   </td>
-  </tr>
-  <tr>
    <td><strong>R4</strong>
    </td>
    <td>S0/1/0
    </td>
    <td>2001:db8:3c4d:120::2/64
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" ><strong>RB</strong>
+   </td>
+   <td>S0/1/1
+   </td>
+   <td>2001:db8:3c4d:110::1/64
+   </td>
+  </tr>
+  <tr>
+   <td>S0/1/0
+   </td>
+   <td>2001:db8:3c4d:120::1/64
    </td>
   </tr>
 </table>
@@ -385,6 +358,8 @@
    </td>
   </tr>
 </table>
+
+</details>
 
 <details> 
     <summary>
