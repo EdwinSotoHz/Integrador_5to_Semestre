@@ -340,7 +340,7 @@
   <tr>
    <td><strong>RA</strong>
    </td>
-   <td>Antena (S0/0/0)
+   <td>Antena
    </td>
    <td>2001:db8:acad:1::1/64
    </td>
@@ -348,7 +348,7 @@
   <tr>
    <td><strong>RB</strong>
    </td>
-   <td>Antena (S0/0/0)
+   <td>Antena
    </td>
    <td>2001:db8:acad:1::2/64
    </td>
