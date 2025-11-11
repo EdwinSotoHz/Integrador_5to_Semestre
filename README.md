@@ -28,6 +28,7 @@
 
 ### Direccionamiento:
 
+
 <table>
   <tr>
    <td colspan="2" ><strong>🟪 StatelessLAN</strong>
@@ -240,7 +241,7 @@
   <tr>
    <td><strong>R1</strong>
    </td>
-   <td>S0/1/1
+   <td>S0/0/1
    </td>
    <td>2001:db8:1:1::2/64
    </td>
@@ -248,7 +249,7 @@
   <tr>
    <td><strong>R2</strong>
    </td>
-   <td>S0/1/0
+   <td>S0/0/0
    </td>
    <td>2001:db8:2:2::2/64
    </td>
@@ -256,13 +257,13 @@
   <tr>
    <td rowspan="2" ><strong>RA</strong>
    </td>
-   <td>S0/1/1
+   <td>S0/0/1
    </td>
    <td>2001:db8:1:1::1/64
    </td>
   </tr>
   <tr>
-   <td>S0/1/0
+   <td>S0/0/0
    </td>
    <td>2001:db8:2:2::1/64
    </td>
@@ -293,7 +294,7 @@
   <tr>
    <td><strong>R3</strong>
    </td>
-   <td>S0/1/1
+   <td>S0/0/1
    </td>
    <td>2001:db8:3:3::2/64
    </td>
@@ -301,7 +302,7 @@
   <tr>
    <td><strong>R4</strong>
    </td>
-   <td>S0/1/0
+   <td>S0/0/0
    </td>
    <td>2001:db8:4:4::2/64
    </td>
@@ -309,13 +310,13 @@
   <tr>
    <td rowspan="2" ><strong>RB</strong>
    </td>
-   <td>S0/1/1
+   <td>S0/0/1
    </td>
    <td>2001:db8:3:3::1/64
    </td>
   </tr>
   <tr>
-   <td>S0/1/0
+   <td>S0/0/0
    </td>
    <td>2001:db8:4:4::1/64
    </td>
@@ -328,11 +329,8 @@
   <tr>
    <td colspan="2" ><strong>🟧  RA ↔ RB (Antenas)</strong>
    </td>
-   <td><strong>Prefijo base: </strong>
-<p>
+   <td colspan="2" ><strong>Prefijo base: </strong>
 2001:db8:7:7::/64
-   </td>
-   <td>
    </td>
   </tr>
   <tr>
@@ -366,7 +364,6 @@
    </td>
   </tr>
 </table>
-
 
 </details>
 
