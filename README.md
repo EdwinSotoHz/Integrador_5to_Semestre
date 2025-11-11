@@ -54,7 +54,7 @@
   <tr>
    <td>G0/1.25
    </td>
-   <td>2001:db8:cafe:45::1/64
+   <td>2001:db8:cafe:25::1/64
    </td>
   </tr>
   <tr>
@@ -80,7 +80,7 @@
   <tr>
    <td>G0/1.25
    </td>
-   <td>2001:db8:cafe:45::2/64
+   <td>2001:db8:cafe:25::2/64
    </td>
   </tr>
   <tr>
@@ -222,9 +222,11 @@
   <tr>
    <td colspan="2" ><strong>🟧 StatelessLAN ↔ RA</strong>
    </td>
-   <td><strong>Prefijo base: </strong>  <br>
-2001:db8:cafe:110::/64 <br>
-2001:db8:cafe:120::/64
+   <td><strong>Prefijo base: </strong>
+<p>
+2001:db8:1:1::/64
+<p>
+2001:db8:2:2::/64
    </td>
   </tr>
   <tr>
@@ -240,7 +242,7 @@
    </td>
    <td>S0/1/1
    </td>
-   <td>2001:db8:cafe:110::2/64
+   <td>2001:db8:1:1::2/64
    </td>
   </tr>
   <tr>
@@ -248,7 +250,7 @@
    </td>
    <td>S0/1/0
    </td>
-   <td>2001:db8:cafe:120::2/64
+   <td>2001:db8:2:2::2/64
    </td>
   </tr>
   <tr>
@@ -256,13 +258,13 @@
    </td>
    <td>S0/1/1
    </td>
-   <td>2001:db8:cafe:110::1/64
+   <td>2001:db8:1:1::1/64
    </td>
   </tr>
   <tr>
    <td>S0/1/0
    </td>
-   <td>2001:db8:cafe:120::1/64
+   <td>2001:db8:2:2::1/64
    </td>
   </tr>
 </table>
@@ -273,9 +275,11 @@
   <tr>
    <td colspan="2" ><strong>🟧 StatefulLAN ↔ RB</strong>
    </td>
-   <td><strong>Prefijo base: </strong>  <br>
-2001:db8:3c4d:110::/64 <br>
-2001:db8:3c4d:120::/64
+   <td><strong>Prefijo base: </strong>
+<p>
+2001:db8:3:3::/64
+<p>
+2001:db8:4:4::/64
    </td>
   </tr>
   <tr>
@@ -291,7 +295,7 @@
    </td>
    <td>S0/1/1
    </td>
-   <td>2001:db8:3c4d:110::2/64
+   <td>2001:db8:3:3::2/64
    </td>
   </tr>
   <tr>
@@ -299,7 +303,7 @@
    </td>
    <td>S0/1/0
    </td>
-   <td>2001:db8:3c4d:120::2/64
+   <td>2001:db8:4:4::2/64
    </td>
   </tr>
   <tr>
@@ -307,13 +311,13 @@
    </td>
    <td>S0/1/1
    </td>
-   <td>2001:db8:3c4d:110::1/64
+   <td>2001:db8:3:3::1/64
    </td>
   </tr>
   <tr>
    <td>S0/1/0
    </td>
-   <td>2001:db8:3c4d:120::1/64
+   <td>2001:db8:4:4::1/64
    </td>
   </tr>
 </table>
@@ -326,7 +330,9 @@
    </td>
    <td><strong>Prefijo base: </strong>
 <p>
-2001:db8:acad:1::/64
+2001:db8:7:7::/64
+   </td>
+   <td>
    </td>
   </tr>
   <tr>
@@ -336,24 +342,31 @@
    </td>
    <td><strong>Dirección IPv6</strong>
    </td>
+   <td><strong>Link-Local </strong>
+   </td>
   </tr>
   <tr>
    <td><strong>RA</strong>
    </td>
-   <td>Antena
+   <td>Antena_A
    </td>
-   <td>2001:db8:acad:1::1/64
+   <td>2001:db8:7:7::1/64
+   </td>
+   <td>fe80::1
    </td>
   </tr>
   <tr>
    <td><strong>RB</strong>
    </td>
-   <td>Antena
+   <td>Antena_B
    </td>
-   <td>2001:db8:acad:1::2/64
+   <td>2001:db8:7:7::2/64
+   </td>
+   <td>fe80::2
    </td>
   </tr>
 </table>
+
 
 </details>
 
