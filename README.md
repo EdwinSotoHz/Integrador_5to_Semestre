@@ -71,19 +71,19 @@ Direccionamiento:
    </td>
   </tr>
   <tr>
-   <td>S1
+   <td>S4
    </td>
    <td>2001:db8:3c4d:30::4
    </td>
   </tr>
   <tr>
-   <td>S2
+   <td>S5
    </td>
    <td>2001:db8:3c4d:30::5
    </td>
   </tr>
   <tr>
-   <td>S3
+   <td>S6
    </td>
    <td>2001:db8:3c4d:30::6
    </td>
