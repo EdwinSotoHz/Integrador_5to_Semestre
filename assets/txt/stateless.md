@@ -42,7 +42,7 @@ vlan 65
 ```ini
 interface vlan 55
  no ip address
- ipv6 address 2001:db8:cafe:55::1/64
+ ipv6 address 2001:db8:cafe:55::11/64
  no shutdown
  exit
 ```
@@ -178,7 +178,7 @@ vlan 65
 interface vlan 55
  no ip address
  ipv6 enable
- ipv6 address 2001:db8:cafe:55::2/64
+ ipv6 address 2001:db8:cafe:55::12/64
  no shutdown
  exit
 ```
@@ -324,7 +324,7 @@ vlan 65
 interface vlan 55
  no ip address
  ipv6 enable
- ipv6 address 2001:db8:cafe:55::3/64
+ ipv6 address 2001:db8:cafe:55::13/64
  no shutdown
  exit
 ```

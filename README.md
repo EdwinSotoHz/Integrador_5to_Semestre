@@ -424,7 +424,7 @@ Configuración de interfaz de administración IPv6
 ```ini
 S1(config)# interface vlan 55
 S1(config-if)# no ip address
-S1(config-if)# ipv6 address 2001:db8:cafe:55::1/64
+S1(config-if)# ipv6 address 2001:db8:cafe:55::11/64
 S1(config-if)# no shutdown
 S1(config-if)# exit
 ```
@@ -573,7 +573,7 @@ Configuración de interfaz de administración IPv6
 S2(config)# interface vlan 55
 S2(config-if)# no ip address
 S2(config-if)# ipv6 enable
-S2(config-if)# ipv6 address 2001:db8:cafe:55::2/64
+S2(config-if)# ipv6 address 2001:db8:cafe:55::12/64
 S2(config-if)# no shutdown
 S2(config-if)# exit
 ```
@@ -732,7 +732,7 @@ Configuración de interfaz de administración IPv6
 S3(config)# interface vlan 55
 S3(config-if)# no ip address
 S3(config-if)# ipv6 enable
-S3(config-if)# ipv6 address 2001:db8:cafe:55::3/64
+S3(config-if)# ipv6 address 2001:db8:cafe:55::13/64
 S3(config-if)# no shutdown
 S3(config-if)# exit
 ```
@@ -1157,7 +1157,7 @@ Configuración de interfaz de administración IPv6
 ```ini
 S4(config)# interface vlan 30
 S4(config-if)# no ip address
-S4(config-if)# ipv6 address 2001:db8:3c4d:30::4/64
+S4(config-if)# ipv6 address 2001:db8:3c4d:30::14/64
 S4(config-if)# no shutdown
 S4(config-if)# exit
 ```
@@ -1318,7 +1318,7 @@ Configuración de interfaz de administración IPv6
 S5(config)# interface vlan 30
 S5(config-if)# no ip address
 S5(config-if)# ipv6 enable
-S5(config-if)# ipv6 address 2001:db8:3c4d:30::5/64
+S5(config-if)# ipv6 address 2001:db8:3c4d:30::15/64
 S5(config-if)# no shutdown
 S5(config-if)# exit
 ```
@@ -1479,7 +1479,7 @@ Configuración de interfaz de administración IPv6
 S6(config)# interface vlan 30
 S6(config-if)# no ip address
 S6(config-if)# ipv6 enable
-S6(config-if)# ipv6 address 2001:db8:3c4d:30::6/64
+S6(config-if)# ipv6 address 2001:db8:3c4d:30::16/64
 S6(config-if)# no shutdown
 S6(config-if)# exit
 ```

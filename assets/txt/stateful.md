@@ -41,7 +41,7 @@ vlan 40
 ```ini
 interface vlan 30
  no ip address
- ipv6 address 2001:db8:3c4d:30::4/64
+ ipv6 address 2001:db8:3c4d:30::14/64
  no shutdown
  exit
 ```
@@ -186,7 +186,7 @@ vlan 40
 interface vlan 30
  no ip address
  ipv6 enable
- ipv6 address 2001:db8:3c4d:30::5/64
+ ipv6 address 2001:db8:3c4d:30::15/64
  no shutdown
  exit
 ```
@@ -332,7 +332,7 @@ vlan 40
 interface vlan 30
  no ip address
  ipv6 enable
- ipv6 address 2001:db8:3c4d:30::6/64
+ ipv6 address 2001:db8:3c4d:30::16/64
  no shutdown
  exit
 ```
