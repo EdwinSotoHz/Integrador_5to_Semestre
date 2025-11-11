@@ -366,7 +366,7 @@ Borrar la configuración guardada en NVRAM.
 
 ```ini
 Switch# erase startup-config
-```
+``` 
 
 Configuraciones rápidas:
 - [Stateless](assets/txt/stateless.md)
