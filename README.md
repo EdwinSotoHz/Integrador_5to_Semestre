@@ -223,9 +223,9 @@
    <td colspan="2" ><strong>🟧 StatelessLAN ↔ RA</strong>
    </td>
    <td><strong>Prefijo base: </strong>
-<p>
+<br>
 2001:db8:1:1::/64
-<p>
+<br>
 2001:db8:2:2::/64
    </td>
   </tr>
@@ -276,9 +276,9 @@
    <td colspan="2" ><strong>🟧 StatefulLAN ↔ RB</strong>
    </td>
    <td><strong>Prefijo base: </strong>
-<p>
+<br>
 2001:db8:3:3::/64
-<p>
+<br>
 2001:db8:4:4::/64
    </td>
   </tr>
