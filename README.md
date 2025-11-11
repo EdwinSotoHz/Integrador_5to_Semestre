@@ -26,70 +26,365 @@
     </summary>
 <img src="assets/img/image02.png" height="500px" />
 
-Direccionamiento:
-<table>
-  <tr>
-   <td colspan="2" >Stateless
-   </td>
-  </tr>
-  <tr>
-   <td>Dispositivo
-   </td>
-   <td>Dirección
-   </td>
-  </tr>
-  <tr>
-   <td>S1
-   </td>
-   <td>2001:db8:cafe:55::1
-   </td>
-  </tr>
-  <tr>
-   <td>S2
-   </td>
-   <td>2001:db8:cafe:55::2
-   </td>
-  </tr>
-  <tr>
-   <td>S3
-   </td>
-   <td>2001:db8:cafe:55::3
-   </td>
-  </tr>
-</table>
+### Direccionamiento:
+    <table>
+    <tr>
+    <td colspan="2" ><strong>🟪 StatelessLAN</strong>
+    </td>
+    <td><strong>Prefijo base: </strong>2001:db8:cafe::/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>Dispositivo</strong>
+    </td>
+    <td><strong>Interfaz</strong>
+    </td>
+    <td><strong>Dirección IPv6</strong>
+    </td>
+    </tr>
+    <tr>
+    <td><strong>R1</strong>
+    </td>
+    <td>G0/1.15
+    </td>
+    <td>2001:db8:cafe:15::1/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.25
+    </td>
+    <td>2001:db8:cafe:25::1/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.55
+    </td>
+    <td>2001:db8:cafe:55::1/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.65
+    </td>
+    <td>2001:db8:cafe:65::1/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>R2</strong>
+    </td>
+    <td>G0/1.15
+    </td>
+    <td>2001:db8:cafe:15::2/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.25
+    </td>
+    <td>2001:db8:cafe:25::2/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.55
+    </td>
+    <td>2001:db8:cafe:55::2/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.65
+    </td>
+    <td>2001:db8:cafe:65::2/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>S1</strong>
+    </td>
+    <td>VLAN55
+    </td>
+    <td>2001:db8:cafe:55::11/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>S2</strong>
+    </td>
+    <td>VLAN55
+    </td>
+    <td>2001:db8:cafe:55::12/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>S3</strong>
+    </td>
+    <td>VLAN55
+    </td>
+    <td>2001:db8:cafe:55::13/64
+    </td>
+    </tr>
+    </table>
 
 
-<table>
-  <tr>
-   <td colspan="2" >Stateful
-   </td>
-  </tr>
-  <tr>
-   <td>Dispositivo
-   </td>
-   <td>Dirección
-   </td>
-  </tr>
-  <tr>
-   <td>S4
-   </td>
-   <td>2001:db8:3c4d:30::4
-   </td>
-  </tr>
-  <tr>
-   <td>S5
-   </td>
-   <td>2001:db8:3c4d:30::5
-   </td>
-  </tr>
-  <tr>
-   <td>S6
-   </td>
-   <td>2001:db8:3c4d:30::6
-   </td>
-  </tr>
-</table>
-</details>
+
+    <table>
+    <tr>
+    <td colspan="2" ><strong>🟦 StatefulLAN</strong>
+    </td>
+    <td><strong>Prefijo base: </strong>2001:db8:3c4d::/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>Dispositivo</strong>
+    </td>
+    <td><strong>Interfaz</strong>
+    </td>
+    <td><strong>Dirección IPv6</strong>
+    </td>
+    </tr>
+    <tr>
+    <td><strong>R3</strong>
+    </td>
+    <td>G0/1.10
+    </td>
+    <td>2001:db8:3c4d:10::1/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.20
+    </td>
+    <td>2001:db8:3c4d:20::1/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.30
+    </td>
+    <td>2001:db8:3c4d:30::1/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.40
+    </td>
+    <td>2001:db8:3c4d:40::1/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>R4</strong>
+    </td>
+    <td>G0/1.10
+    </td>
+    <td>2001:db8:3c4d:10::2/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.20
+    </td>
+    <td>2001:db8:3c4d:20::2/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.30
+    </td>
+    <td>2001:db8:3c4d:30::2/64
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>G0/1.40
+    </td>
+    <td>2001:db8:3c4d:40::2/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>S3</strong>
+    </td>
+    <td>VLAN30
+    </td>
+    <td>2001:db8:3c4d:30::14/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>S4</strong>
+    </td>
+    <td>VLAN30
+    </td>
+    <td>2001:db8:3c4d:30::15/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>S5</strong>
+    </td>
+    <td>VLAN30
+    </td>
+    <td>2001:db8:3c4d:30::16/64
+    </td>
+    </tr>
+    </table>
+
+
+
+    <table>
+    <tr>
+    <td colspan="2" ><strong>🟧 StatelessLAN ↔ RA</strong>
+    </td>
+    <td><strong>Prefijo base: </strong>
+    <p>
+    2001:db8:cafe:110::/64
+    <p>
+    2001:db8:cafe:120::/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>Dispositivo</strong>
+    </td>
+    <td><strong>Interfaz</strong>
+    </td>
+    <td><strong>Dirección IPv6</strong>
+    </td>
+    </tr>
+    <tr>
+    <td><strong>R1</strong>
+    </td>
+    <td>S0/1/1
+    </td>
+    <td>2001:db8:cafe:110::2/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>RA</strong>
+    </td>
+    <td>S0/1/1
+    </td>
+    <td>2001:db8:cafe:110::1/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>R2</strong>
+    </td>
+    <td>S0/1/0
+    </td>
+    <td>2001:db8:cafe:120::2/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>RA</strong>
+    </td>
+    <td>S0/1/0
+    </td>
+    <td>2001:db8:cafe:120::1/64
+    </td>
+    </tr>
+    </table>
+
+
+
+    <table>
+    <tr>
+    <td colspan="2" ><strong>🟧 StatefulLAN ↔ RB</strong>
+    </td>
+    <td><strong>Prefijo base: </strong>
+    <p>
+    2001:db8:3c4d:110::/64
+    <p>
+    2001:db8:3c4d:120::/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>Dispositivo</strong>
+    </td>
+    <td><strong>Interfaz</strong>
+    </td>
+    <td><strong>Dirección IPv6</strong>
+    </td>
+    </tr>
+    <tr>
+    <td><strong>RB</strong>
+    </td>
+    <td>S0/1/1
+    </td>
+    <td>2001:db8:3c4d:110::1/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>R3</strong>
+    </td>
+    <td>S0/1/1
+    </td>
+    <td>2001:db8:3c4d:110::2/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>RB</strong>
+    </td>
+    <td>S0/1/0
+    </td>
+    <td>2001:db8:3c4d:120::1/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>R4</strong>
+    </td>
+    <td>S0/1/0
+    </td>
+    <td>2001:db8:3c4d:120::2/64
+    </td>
+    </tr>
+    </table>
+
+
+
+    <table>
+    <tr>
+    <td colspan="2" ><strong>🟧  RA ↔ RB (Antenas)</strong>
+    </td>
+    <td><strong>Prefijo base: </strong>
+    <p>
+    2001:db8:acad:1::/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>Dispositivo</strong>
+    </td>
+    <td><strong>Interfaz</strong>
+    </td>
+    <td><strong>Dirección IPv6</strong>
+    </td>
+    </tr>
+    <tr>
+    <td><strong>RA</strong>
+    </td>
+    <td>Antena (S0/0/0)
+    </td>
+    <td>2001:db8:acad:1::1/64
+    </td>
+    </tr>
+    <tr>
+    <td><strong>RB</strong>
+    </td>
+    <td>Antena (S0/0/0)
+    </td>
+    <td>2001:db8:acad:1::2/64
+    </td>
+    </tr>
+    </table>
 
 <details> 
     <summary>
