@@ -675,6 +675,19 @@ ipv6 route ::/0 s0/0/1 2001:db8:2:2::1
     </summary>
 
 ```ini
+enable
+configure terminal
+
+no logging console
+
+hostname RA
+enable password cisco
+enable secret tics
+banner motd # Solo acceso autorizado RA #
+service password-encryption
+```
+
+```ini
 interface s 0/0/1
  no ip address
  ipv6 address 2001:db8:1:1::1/64
