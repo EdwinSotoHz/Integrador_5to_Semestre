@@ -28,7 +28,6 @@
 
 ### Direccionamiento:
 
-
 <table>
   <tr>
    <td colspan="2" ><strong>🟪 StatelessLAN</strong>
@@ -121,8 +120,6 @@
    </td>
   </tr>
 </table>
-
-
 
 <table>
   <tr>
@@ -217,8 +214,6 @@
   </tr>
 </table>
 
-
-
 <table>
   <tr>
    <td colspan="2" ><strong>🟧 StatelessLAN ↔ RA</strong>
@@ -270,8 +265,6 @@
   </tr>
 </table>
 
-
-
 <table>
   <tr>
    <td colspan="2" ><strong>🟧 StatefulLAN ↔ RB</strong>
@@ -322,8 +315,6 @@
    </td>
   </tr>
 </table>
-
-
 
 <table>
   <tr>
@@ -902,7 +893,7 @@ Subinterfaz VLAN 15 con HSRP activo y configuración stateless
 R1(config)# interface g 0/1.15
 R1(config-subif)# encapsulation dot1Q 15
 R1(config-subif)# no ip address
-R1(config-subif)# ipv6 address 2001:db8:cafe:15::/64 eui-64
+R1(config-subif)# ipv6 address 2001:db8:cafe:15::1/64 eui-64
 R1(config-subif)# ipv6 enable
 R1(config-subif)# ipv6 nd other-config-flag
 R1(config-subif)# ipv6 dhcp server DHCP-STATELESS-15
@@ -919,7 +910,7 @@ Subinterfaz VLAN 45 con HSRP activo y configuración stateless
 R1(config)# interface g 0/1.45
 R1(config-subif)# encapsulation dot1Q 45
 R1(config-subif)# no ip address
-R1(config-subif)# ipv6 address 2001:db8:cafe:45::/64 eui-64
+R1(config-subif)# ipv6 address 2001:db8:cafe:45::1/64 eui-64
 R1(config-subif)# ipv6 enable
 R1(config-subif)# ipv6 nd other-config-flag
 R1(config-subif)# ipv6 dhcp server DHCP-STATELESS-45
@@ -936,7 +927,7 @@ Subinterfaz VLAN 55 con HSRP activo y configuración stateless
 R1(config)# interface g 0/1.55
 R1(config-subif)# encapsulation dot1Q 55
 R1(config-subif)# no ip address
-R1(config-subif)# ipv6 address 2001:db8:cafe:55::/64 eui-64
+R1(config-subif)# ipv6 address 2001:db8:cafe:55::1/64 eui-64
 R1(config-subif)# ipv6 enable
 R1(config-subif)# ipv6 nd other-config-flag
 R1(config-subif)# ipv6 dhcp server DHCP-STATELESS-55
@@ -953,7 +944,7 @@ Subinterfaz VLAN nativa 65 con HSRP activo y configuración stateless
 R1(config)# interface g 0/1.65
 R1(config-subif)# encapsulation dot1Q 65 native
 R1(config-subif)# no ip address
-R1(config-subif)# ipv6 address 2001:db8:cafe:65::/64 eui-64
+R1(config-subif)# ipv6 address 2001:db8:cafe:65::1/64 eui-64
 R1(config-subif)# ipv6 enable
 R1(config-subif)# ipv6 nd other-config-flag
 R1(config-subif)# ipv6 dhcp server DHCP-STATELESS-65
@@ -1030,7 +1021,7 @@ Subinterfaz VLAN 15 con HSRP standby y configuración stateless
 R2(config)# interface g 0/1.15
 R2(config-subif)# encapsulation dot1Q 15
 R2(config-subif)# no ip address
-R2(config-subif)# ipv6 address 2001:db8:cafe:15::/64 eui-64
+R2(config-subif)# ipv6 address 2001:db8:cafe:15::2/64 eui-64
 R2(config-subif)# ipv6 enable
 R2(config-subif)# ipv6 nd other-config-flag
 R2(config-subif)# ipv6 dhcp server DHCP-STATELESS-15
@@ -1046,7 +1037,7 @@ Subinterfaz VLAN 45 con HSRP standby y configuración stateless
 R2(config)# interface g 0/1.45
 R2(config-subif)# encapsulation dot1Q 45
 R2(config-subif)# no ip address
-R2(config-subif)# ipv6 address 2001:db8:cafe:45::/64 eui-64
+R2(config-subif)# ipv6 address 2001:db8:cafe:45::2/64 eui-64
 R2(config-subif)# ipv6 enable
 R2(config-subif)# ipv6 nd other-config-flag
 R2(config-subif)# ipv6 dhcp server DHCP-STATELESS-45
@@ -1062,7 +1053,7 @@ Subinterfaz VLAN 55 con HSRP standby y configuración stateless
 R2(config)# interface g 0/1.55
 R2(config-subif)# encapsulation dot1Q 55
 R2(config-subif)# no ip address
-R2(config-subif)# ipv6 address 2001:db8:cafe:55::/64 eui-64
+R2(config-subif)# ipv6 address 2001:db8:cafe:55::2/64 eui-64
 R2(config-subif)# ipv6 enable
 R2(config-subif)# ipv6 nd other-config-flag
 R2(config-subif)# ipv6 dhcp server DHCP-STATELESS-55
@@ -1078,7 +1069,7 @@ Subinterfaz VLAN nativa 65 con HSRP standby y configuración stateless
 R2(config)# interface g 0/1.65
 R2(config-subif)# encapsulation dot1Q 65 native
 R2(config-subif)# no ip address
-R2(config-subif)# ipv6 address 2001:db8:cafe:65::/64 eui-64
+R2(config-subif)# ipv6 address 2001:db8:cafe:65::2/64 eui-64
 R2(config-subif)# ipv6 enable
 R2(config-subif)# ipv6 nd other-config-flag
 R2(config-subif)# ipv6 dhcp server DHCP-STATELESS-65
@@ -1643,7 +1634,7 @@ Subinterfaz VLAN 10 con HSRP y configuración stateful
 R3(config)# interface g 0/1.10
 R3(config-subif)# encapsulation dot1Q 10
 R3(config-subif)# no ip address
-R3(config-subif)# ipv6 address 2001:db8:3c4d:10::/64 eui-64
+R3(config-subif)# ipv6 address 2001:db8:3c4d:10::1/64 eui-64
 R3(config-subif)# ipv6 enable
 R3(config-subif)# ipv6 nd managed-config-flag
 R3(config-subif)# ipv6 nd prefix default no-advertise
@@ -1659,7 +1650,7 @@ Subinterfaz VLAN 20 con HSRP y configuración stateful
 R3(config)# interface g 0/1.20
 R3(config-subif)# encapsulation dot1Q 20
 R3(config-subif)# no ip address
-R3(config-subif)# ipv6 address 2001:db8:3c4d:20::/64 eui-64
+R3(config-subif)# ipv6 address 2001:db8:3c4d:20::1/64 eui-64
 R3(config-subif)# ipv6 enable
 R3(config-subif)# ipv6 nd managed-config-flag
 R3(config-subif)# ipv6 nd prefix default no-advertise
@@ -1675,7 +1666,7 @@ Subinterfaz VLAN 30 con HSRP y configuración stateful
 R3(config)# interface g 0/1.30
 R3(config-subif)# encapsulation dot1Q 30
 R3(config-subif)# no ip address
-R3(config-subif)# ipv6 address 2001:db8:3c4d:30::/64 eui-64
+R3(config-subif)# ipv6 address 2001:db8:3c4d:30::1/64 eui-64
 R3(config-subif)# ipv6 enable
 R3(config-subif)# ipv6 nd managed-config-flag
 R3(config-subif)# ipv6 nd prefix default no-advertise
@@ -1691,7 +1682,7 @@ Subinterfaz VLAN nativa 40 con HSRP y configuración stateful
 R3(config)# interface g 0/1.40
 R3(config-subif)# encapsulation dot1Q 40 native
 R3(config-subif)# no ip address
-R3(config-subif)# ipv6 address 2001:db8:3c4d:40::/64 eui-64
+R3(config-subif)# ipv6 address 2001:db8:3c4d:40::1/64 eui-64
 R3(config-subif)# ipv6 enable
 R3(config-subif)# ipv6 nd managed-config-flag
 R3(config-subif)# ipv6 nd prefix default no-advertise
@@ -1771,7 +1762,7 @@ Subinterfaz VLAN 10 con HSRP activo y servidor DHCP
 R4(config)# interface g 0/1.10
 R4(config-subif)# encapsulation dot1Q 10
 R4(config-subif)# no ip address
-R4(config-subif)# ipv6 address 2001:db8:3c4d:10::/64 eui-64
+R4(config-subif)# ipv6 address 2001:db8:3c4d:10::2/64 eui-64
 R4(config-subif)# ipv6 enable
 R4(config-subif)# ipv6 nd managed-config-flag
 R4(config-subif)# ipv6 nd prefix default no-advertise
@@ -1789,7 +1780,7 @@ Subinterfaz VLAN 20 con HSRP activo y servidor DHCP
 R4(config)# interface g 0/1.20
 R4(config-subif)# encapsulation dot1Q 20
 R4(config-subif)# no ip address
-R4(config-subif)# ipv6 address 2001:db8:3c4d:20::/64 eui-64
+R4(config-subif)# ipv6 address 2001:db8:3c4d:20::2/64 eui-64
 R4(config-subif)# ipv6 enable
 R4(config-subif)# ipv6 nd managed-config-flag
 R4(config-subif)# ipv6 nd prefix default no-advertise
@@ -1807,7 +1798,7 @@ Subinterfaz VLAN 30 con HSRP activo y servidor DHCP
 R4(config)# interface g 0/1.30
 R4(config-subif)# encapsulation dot1Q 30
 R4(config-subif)# no ip address
-R4(config-subif)# ipv6 address 2001:db8:3c4d:30::/64 eui-64
+R4(config-subif)# ipv6 address 2001:db8:3c4d:30::2/64 eui-64
 R4(config-subif)# ipv6 enable
 R4(config-subif)# ipv6 nd managed-config-flag
 R4(config-subif)# ipv6 nd prefix default no-advertise
@@ -1825,7 +1816,7 @@ Subinterfaz VLAN nativa 40 con HSRP activo y servidor DHCP
 R4(config)# interface g 0/1.40
 R4(config-subif)# encapsulation dot1Q 40 native
 R4(config-subif)# no ip address
-R4(config-subif)# ipv6 address 2001:db8:3c4d:40::/64 eui-64
+R4(config-subif)# ipv6 address 2001:db8:3c4d:40::2/64 eui-64
 R4(config-subif)# ipv6 enable
 R4(config-subif)# ipv6 nd managed-config-flag
 R4(config-subif)# ipv6 nd prefix default no-advertise
