@@ -1,4 +1,3 @@
-## DHCP Stateless
 <details> 
     <summary>
         <h3> Switch S1 </h3>

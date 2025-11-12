@@ -24,7 +24,7 @@
     <summary>
         Topología Lógica 
     </summary>
-<img src="assets/img/image02.png" height="500px" />
+<img src="assets/img/topologia_logica.gif" height="500px" />
 
 ### Direccionamiento:
 
@@ -984,6 +984,17 @@ R1(config-line)# login local
 R1(config-line)# exit
 ```
 
+Configuración para routeo estático
+```ini
+R1(config)# interface s 0/0/1
+R1(config-if)# no ip address
+R1(config-if)# ipv6 address 2001:db8:1:1::2/64
+R1(config-if)# ipv6 enable
+R1(config-if)# no shutdown
+R1(config-if)# exit
+R1(config)# ipv6 route ::/0 s0/0/1 2001:db8:1:1::1
+```
+
 </details>
 
 <details> 
@@ -1106,6 +1117,17 @@ R2(config-line)# login local
 R2(config-line)# exit
 ```
 
+Configuración para routeo estático
+```ini
+R2(config)#interface s 0/0/0
+R2(config-if)# no ip address
+R2(config-if)# ipv6 address 2001:db8:2:2::2/64
+R2(config-if)# ipv6 enable
+R2(config-if)# no shutdown
+R2(config-if)# exit
+R2(config)# ipv6 route ::/0 s0/0/1 2001:db8:2:2::1
+```
+
 </details>
 
 <details> 
@@ -1113,8 +1135,45 @@ R2(config-line)# exit
         Configuraciones Router RA
     </summary>
 
-```diff
-- Pendiente
+Configuración básica de consola y seguridad
+```ini
+RA> enable
+RA# configure terminal
+
+RA(config)# no logging console
+
+RA(config)# hostname RA
+RA(config)# enable password cisco
+RA(config)# enable secret tics
+RA(config)# banner motd # Solo acceso autorizado RA #
+RA(config)# service password-encryption
+```
+
+Configuración para routeo estático
+```ini
+RA(config)# ipv6 unicast-routing
+RA(config)# interface s 0/0/1
+RA(config-if)# no ip address
+RA(config-if)# ipv6 address 2001:db8:1:1::1/64
+RA(config-if)# ipv6 enable
+RA(config-if)# no shutdown
+RA(config-if)# exit
+RA(config)# interface s 0/0/0
+RA(config-if)# no ip address
+RA(config-if)# ipv6 address 2001:db8:2:2::1/64
+RA(config-if)# ipv6 enable
+RA(config-if)# no shutdown
+RA(config-if)# exit
+RA(config)# interface g 0/1
+RA(config-if)# no ip address
+RA(config-if)# ipv6 address 2001:db8:7:7::1/64
+RA(config-if)# ipv6 address fe80::1 link-local
+RA(config-if)# no shutdown
+RA(config-if)# exit
+
+RA(config)# ipv6 route ::/0 s0/0/1 2001:db8:1:1::2
+RA(config)# ipv6 route ::/0 s0/0/0 2001:db8:2:2::2
+RA(config)# ipv6 route ::/0 2001:DB8:7:7::2
 ```
 
 </details>
@@ -1711,6 +1770,17 @@ R3(config-line)# login local
 R3(config-line)# exit
 ```
 
+Configuración para routeo estático
+```ini
+R3(config)#interface s 0/0/1
+R3(config-if)# no ip address
+R3(config-if)# ipv6 address 2001:db8:3:3::2/64
+R3(config-if)# ipv6 enable
+R3(config-if)# no shutdown
+R3(config-if)# exit
+R3(config)# ipv6 route ::/0 s0/0/1 2001:db8:3:3::1
+```
+
 </details>
 
 <details> 
@@ -1845,6 +1915,17 @@ R4(config-line)# login local
 R4(config-line)# exit
 ```
 
+Configuración para routeo estático
+```ini
+R3(config)#interface s 0/0/0
+R3(config-if)# no ip address
+R3(config-if)# ipv6 address 2001:db8:4:4::2/64
+R3(config-if)# ipv6 enable
+R3(config-if)# no shutdown
+R3(config-if)# exit
+R3(config)# ipv6 route ::/0 s0/0/0 2001:db8:4:4::1
+```
+
 </details>
 
 <details> 
@@ -1852,8 +1933,45 @@ R4(config-line)# exit
         Configuraciones Router RB
     </summary>
 
-```diff
-- Pendiente
+Configuración básica de consola y seguridad
+```ini
+RA> enable
+RA# configure terminal
+
+RA(config)# no logging console
+
+RA(config)# hostname RB
+RA(config)# enable password cisco
+RA(config)# enable secret tics
+RA(config)# banner motd # Solo acceso autorizado RB #
+RA(config)# service password-encryption
+```
+
+Configuración para routeo estático
+```ini
+RA(config)# ipv6 unicast-routing
+RA(config)# interface s 0/0/1
+RA(config-if)# no ip address
+RA(config-if)# ipv6 address 2001:db8:3:3::1/64
+RA(config-if)# ipv6 enable
+RA(config-if)# no shutdown
+RA(config-if)# exit
+RA(config)# interface s 0/0/0
+RA(config-if)# no ip address
+RA(config-if)# ipv6 address 2001:db8:4:4::1/64
+RA(config-if)# ipv6 enable
+RA(config-if)# no shutdown
+RA(config-if)# exit
+RA(config)# interface g 0/1
+RA(config-if)# no ip address
+RA(config-if)# ipv6 address 2001:db8:7:7::2/64
+RA(config-if)# ipv6 address fe80::2 link-local
+RA(config-if)# no shutdown
+RA(config-if)# exit
+
+RA(config)# ipv6 route ::/0 s0/0/1 2001:db8:3:3::2
+RA(config)# ipv6 route ::/0 s0/0/0 2001:db8:4:4::2
+RA(config)# ipv6 route ::/0 2001:DB8:7:7::1
 ```
 
 </details>
@@ -1953,6 +2071,24 @@ R4(config-line)# exit
             </td>
             <td>
                 <img src="assets/img/sh_r04.png" alt="Imagen DHCPv6 estado" width="700">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ver la tabla de routeo 
+                <pre><code>do sh ipv6 route</code></pre>
+            </td>
+            <td>
+                <img src="assets/img/sh_r05.png" alt="Imagen tabla routeo estado" width="700">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ver el routeo del router
+                <pre><code>do sh run | inc route</code></pre>
+            </td>
+            <td>
+                <img src="assets/img/sh_r06.png" alt="Imagen routeo estado" width="700">
             </td>
         </tr>
     </table>
