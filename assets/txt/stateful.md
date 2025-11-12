@@ -699,6 +699,7 @@ service password-encryption
 ```
 
 ```ini
+ipv6 unicast-routing
 interface s 0/0/1
  no ip address
  ipv6 address 2001:db8:3:3::1/64
