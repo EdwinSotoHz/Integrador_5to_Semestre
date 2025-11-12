@@ -408,13 +408,13 @@ S1(config)# service password-encryption
 Creación de VLANs para diferentes grupos
 ```ini
 S1(config)# vlan 15
-S1(config-vlan)# name Estudiantes
+S1(config-vlan)# name AdminStaff
 S1(config-vlan)# exit
 S1(config)# vlan 45
-S1(config-vlan)# name Docentes
+S1(config-vlan)# name Users
 S1(config-vlan)# exit
 S1(config)# vlan 55
-S1(config-vlan)# name Admin
+S1(config-vlan)# name Adminstrative
 S1(config-vlan)# exit
 S1(config)# vlan 65
 S1(config-vlan)# name Native
@@ -556,13 +556,13 @@ S2(config)# service password-encryption
 Creación de VLANs para diferentes grupos
 ```ini
 S2(config)# vlan 15
-S2(config-vlan)# name Estudiantes
+S2(config-vlan)# name AdminStaff
 S2(config-vlan)# exit
 S2(config)# vlan 45
-S2(config-vlan)# name Docentes
+S2(config-vlan)# name Users
 S2(config-vlan)# exit
 S2(config)# vlan 55
-S2(config-vlan)# name Admin
+S2(config-vlan)# name Adminstrative
 S2(config-vlan)# exit
 S2(config)# vlan 65
 S2(config-vlan)# name Native
@@ -715,13 +715,13 @@ S3(config)# service password-encryption
 Creación de VLANs para diferentes grupos
 ```ini
 S3(config)# vlan 15
-S3(config-vlan)# name Estudiantes
+S3(config-vlan)# name AdminStaff
 S3(config-vlan)# exit
 S3(config)# vlan 45
-S3(config-vlan)# name Docentes
+S3(config-vlan)# name Users
 S3(config-vlan)# exit
 S3(config)# vlan 55
-S3(config-vlan)# name Admin
+S3(config-vlan)# name Adminstrative
 S3(config-vlan)# exit
 S3(config)# vlan 65
 S3(config-vlan)# name Native
@@ -1141,13 +1141,13 @@ S4(config)# service password-encryption
 Creación de VLANs para diferentes grupos
 ```ini
 S4(config)# vlan 10
-S4(config-vlan)# name Estudiantes
+S4(config-vlan)# name AdminStaff
 S4(config-vlan)# exit
 S4(config)# vlan 20
-S4(config-vlan)# name Docentes
+S4(config-vlan)# name Users
 S4(config-vlan)# exit
 S4(config)# vlan 30
-S4(config-vlan)# name Admin
+S4(config-vlan)# name Adminstrative
 S4(config-vlan)# exit
 S4(config)# vlan 40
 S4(config-vlan)# name Native
@@ -1301,13 +1301,13 @@ S5(config)# service password-encryption
 Creación de VLANs para diferentes grupos
 ```ini
 S5(config)# vlan 10
-S5(config-vlan)# name Estudiantes
+S5(config-vlan)# name AdminStaff
 S5(config-vlan)# exit
 S5(config)# vlan 20
-S5(config-vlan)# name Docentes
+S5(config-vlan)# name Users
 S5(config-vlan)# exit
 S5(config)# vlan 30
-S5(config-vlan)# name Admin
+S5(config-vlan)# name Adminstrative
 S5(config-vlan)# exit
 S5(config)# vlan 40
 S5(config-vlan)# name Native
@@ -1462,13 +1462,13 @@ S6(config)# service password-encryption
 Creación de VLANs para diferentes grupos
 ```ini
 S6(config)# vlan 10
-S6(config-vlan)# name Estudiantes
+S6(config-vlan)# name AdminStaff
 S6(config-vlan)# exit
 S6(config)# vlan 20
-S6(config-vlan)# name Docentes
+S6(config-vlan)# name Users
 S6(config-vlan)# exit
 S6(config)# vlan 30
-S6(config-vlan)# name Admin
+S6(config-vlan)# name Adminstrative
 S6(config-vlan)# exit
 S6(config)# vlan 40
 S6(config-vlan)# name Native

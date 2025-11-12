@@ -26,13 +26,13 @@ service password-encryption
 
 ```ini
 vlan 15
- name Estudiantes
+ name AdminStaff
  exit
 vlan 45
- name Docentes
+ name Users
  exit
 vlan 55
- name Admin
+ name Adminstrative
  exit
 vlan 65
  name Native
@@ -161,13 +161,13 @@ service password-encryption
 
 ```ini
 vlan 15
- name Estudiantes
+ name AdminStaff
  exit
 vlan 45
- name Docentes
+ name Users
  exit
 vlan 55
- name Admin
+ name Adminstrative
  exit
 vlan 65
  name Native
@@ -307,13 +307,13 @@ service password-encryption
 
 ```ini
 vlan 15
- name Estudiantes
+ name AdminStaff
  exit
 vlan 45
- name Docentes
+ name Users
  exit
 vlan 55
- name Admin
+ name Adminstrative
  exit
 vlan 65
  name Native
