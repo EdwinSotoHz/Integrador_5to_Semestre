@@ -466,7 +466,7 @@ ipv6 dhcp pool DHCP-STATEFUL-40
 interface g 0/1.10
  encapsulation dot1Q 10
  no ip address
- ipv6 address 2001:db8:3c4d:10::2/64
+ ipv6 address 2001:db8:3c4d:10::1/64
  ipv6 enable
  ipv6 nd managed-config-flag
  ipv6 nd prefix default no-advertise
@@ -481,7 +481,7 @@ interface g 0/1.10
 interface g 0/1.20
  encapsulation dot1Q 20
  no ip address
- ipv6 address 2001:db8:3c4d:20::2/64
+ ipv6 address 2001:db8:3c4d:20::1/64
  ipv6 enable
  ipv6 nd managed-config-flag
  ipv6 nd prefix default no-advertise
@@ -496,7 +496,7 @@ interface g 0/1.20
 interface g 0/1.30
  encapsulation dot1Q 30
  no ip address
- ipv6 address 2001:db8:3c4d:30::2/64
+ ipv6 address 2001:db8:3c4d:30::1/64
  ipv6 enable
  ipv6 nd managed-config-flag
  ipv6 nd prefix default no-advertise
@@ -511,7 +511,7 @@ interface g 0/1.30
 interface g 0/1.40
  encapsulation dot1Q 40 native
  no ip address
- ipv6 address 2001:db8:3c4d:40::2/64
+ ipv6 address 2001:db8:3c4d:40::1/64
  ipv6 enable
  ipv6 nd managed-config-flag
  ipv6 nd prefix default no-advertise
