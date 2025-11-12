@@ -24,7 +24,7 @@
     <summary>
         Topología Lógica 
     </summary>
-<img src="assets/img/topologia_logica.webm" height="500px" />
+<img src="assets/img/topologia_logica.webp" height="500px" />
 
 ### Direccionamiento:
 
