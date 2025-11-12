@@ -710,7 +710,7 @@ interface g 0/1
 
 ipv6 route ::/0 s0/0/1 2001:db8:2:2::2
 ipv6 route ::/0 s0/0/0 2001:db8:2:2::2
-ipv6 route 2001:db8:cafe::/64 g0/1 fe80::2
+ipv6 route ::/0 g0/1 fe80::2
 ```
 
 </details>
