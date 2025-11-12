@@ -533,6 +533,16 @@ line vty 0 15
  exit
 ```
 
+```ini
+interface s 0/0/1
+ no ip address
+ ipv6 address 2001:db8:3:3::2/64
+ ipv6 enable
+ no shutdown
+ exit
+ipv6 route ::/0 s0/0/1 2001:db8:3:3::1
+```
+
 </details>
 
 <details> 
@@ -658,15 +668,46 @@ line vty 0 15
  exit
 ```
 
+```ini
+interface s 0/0/0
+ no ip address
+ ipv6 address 2001:db8:4:4::2/64
+ ipv6 enable
+ no shutdown
+ exit
+ipv6 route ::/0 s0/0/0 2001:db8:4:4::1
+```
+
 </details>
 
 <details> 
     <summary>
-        <h3> Router RA </h3>
+        <h3> Router RB </h3>
     </summary>
 
-```diff
-- Pendiente
+```ini
+interface s 0/0/1
+ no ip address
+ ipv6 address 2001:db8:3:3::1/64
+ ipv6 enable
+ no shutdown
+ exit
+interface s 0/0/0
+ no ip address
+ ipv6 address 2001:db8:4:4::1/64
+ ipv6 enable
+ no shutdown
+ exit
+interface g 0/1
+ no ip address
+ ipv6 address 2001:db8:7:7::2/64
+ ipv6 fe80::2 link-local
+ no shutdown
+ exit
+ 
+ipv6 route ::/0 s0/0/1 2001:db8:3:3::1
+ipv6 route ::/0 s0/0/0 2001:db8:4:4::1
+ipv6 route 2001:db8:3c4d::/64 g0/1 fe80::1
 ```
 
 </details>
