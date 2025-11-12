@@ -714,7 +714,7 @@ interface s 0/0/0
 interface g 0/1
  no ip address
  ipv6 address 2001:db8:7:7::2/64
- ipv6 fe80::2 link-local
+ ipv6 address fe80::2 link-local
  no shutdown
  exit
  
