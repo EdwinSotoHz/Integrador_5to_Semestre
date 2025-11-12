@@ -376,6 +376,22 @@ Switch(config)# line console 0
 Switch(config-line)# logging synchronous
 ``` 
 
+**Llegar a los switch en Packet Tracer**
+Stateless:
+
+```ini
+ipv6 route ::/0 2001:db8:cafe:55::1
+ipv6 route ::/0 2001:db8:cafe:55::1
+``` 
+
+Stateful:
+
+```ini
+ipv6 route ::/0 2001:db8:3c4d:30::1
+ipv6 route ::/0 2001:db8:3c4d:30::1
+``` 
+
+
 Configuraciones rápidas:
 - [Stateless](assets/txt/stateless.md)
 - [Stateful](assets/txt/stateful.md)
