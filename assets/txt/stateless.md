@@ -708,9 +708,9 @@ interface g 0/1
  no shutdown
  exit
 
-ipv6 route ::/0 s0/0/1 2001:db8:2:2::2
+ipv6 route ::/0 s0/0/1 2001:db8:1:1::2
 ipv6 route ::/0 s0/0/0 2001:db8:2:2::2
-ipv6 route ::/0 g0/1 fe80::2
+ipv6 route ::/0 2001:DB8:7:7::2
 ```
 
 </details>
