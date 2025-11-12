@@ -463,7 +463,7 @@ ipv6 dhcp pool DHCP-STATELESS-65
 interface g 0/1.15
  encapsulation dot1Q 15
  no ip address
- ipv6 address 2001:db8:cafe:15::1/64 eui-64
+ ipv6 address 2001:db8:cafe:15::1/64
  ipv6 enable
  ipv6 nd other-config-flag
  ipv6 dhcp server DHCP-STATELESS-15
@@ -479,7 +479,7 @@ interface g 0/1.15
 interface g 0/1.45
  encapsulation dot1Q 45
  no ip address
- ipv6 address 2001:db8:cafe:45::1/64 eui-64
+ ipv6 address 2001:db8:cafe:45::1/64
  ipv6 enable
  ipv6 nd other-config-flag
  ipv6 dhcp server DHCP-STATELESS-45
@@ -495,7 +495,7 @@ interface g 0/1.45
 interface g 0/1.55
  encapsulation dot1Q 55
  no ip address
- ipv6 address 2001:db8:cafe:55::1/64 eui-64
+ ipv6 address 2001:db8:cafe:55::1/64
  ipv6 enable
  ipv6 nd other-config-flag
  ipv6 dhcp server DHCP-STATELESS-55
@@ -511,7 +511,7 @@ interface g 0/1.55
 interface g 0/1.65
  encapsulation dot1Q 65 native
  no ip address
- ipv6 address 2001:db8:cafe:65::1/64 eui-64
+ ipv6 address 2001:db8:cafe:65::1/64
  ipv6 enable
  ipv6 nd other-config-flag
  ipv6 dhcp server DHCP-STATELESS-65
@@ -580,7 +580,7 @@ ipv6 dhcp pool DHCP-STATELESS-65
 interface g 0/1.15
  encapsulation dot1Q 15
  no ip address
- ipv6 address 2001:db8:cafe:15::2/64 eui-64
+ ipv6 address 2001:db8:cafe:15::2/64
  ipv6 enable
  ipv6 nd other-config-flag
  ipv6 dhcp server DHCP-STATELESS-15
@@ -595,7 +595,7 @@ interface g 0/1.15
 interface g 0/1.45
  encapsulation dot1Q 45
  no ip address
- ipv6 address 2001:db8:cafe:45::2/64 eui-64
+ ipv6 address 2001:db8:cafe:45::2/64
  ipv6 enable
  ipv6 nd other-config-flag
  ipv6 dhcp server DHCP-STATELESS-45
@@ -610,7 +610,7 @@ interface g 0/1.45
 interface g 0/1.55
  encapsulation dot1Q 55
  no ip address
- ipv6 address 2001:db8:cafe:55::2/64 eui-64
+ ipv6 address 2001:db8:cafe:55::2/64
  ipv6 enable
  ipv6 nd other-config-flag
  ipv6 dhcp server DHCP-STATELESS-55
@@ -625,7 +625,7 @@ interface g 0/1.55
 interface g 0/1.65
  encapsulation dot1Q 65 native
  no ip address
- ipv6 address 2001:db8:cafe:65::2/64 eui-64
+ ipv6 address 2001:db8:cafe:65::2/64
  ipv6 enable
  ipv6 nd other-config-flag
  ipv6 dhcp server DHCP-STATELESS-65

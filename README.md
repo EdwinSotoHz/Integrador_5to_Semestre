@@ -892,7 +892,7 @@ Subinterfaz VLAN 15 con HSRP activo y configuración stateless
 R1(config)# interface g 0/1.15
 R1(config-subif)# encapsulation dot1Q 15
 R1(config-subif)# no ip address
-R1(config-subif)# ipv6 address 2001:db8:cafe:15::1/64 eui-64
+R1(config-subif)# ipv6 address 2001:db8:cafe:15::1/64
 R1(config-subif)# ipv6 enable
 R1(config-subif)# ipv6 nd other-config-flag
 R1(config-subif)# ipv6 dhcp server DHCP-STATELESS-15
@@ -909,7 +909,7 @@ Subinterfaz VLAN 45 con HSRP activo y configuración stateless
 R1(config)# interface g 0/1.45
 R1(config-subif)# encapsulation dot1Q 45
 R1(config-subif)# no ip address
-R1(config-subif)# ipv6 address 2001:db8:cafe:45::1/64 eui-64
+R1(config-subif)# ipv6 address 2001:db8:cafe:45::1/64
 R1(config-subif)# ipv6 enable
 R1(config-subif)# ipv6 nd other-config-flag
 R1(config-subif)# ipv6 dhcp server DHCP-STATELESS-45
@@ -926,7 +926,7 @@ Subinterfaz VLAN 55 con HSRP activo y configuración stateless
 R1(config)# interface g 0/1.55
 R1(config-subif)# encapsulation dot1Q 55
 R1(config-subif)# no ip address
-R1(config-subif)# ipv6 address 2001:db8:cafe:55::1/64 eui-64
+R1(config-subif)# ipv6 address 2001:db8:cafe:55::1/64
 R1(config-subif)# ipv6 enable
 R1(config-subif)# ipv6 nd other-config-flag
 R1(config-subif)# ipv6 dhcp server DHCP-STATELESS-55
@@ -943,7 +943,7 @@ Subinterfaz VLAN nativa 65 con HSRP activo y configuración stateless
 R1(config)# interface g 0/1.65
 R1(config-subif)# encapsulation dot1Q 65 native
 R1(config-subif)# no ip address
-R1(config-subif)# ipv6 address 2001:db8:cafe:65::1/64 eui-64
+R1(config-subif)# ipv6 address 2001:db8:cafe:65::1/64
 R1(config-subif)# ipv6 enable
 R1(config-subif)# ipv6 nd other-config-flag
 R1(config-subif)# ipv6 dhcp server DHCP-STATELESS-65
@@ -1018,7 +1018,7 @@ Subinterfaz VLAN 15 con HSRP standby y configuración stateless
 R2(config)# interface g 0/1.15
 R2(config-subif)# encapsulation dot1Q 15
 R2(config-subif)# no ip address
-R2(config-subif)# ipv6 address 2001:db8:cafe:15::2/64 eui-64
+R2(config-subif)# ipv6 address 2001:db8:cafe:15::2/64
 R2(config-subif)# ipv6 enable
 R2(config-subif)# ipv6 nd other-config-flag
 R2(config-subif)# ipv6 dhcp server DHCP-STATELESS-15
@@ -1034,7 +1034,7 @@ Subinterfaz VLAN 45 con HSRP standby y configuración stateless
 R2(config)# interface g 0/1.45
 R2(config-subif)# encapsulation dot1Q 45
 R2(config-subif)# no ip address
-R2(config-subif)# ipv6 address 2001:db8:cafe:45::2/64 eui-64
+R2(config-subif)# ipv6 address 2001:db8:cafe:45::2/64
 R2(config-subif)# ipv6 enable
 R2(config-subif)# ipv6 nd other-config-flag
 R2(config-subif)# ipv6 dhcp server DHCP-STATELESS-45
@@ -1050,7 +1050,7 @@ Subinterfaz VLAN 55 con HSRP standby y configuración stateless
 R2(config)# interface g 0/1.55
 R2(config-subif)# encapsulation dot1Q 55
 R2(config-subif)# no ip address
-R2(config-subif)# ipv6 address 2001:db8:cafe:55::2/64 eui-64
+R2(config-subif)# ipv6 address 2001:db8:cafe:55::2/64
 R2(config-subif)# ipv6 enable
 R2(config-subif)# ipv6 nd other-config-flag
 R2(config-subif)# ipv6 dhcp server DHCP-STATELESS-55
@@ -1066,7 +1066,7 @@ Subinterfaz VLAN nativa 65 con HSRP standby y configuración stateless
 R2(config)# interface g 0/1.65
 R2(config-subif)# encapsulation dot1Q 65 native
 R2(config-subif)# no ip address
-R2(config-subif)# ipv6 address 2001:db8:cafe:65::2/64 eui-64
+R2(config-subif)# ipv6 address 2001:db8:cafe:65::2/64
 R2(config-subif)# ipv6 enable
 R2(config-subif)# ipv6 nd other-config-flag
 R2(config-subif)# ipv6 dhcp server DHCP-STATELESS-65
@@ -1623,7 +1623,7 @@ Subinterfaz VLAN 10 con HSRP y configuración stateful
 R3(config)# interface g 0/1.10
 R3(config-subif)# encapsulation dot1Q 10
 R3(config-subif)# no ip address
-R3(config-subif)# ipv6 address 2001:db8:3c4d:10::1/64 eui-64
+R3(config-subif)# ipv6 address 2001:db8:3c4d:10::1/64
 R3(config-subif)# ipv6 enable
 R3(config-subif)# ipv6 nd managed-config-flag
 R3(config-subif)# ipv6 nd prefix default no-advertise
