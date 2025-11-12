@@ -394,9 +394,7 @@ Configuración básica de consola y seguridad
 S1> enable
 S1# configure terminal
 
-S1(config)# line console 0
-S1(config-line)# logging synchronous
-S1(config-line)# exit
+S1(config)# no logging console
 
 S1(config)# hostname S1
 S1(config)# enable password cisco
@@ -542,9 +540,7 @@ Configuración básica de consola y seguridad
 S2> enable
 S2# configure terminal
 
-S2(config)# line console 0
-S2(config-line)# logging synchronous
-S2(config-line)# exit
+S2(config)# no logging console
 
 S2(config)# hostname S2
 S2(config)# enable password cisco
@@ -701,9 +697,7 @@ Configuración básica de consola y seguridad
 S3> enable
 S3# configure terminal
 
-S3(config)# line console 0
-S3(config-line)# logging synchronous
-S3(config-line)# exit
+S3(config)# no logging console
 
 S3(config)# hostname S3
 S3(config)# enable password cisco
@@ -853,9 +847,7 @@ Configuración básica de consola y seguridad
 R1> enable
 R1# configure terminal
 
-R1(config)# line console 0
-R1(config-line)# logging synchronous
-R1(config-line)# exit
+R1(config)# no logging console
 
 R1(config)# hostname R1
 R1(config)# enable password cisco
@@ -981,9 +973,7 @@ Configuración básica de consola y seguridad
 R2> enable
 R2# configure terminal
 
-R2(config)# line console 0
-R2(config-line)# logging synchronous
-R2(config-line)# exit
+R2(config)# no logging console
 
 R2(config)# hostname R2
 R2(config)# enable password cisco
@@ -1127,9 +1117,7 @@ Configuración básica de consola y seguridad
 S4> enable
 S4# configure terminal
 
-S4(config)# line console 0
-S4(config-line)# logging synchronous
-S4(config-line)# exit
+S4(config)# no logging console
 
 S4(config)# hostname S4
 S4(config)# enable password cisco
@@ -1287,9 +1275,7 @@ Configuración básica de consola y seguridad
 S5> enable
 S5# configure terminal
 
-S5(config)# line console 0
-S5(config-line)# logging synchronous
-S5(config-line)# exit
+S5(config)# no logging console
 
 S5(config)# hostname S5
 S5(config)# enable password cisco
@@ -1448,9 +1434,7 @@ Configuración básica de consola y seguridad
 S6> enable
 S6# configure terminal
 
-S6(config)# line console 0
-S6(config-line)# logging synchronous
-S6(config-line)# exit
+S6(config)# no logging console
 
 S6(config)# hostname S6
 S6(config)# enable password cisco
@@ -1590,9 +1574,7 @@ Configuración básica de consola y seguridad
 R3> enable
 R3# configure terminal
 
-R3(config)# line console 0
-R3(config-line)# logging synchronous
-R3(config-line)# exit
+R3(config)# no logging console
 
 R3(config)# hostname R3
 R3(config)# enable password cisco
@@ -1718,9 +1700,7 @@ Configuración básica de consola y seguridad
 R4> enable
 R4# configure terminal
 
-R4(config)# line console 0
-R4(config-line)# logging synchronous
-R4(config-line)# exit
+R4(config)# no logging console
 
 R4(config)# hostname R4
 R4(config)# enable password cisco

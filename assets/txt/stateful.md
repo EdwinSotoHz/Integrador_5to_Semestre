@@ -12,9 +12,7 @@ reload
 enable
 configure terminal
 
-line console 0
- logging synchronous
- exit
+no logging console
 
 hostname S4
 enable password cisco
@@ -156,9 +154,7 @@ reload
 enable
 configure terminal
 
-line console 0
- logging synchronous
- exit
+no logging console
 
 hostname S5
 enable password cisco
@@ -302,9 +298,7 @@ reload
 enable
 configure terminal
 
-line console 0
- logging synchronous
- exit
+no logging console
 
 hostname S6
 enable password cisco
@@ -433,9 +427,7 @@ line vty 0 15
 enable
 configure terminal
 
-line console 0
- logging synchronous
- exit
+no logging console
 
 hostname R3
 enable password cisco
@@ -552,9 +544,7 @@ line vty 0 15
 enable
 configure terminal
 
-line console 0
- logging synchronous
- exit
+no logging console
 
 hostname R4
 enable password cisco
