@@ -679,3 +679,8 @@ interface f 0/15
  no shut
  exit
 ```
+
+Volver a activar los logs de consola (hacerlo al final)
+```ini
+logging console
+```

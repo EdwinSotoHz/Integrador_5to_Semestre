@@ -369,6 +369,13 @@ Borrar la configuración guardada en NVRAM.
 Switch# erase startup-config
 ``` 
 
+Evitar que los mensajes de log interrumpan al escribir en el CLI.
+
+```ini
+Switch(config)# line console 0
+Switch(config-line)# logging synchronous
+``` 
+
 Configuraciones rápidas:
 - [Stateless](assets/txt/stateless.md)
 - [Stateful](assets/txt/stateful.md)
