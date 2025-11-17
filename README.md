@@ -2091,6 +2091,15 @@ RA(config)# ipv6 route ::/0 2001:DB8:7:7::1
                 <img src="assets/img/sh_r06.png" alt="Imagen routeo estado" width="700">
             </td>
         </tr>
+        <tr>
+            <td>
+                Ver vecinos de este dispositivo
+                <pre><code>do sh ipv6 neighbors</code></pre>
+            </td>
+            <td>
+                <img src="assets/img/sh_r06.png" alt="[imagen pendiente] lo importante es ver las direcciones globales y link local" width="700">
+            </td>
+        </tr>
     </table>
 </details> 
 
@@ -2115,6 +2124,12 @@ RA(config)# ipv6 route ::/0 2001:DB8:7:7::1
             <td>
                 Renovar dirección IP (Forzar DHCPv6):
                 <pre><code>ipconfig /renew</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ver vecinos de este dispositivo
+                <pre><code>netsh interface ipv6 show neighbors</code></pre>
             </td>
         </tr>
     </table>
