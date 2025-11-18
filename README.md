@@ -343,6 +343,7 @@
    </td>
    <td>Automática
    </td>
+  <tr>
    <td><strong>RA</strong>
    </td>
    <td>Antena_A
@@ -361,6 +362,8 @@
    </td>
    <td>fe80::2
    </td>
+  </tr>
+  <tr>
    <td><strong>RB</strong>
    </td>
    <td>Antena_B
