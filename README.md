@@ -337,9 +337,17 @@
   <tr>
    <td><strong>RA</strong>
    </td>
-   <td>Antena_A
+   <td>G0/1
    </td>
    <td>2001:db8:7:7::1/64
+   </td>
+   <td>Automática
+   </td>
+   <td><strong>RA</strong>
+   </td>
+   <td>Antena_A
+   </td>
+   <td>2001:db8:7:7::3/64
    </td>
    <td>fe80::1
    </td>
@@ -347,11 +355,19 @@
   <tr>
    <td><strong>RB</strong>
    </td>
-   <td>Antena_B
+   <td>G0/1
    </td>
    <td>2001:db8:7:7::2/64
    </td>
    <td>fe80::2
+   </td>
+   <td><strong>RB</strong>
+   </td>
+   <td>Antena_B
+   </td>
+   <td>2001:db8:7:7::4/64
+   </td>
+   <td>Automática
    </td>
   </tr>
 </table>
