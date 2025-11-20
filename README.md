@@ -344,14 +344,6 @@
    <td>Automática
    </td>
   <tr>
-   <td colspan="2" ><strong>ANTENA_A</strong>
-   </td>
-   <td>2001:db8:7:7::3/64
-   </td>
-   <td>fe80::1
-   </td>
-  </tr>
-  <tr>
    <td><strong>RB</strong>
    </td>
    <td>G0/1
@@ -359,6 +351,14 @@
    <td>2001:db8:7:7::2/64
    </td>
    <td>fe80::2
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" ><strong>ANTENA_A</strong>
+   </td>
+   <td>2001:db8:7:7::3/64
+   </td>
+   <td>fe80::1
    </td>
   </tr>
   <tr>
