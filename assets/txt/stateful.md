@@ -1,7 +1,5 @@
 <details> 
-    <summary>
-### Switch S4 
-    </summary>
+    <summary><span style="font-size: 1.3em; font-weight: bold;">Switch S4</span></summary>
 
 ```ini
 sdm prefer dual-ipv4-and-ipv6 default
