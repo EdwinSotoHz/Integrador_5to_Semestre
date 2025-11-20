@@ -1,6 +1,6 @@
 <details> 
     <summary>
-        <h3> Switch S1 </h3>
+        Switch S1
     </summary>
 
 ```ini
@@ -133,7 +133,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h3> Switch S2 </h3>
+        Switch S2
     </summary>
 
 ```ini
@@ -277,7 +277,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h3> Switch S3 </h3>
+        Switch S3
     </summary>
 
 ```ini
@@ -420,7 +420,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h3> Router R1 </h3>
+        Router R1
     </summary>
 
 ```ini
@@ -547,7 +547,7 @@ ipv6 route ::/0 s0/0/1 2001:db8:1:1::1
 
 <details> 
     <summary>
-        <h3> Router R2 </h3>
+        Router R2
     </summary>
 
 ```ini
@@ -670,7 +670,7 @@ ipv6 route ::/0 s0/0/1 2001:db8:2:2::1
 
 <details> 
     <summary>
-        <h3> Router RA </h3>
+        Router RA
     </summary>
 
 ```ini

@@ -1,5 +1,7 @@
 <details> 
-    <summary><span style="font-size: 1.3em; font-weight: bold;">Switch S4</span></summary>
+    <summary>
+        Switch S4
+    </summary>
 
 ```ini
 sdm prefer dual-ipv4-and-ipv6 default
@@ -140,7 +142,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h3> Switch S5 </h3>
+        Switch S5
     </summary>
 
 ```ini
@@ -284,7 +286,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h3> Switch S6 </h3>
+        Switch S6
     </summary>
 
 ```ini
@@ -418,7 +420,7 @@ line vty 0 15
 
 <details> 
     <summary>
-        <h3> Router R3 </h3>
+        Router R3
     </summary>
 
 ```ini
@@ -545,7 +547,7 @@ ipv6 route ::/0 s0/0/1 2001:db8:3:3::1
 
 <details> 
     <summary>
-        <h3> Router R4 </h3>
+        Router R4
     </summary>
 
 ```ini
@@ -680,7 +682,7 @@ ipv6 route ::/0 s0/0/0 2001:db8:4:4::1
 
 <details> 
     <summary>
-        <h3> Router RB </h3>
+        Router RB
     </summary>
 
 ```ini
