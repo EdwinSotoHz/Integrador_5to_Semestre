@@ -48,25 +48,25 @@
    </td>
    <td>G0/1.15
    </td>
-   <td>2001:db8:cafe:15::1/64
+   <td>2001:db8:cafe:15::1
    </td>
   </tr>
   <tr>
    <td>G0/1.25
    </td>
-   <td>2001:db8:cafe:25::1/64
+   <td>2001:db8:cafe:25::1
    </td>
   </tr>
   <tr>
    <td>G0/1.55
    </td>
-   <td>2001:db8:cafe:55::1/64
+   <td>2001:db8:cafe:55::1
    </td>
   </tr>
   <tr>
    <td>G0/1.65
    </td>
-   <td>2001:db8:cafe:65::1/64
+   <td>2001:db8:cafe:65::1
    </td>
   </tr>
   <tr>
@@ -74,25 +74,25 @@
    </td>
    <td>G0/1.15
    </td>
-   <td>2001:db8:cafe:15::2/64
+   <td>2001:db8:cafe:15::2
    </td>
   </tr>
   <tr>
    <td>G0/1.25
    </td>
-   <td>2001:db8:cafe:25::2/64
+   <td>2001:db8:cafe:25::2
    </td>
   </tr>
   <tr>
    <td>G0/1.55
    </td>
-   <td>2001:db8:cafe:55::2/64
+   <td>2001:db8:cafe:55::2
    </td>
   </tr>
   <tr>
    <td>G0/1.65
    </td>
-   <td>2001:db8:cafe:65::2/64
+   <td>2001:db8:cafe:65::2
    </td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@
    </td>
    <td>VLAN55
    </td>
-   <td>2001:db8:cafe:55::11/64
+   <td>2001:db8:cafe:55::11
    </td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@
    </td>
    <td>VLAN55
    </td>
-   <td>2001:db8:cafe:55::12/64
+   <td>2001:db8:cafe:55::12
    </td>
   </tr>
   <tr>
@@ -116,7 +116,7 @@
    </td>
    <td>VLAN55
    </td>
-   <td>2001:db8:cafe:55::13/64
+   <td>2001:db8:cafe:55::13
    </td>
   </tr>
 </table>
@@ -141,25 +141,25 @@
    </td>
    <td>G0/1.10
    </td>
-   <td>2001:db8:3c4d:10::1/64
+   <td>2001:db8:3c4d:10::1
    </td>
   </tr>
   <tr>
    <td>G0/1.20
    </td>
-   <td>2001:db8:3c4d:20::1/64
+   <td>2001:db8:3c4d:20::1
    </td>
   </tr>
   <tr>
    <td>G0/1.30
    </td>
-   <td>2001:db8:3c4d:30::1/64
+   <td>2001:db8:3c4d:30::1
    </td>
   </tr>
   <tr>
    <td>G0/1.40
    </td>
-   <td>2001:db8:3c4d:40::1/64
+   <td>2001:db8:3c4d:40::1
    </td>
   </tr>
   <tr>
@@ -167,25 +167,25 @@
    </td>
    <td>G0/1.10
    </td>
-   <td>2001:db8:3c4d:10::2/64
+   <td>2001:db8:3c4d:10::2
    </td>
   </tr>
   <tr>
    <td>G0/1.20
    </td>
-   <td>2001:db8:3c4d:20::2/64
+   <td>2001:db8:3c4d:20::2
    </td>
   </tr>
   <tr>
    <td>G0/1.30
    </td>
-   <td>2001:db8:3c4d:30::2/64
+   <td>2001:db8:3c4d:30::2
    </td>
   </tr>
   <tr>
    <td>G0/1.40
    </td>
-   <td>2001:db8:3c4d:40::2/64
+   <td>2001:db8:3c4d:40::2
    </td>
   </tr>
   <tr>
@@ -193,7 +193,7 @@
    </td>
    <td>VLAN30
    </td>
-   <td>2001:db8:3c4d:30::14/64
+   <td>2001:db8:3c4d:30::14
    </td>
   </tr>
   <tr>
@@ -201,7 +201,7 @@
    </td>
    <td>VLAN30
    </td>
-   <td>2001:db8:3c4d:30::15/64
+   <td>2001:db8:3c4d:30::15
    </td>
   </tr>
   <tr>
@@ -209,7 +209,7 @@
    </td>
    <td>VLAN30
    </td>
-   <td>2001:db8:3c4d:30::16/64
+   <td>2001:db8:3c4d:30::16
    </td>
   </tr>
 </table>
@@ -238,7 +238,7 @@
    </td>
    <td>S0/0/1
    </td>
-   <td>2001:db8:1:1::2/64
+   <td>2001:db8:1:1::2
    </td>
   </tr>
   <tr>
@@ -246,7 +246,7 @@
    </td>
    <td>S0/0/0
    </td>
-   <td>2001:db8:2:2::2/64
+   <td>2001:db8:2:2::2
    </td>
   </tr>
   <tr>
@@ -254,13 +254,13 @@
    </td>
    <td>S0/0/1
    </td>
-   <td>2001:db8:1:1::1/64
+   <td>2001:db8:1:1::1
    </td>
   </tr>
   <tr>
    <td>S0/0/0
    </td>
-   <td>2001:db8:2:2::1/64
+   <td>2001:db8:2:2::1
    </td>
   </tr>
 </table>
@@ -289,7 +289,7 @@
    </td>
    <td>S0/0/1
    </td>
-   <td>2001:db8:3:3::2/64
+   <td>2001:db8:3:3::2
    </td>
   </tr>
   <tr>
@@ -297,7 +297,7 @@
    </td>
    <td>S0/0/0
    </td>
-   <td>2001:db8:4:4::2/64
+   <td>2001:db8:4:4::2
    </td>
   </tr>
   <tr>
@@ -305,13 +305,13 @@
    </td>
    <td>S0/0/1
    </td>
-   <td>2001:db8:3:3::1/64
+   <td>2001:db8:3:3::1
    </td>
   </tr>
   <tr>
    <td>S0/0/0
    </td>
-   <td>2001:db8:4:4::1/64
+   <td>2001:db8:4:4::1
    </td>
   </tr>
 </table>
@@ -339,16 +339,16 @@
    </td>
    <td>G0/1
    </td>
-   <td>2001:db8:7:7::1/64
+   <td>2001:db8:7:7::1
    </td>
-   <td>Automática
+   <td>fe80::1
    </td>
   <tr>
    <td><strong>RB</strong>
    </td>
    <td>G0/1
    </td>
-   <td>2001:db8:7:7::2/64
+   <td>2001:db8:7:7::2
    </td>
    <td>fe80::2
    </td>
@@ -356,15 +356,15 @@
   <tr>
    <td colspan="2" ><strong>ANTENA_A</strong>
    </td>
-   <td>2001:db8:7:7::3/64
+   <td>2001:db8:7:7::3
    </td>
-   <td>fe80::1
+   <td>Automática
    </td>
   </tr>
   <tr>
    <td colspan="2" ><strong>ANTENA_B</strong>
    </td>
-   <td>2001:db8:7:7::4/64
+   <td>2001:db8:7:7::4
    </td>
    <td>Automática
    </td>
@@ -1189,6 +1189,9 @@ RA(config-if)# exit
 RA(config)# ipv6 route ::/0 s0/0/1 2001:db8:1:1::2
 RA(config)# ipv6 route ::/0 s0/0/0 2001:db8:2:2::2
 RA(config)# ipv6 route ::/0 2001:DB8:7:7::2
+
+RA(config)# ipv6 route ::/0 2001:DB8:7:7::3
+RA(config)# ipv6 route ::/0 2001:DB8:7:7::4
 ```
 
 </details>
@@ -1950,43 +1953,46 @@ R3(config)# ipv6 route ::/0 s0/0/0 2001:db8:4:4::1
 
 Configuración básica de consola y seguridad
 ```ini
-RA> enable
-RA# configure terminal
+RB> enable
+RB# configure terminal
 
-RA(config)# no logging console
+RB(config)# no logging console
 
-RA(config)# hostname RB
-RA(config)# enable password cisco
-RA(config)# enable secret tics
-RA(config)# banner motd # Solo acceso autorizado RB #
-RA(config)# service password-encryption
+RB(config)# hostname RB
+RB(config)# enable password cisco
+RB(config)# enable secret tics
+RB(config)# banner motd # Solo acceso autorizado RB #
+RB(config)# service password-encryption
 ```
 
 Configuración para routeo estático
 ```ini
-RA(config)# ipv6 unicast-routing
-RA(config)# interface s 0/0/1
-RA(config-if)# no ip address
-RA(config-if)# ipv6 address 2001:db8:3:3::1/64
-RA(config-if)# ipv6 enable
-RA(config-if)# no shutdown
-RA(config-if)# exit
-RA(config)# interface s 0/0/0
-RA(config-if)# no ip address
-RA(config-if)# ipv6 address 2001:db8:4:4::1/64
-RA(config-if)# ipv6 enable
-RA(config-if)# no shutdown
-RA(config-if)# exit
-RA(config)# interface g 0/1
-RA(config-if)# no ip address
-RA(config-if)# ipv6 address 2001:db8:7:7::2/64
-RA(config-if)# ipv6 address fe80::2 link-local
-RA(config-if)# no shutdown
-RA(config-if)# exit
+RB(config)# ipv6 unicast-routing
+RB(config)# interface s 0/0/1
+RB(config-if)# no ip address
+RB(config-if)# ipv6 address 2001:db8:3:3::1/64
+RB(config-if)# ipv6 enable
+RB(config-if)# no shutdown
+RB(config-if)# exit
+RB(config)# interface s 0/0/0
+RB(config-if)# no ip address
+RB(config-if)# ipv6 address 2001:db8:4:4::1/64
+RB(config-if)# ipv6 enable
+RB(config-if)# no shutdown
+RB(config-if)# exit
+RB(config)# interface g 0/1
+RB(config-if)# no ip address
+RB(config-if)# ipv6 address 2001:db8:7:7::2/64
+RB(config-if)# ipv6 address fe80::2 link-local
+RB(config-if)# no shutdown
+RB(config-if)# exit
 
-RA(config)# ipv6 route ::/0 s0/0/1 2001:db8:3:3::2
-RA(config)# ipv6 route ::/0 s0/0/0 2001:db8:4:4::2
-RA(config)# ipv6 route ::/0 2001:DB8:7:7::1
+RB(config)# ipv6 route ::/0 s0/0/1 2001:db8:3:3::2
+RB(config)# ipv6 route ::/0 s0/0/0 2001:db8:4:4::2
+RB(config)# ipv6 route ::/0 2001:DB8:7:7::1
+
+RB(config)# ipv6 route ::/0 2001:DB8:7:7::3
+RB(config)# ipv6 route ::/0 2001:DB8:7:7::4
 ```
 
 </details>
