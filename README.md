@@ -344,9 +344,7 @@
    <td>Automática
    </td>
   <tr>
-   <td><strong>RA</strong>
-   </td>
-   <td>Antena_A
+   <td colspan="2" ><strong>ANTENA_A</strong>
    </td>
    <td>2001:db8:7:7::3/64
    </td>
@@ -364,9 +362,7 @@
    </td>
   </tr>
   <tr>
-   <td><strong>RB</strong>
-   </td>
-   <td>Antena_B
+   <td colspan="2" ><strong>ANTENA_B</strong>
    </td>
    <td>2001:db8:7:7::4/64
    </td>
