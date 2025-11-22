@@ -742,6 +742,8 @@ line vty 0 15
 
 </details>
 
+---
+
 Configuración de prueba para VLAN administrativa 30 (Switchs)
 ```ini
 interface f 0/15
