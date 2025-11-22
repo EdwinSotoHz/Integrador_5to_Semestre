@@ -729,6 +729,17 @@ ipv6 route ::/0 2001:DB8:7:7::3
 ipv6 route ::/0 2001:DB8:7:7::4
 ```
 
+```ini
+username admin password admin
+ip domain-name itsoeh.edu
+crypto key generate rsa
+    1024
+line vty 0 15 
+ transport input ssh
+ login local
+ exit
+```
+
 </details>
 
 Configuración de prueba para VLAN administrativa 30 (Switchs)
