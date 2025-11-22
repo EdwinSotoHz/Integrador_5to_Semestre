@@ -15,7 +15,7 @@
 
 <details> 
     <summary>
-        Topología Física 
+        Topología Física
     </summary>
 <img src="assets/img/image01.png" height="500px" />
 </details>
