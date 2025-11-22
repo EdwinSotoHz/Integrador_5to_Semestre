@@ -704,12 +704,14 @@ interface s 0/0/1
  no ip address
  ipv6 address 2001:db8:3:3::1/64
  ipv6 enable
+ clock rate 64000
  no shutdown
  exit
 interface s 0/0/0
  no ip address
  ipv6 address 2001:db8:4:4::1/64
  ipv6 enable
+ clock rate 64000
  no shutdown
  exit
 interface g 0/1

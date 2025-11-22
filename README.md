@@ -1171,12 +1171,14 @@ RA(config)# interface s 0/0/1
 RA(config-if)# no ip address
 RA(config-if)# ipv6 address 2001:db8:1:1::1/64
 RA(config-if)# ipv6 enable
+RA(config-if)# clock rate 64000
 RA(config-if)# no shutdown
 RA(config-if)# exit
 RA(config)# interface s 0/0/0
 RA(config-if)# no ip address
 RA(config-if)# ipv6 address 2001:db8:2:2::1/64
 RA(config-if)# ipv6 enable
+RA(config-if)# clock rate 64000
 RA(config-if)# no shutdown
 RA(config-if)# exit
 RA(config)# interface g 0/1
@@ -1972,12 +1974,14 @@ RB(config)# interface s 0/0/1
 RB(config-if)# no ip address
 RB(config-if)# ipv6 address 2001:db8:3:3::1/64
 RB(config-if)# ipv6 enable
+RB(config-if)# clock rate 64000
 RB(config-if)# no shutdown
 RB(config-if)# exit
 RB(config)# interface s 0/0/0
 RB(config-if)# no ip address
 RB(config-if)# ipv6 address 2001:db8:4:4::1/64
 RB(config-if)# ipv6 enable
+RB(config-if)# clock rate 64000
 RB(config-if)# no shutdown
 RB(config-if)# exit
 RB(config)# interface g 0/1
