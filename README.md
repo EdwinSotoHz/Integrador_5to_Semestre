@@ -13,6 +13,10 @@
 - [230110578]  Martínez Hernández Brayan 
 - [230110358]  Soto Hernandez Edwin Salvador 
 
+Archivos de configuración:
+- [Stateless.txt](assets/txt/stateless.md)
+- [Stateful.txt](assets/txt/stateful.md)
+
 <details> 
     <summary>
         Topología Física
@@ -422,11 +426,6 @@ interface f 0/15
  no shut
  exit
 ```
-
-
-Configuraciones rápidas:
-- [Stateless](assets/txt/stateless.md)
-- [Stateful](assets/txt/stateful.md)
 
 </details>
 
