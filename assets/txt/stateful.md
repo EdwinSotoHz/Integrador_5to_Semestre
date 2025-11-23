@@ -728,7 +728,7 @@ interface g 0/1
  
 ipv6 route ::/0 s0/0/1 2001:db8:3:3::2
 ipv6 route ::/0 s0/0/0 2001:db8:4:4::2
-ipv6 route ::/0 2001:DB8:7:7::1
+ipv6 route ::/0 g0/1 2001:DB8:7:7::1
 ```
 
 ```ini
