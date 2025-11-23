@@ -108,7 +108,7 @@ interface port-channel 1
 
 ```ini
 interface range f 0/4-6
- channel-group 2 mode desirable
+ channel-group 2 mode auto
  no shutdown
  exit
 interface port-channel 2
@@ -139,6 +139,7 @@ line vty 0 15
  exit
 ```
 </details>
+<br>
 
 <details> 
     <summary>
@@ -238,7 +239,7 @@ interface f 0/24
 
 ```ini
 interface range f 0/1-3
- channel-group 1 mode passive
+ channel-group 1 mode active
  no shutdown
  exit
 interface port-channel 1
@@ -283,6 +284,7 @@ line vty 0 15
 ```
 
 </details>
+<br>
 
 <details> 
     <summary>
@@ -381,7 +383,7 @@ interface f 0/24
 
 ```ini
 interface range f 0/1-3
- channel-group 1 mode on
+ channel-group 1 mode passive
  no shutdown
  exit
 interface port-channel 1
@@ -417,6 +419,7 @@ line vty 0 15
 ```
 
 </details>
+<br>
 
 <details> 
     <summary>
@@ -544,6 +547,7 @@ ipv6 route ::/0 s0/0/1 2001:db8:3:3::1
 ```
 
 </details>
+<br>
 
 <details> 
     <summary>
@@ -679,6 +683,7 @@ ipv6 route ::/0 s0/0/0 2001:db8:4:4::1
 ```
 
 </details>
+<br>
 
 <details> 
     <summary>
@@ -738,6 +743,7 @@ line vty 0 15
 ```
 
 </details>
+<br>
 
 ---
 
