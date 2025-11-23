@@ -1950,13 +1950,13 @@ R4(config-line)# exit
 
 Configuración para routeo estático
 ```ini
-R3(config)#interface s 0/0/0
-R3(config-if)# no ip address
-R3(config-if)# ipv6 address 2001:db8:4:4::2/64
-R3(config-if)# ipv6 enable
-R3(config-if)# no shutdown
-R3(config-if)# exit
-R3(config)# ipv6 route ::/0 s0/0/0 2001:db8:4:4::1
+R4(config)#interface s 0/0/0
+R4(config-if)# no ip address
+R4(config-if)# ipv6 address 2001:db8:4:4::2/64
+R4(config-if)# ipv6 enable
+R4(config-if)# no shutdown
+R4(config-if)# exit
+R4(config)# ipv6 route ::/0 s0/0/0 2001:db8:4:4::1
 ```
 
 </details>
