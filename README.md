@@ -391,11 +391,11 @@ Switch(config)# line console 0
 Switch(config-line)# logging synchronous
 ``` 
 
-**Llegar a los switch en Packet Tracer**
+**Llegar a los switch en Packet Tracer**  
+
 Stateless:
 
 ```ini
-ipv6 route ::/0 2001:db8:cafe:55::1
 ipv6 route ::/0 2001:db8:cafe:55::1
 ``` 
 
@@ -403,8 +403,25 @@ Stateful:
 
 ```ini
 ipv6 route ::/0 2001:db8:3c4d:30::1
-ipv6 route ::/0 2001:db8:3c4d:30::1
 ``` 
+
+Configuración de prueba para VLAN administrativa 55 (Switchs Stateless)
+```ini
+interface f 0/15
+ switchport mode access
+ switchport access vlan 55
+ no shut
+ exit
+```
+
+Configuración de prueba para VLAN administrativa 30 (Switchs Stateful)
+```ini
+interface f 0/15
+ switchport mode access
+ switchport access vlan 30
+ no shut
+ exit
+```
 
 
 Configuraciones rápidas:

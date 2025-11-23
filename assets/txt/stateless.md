@@ -735,16 +735,7 @@ line vty 0 15
 
 ---
 
-Configuración de prueba para VLAN administrativa 55 (Switchs)
-```ini
-interface f 0/15
- switchport mode access
- switchport access vlan 55
- no shut
- exit
-```
-
-Volver a activar los logs de consola (hacerlo al final)
+Volver a activar los logs de consola (hacerlo al final de cada configuración)
 ```ini
 logging console
 ```
