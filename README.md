@@ -519,10 +519,10 @@ S1(config-if)# no shutdown
 S1(config-if)# exit
 ```
 
-EtherChannel 1 modo on para agregación de enlaces
+EtherChannel 1 modo LACP para agregación de enlaces
 ```ini
 S1(config)# interface range f 0/1-3
-S1(config-if-range)# channel-group 1 mode on
+S1(config-if-range)# channel-group 1 mode passive
 S1(config-if-range)# no shutdown
 S1(config-if-range)# exit
 S1(config)# interface port-channel 1
@@ -669,7 +669,7 @@ S2(config-if)# exit
 EtherChannel 1 modo passive para LACP
 ```ini
 S2(config)# interface range f 0/1-3
-S2(config-if-range)# channel-group 1 mode passive
+S2(config-if-range)# channel-group 1 mode active
 S2(config-if-range)# no shutdown
 S2(config-if-range)# exit
 S2(config)# interface port-channel 1
@@ -1194,6 +1194,19 @@ RA(config)# ipv6 route ::/0 2001:DB8:7:7::2
 
 RA(config)# ipv6 route ::/0 2001:DB8:7:7::3
 RA(config)# ipv6 route ::/0 2001:DB8:7:7::4
+```
+
+Configuración de acceso SSH con autenticación local
+```ini
+RA(config)# username admin password admin
+RA(config)# ip domain-name itsoeh.edu
+RA(config)# crypto key generate rsa
+How many bits in the modulus [512]:
+    1024
+RA(config)# line vty 0 15
+RA(config-line)# transport input ssh
+RA(config-line)# login local
+RA(config-line)# exit
 ```
 
 </details>
@@ -1997,6 +2010,19 @@ RB(config)# ipv6 route ::/0 2001:DB8:7:7::1
 
 RB(config)# ipv6 route ::/0 2001:DB8:7:7::3
 RB(config)# ipv6 route ::/0 2001:DB8:7:7::4
+```
+
+Configuración de acceso SSH con autenticación local
+```ini
+RB(config)# username admin password admin
+RB(config)# ip domain-name itsoeh.edu
+RB(config)# crypto key generate rsa
+How many bits in the modulus [512]:
+    1024
+RB(config)# line vty 0 15
+RB(config-line)# transport input ssh
+RB(config-line)# login local
+RB(config-line)# exit
 ```
 
 </details>
