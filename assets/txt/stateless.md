@@ -739,3 +739,9 @@ Volver a activar los logs de consola (hacerlo al final de cada configuración)
 ```ini
 logging console
 ```
+
+**Nota:**
+```diff
+sdm prefer dual-ipv4-and-ipv6 default
+! si este comando no devuelve nada no es necesario aplicar un reload
+```
