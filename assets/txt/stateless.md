@@ -95,7 +95,7 @@ interface f 0/24
 
 ```ini
 interface range f 0/1-3
- channel-group 1 mode on
+ channel-group 1 mode passive
  no shutdown
  exit
 interface port-channel 1
@@ -229,7 +229,7 @@ interface f 0/24
 
 ```ini
 interface range f 0/1-3
- channel-group 1 mode passive
+ channel-group 1 mode active
  no shutdown
  exit
 interface port-channel 1
