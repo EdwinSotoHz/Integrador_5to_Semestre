@@ -753,8 +753,4 @@ logging console
 ```
 
 <br>
-
-**Nota:**
-```diff
-sdm prefer dual-ipv4-and-ipv6 default ! si este comando no devuelve nada no es necesario aplicar un reload
-```
+<b>Nota:</b>Si el comando <pre>sdm prefer dual-ipv4-and-ipv6 default</pre> no devuelve nada no es necesario aplicar un reload
