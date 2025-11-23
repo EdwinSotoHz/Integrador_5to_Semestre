@@ -535,7 +535,7 @@ S1(config-if)# no shutdown
 S1(config-if)# exit
 ```
 
-EtherChannel 1 modo LACP para agregación de enlaces
+EtherChannel 1 modo `passive` para LACP
 ```ini
 S1(config)# interface range f 0/1-3
 S1(config-if-range)# channel-group 1 mode passive
@@ -549,7 +549,7 @@ S1(config-if)# no shutdown
 S1(config-if)# exit
 ```
 
-EtherChannel 2 modo PAgP para agregación de enlaces
+EtherChannel 2 modo `desirable` para PAgP
 ```ini
 S1(config)# interface range f 0/4-6
 S1(config-if-range)# channel-group 2 mode desirable
@@ -682,7 +682,7 @@ S2(config-if)# no shutdown
 S2(config-if)# exit
 ```
 
-EtherChannel 1 modo passive para LACP
+EtherChannel 1 modo `active` para LACP
 ```ini
 S2(config)# interface range f 0/1-3
 S2(config-if-range)# channel-group 1 mode active
@@ -696,7 +696,7 @@ S2(config-if)# no shutdown
 S2(config-if)# exit
 ```
 
-EtherChannel 2 modo on para agregación de enlaces
+EtherChannel 2 modo `on` para agregación de enlaces
 ```ini
 S2(config)# interface range f 0/4-6
 S2(config-if-range)# channel-group 2 mode on
@@ -838,7 +838,7 @@ S3(config-if)# no shutdown
 S3(config-if)# exit
 ```
 
-EtherChannel 1 modo on para agregación de enlaces
+EtherChannel 1 modo `on` para agregación de enlaces
 ```ini
 S3(config)# interface range f 0/1-3
 S3(config-if-range)# channel-group 1 mode on
@@ -852,7 +852,7 @@ S3(config-if)# no shutdown
 S3(config-if)# exit
 ```
 
-EtherChannel 2 modo desirable para agregación de enlaces
+EtherChannel 2 modo `auto` para PAgP
 ```ini
 S3(config)# interface range f 0/4-6
 S3(config-if-range)# channel-group 2 mode auto
@@ -1335,7 +1335,7 @@ S4(config-if)# no shutdown
 S4(config-if)# exit
 ```
 
-EtherChannel 1 modo on para agregación de enlaces
+EtherChannel 1 modo `on` para agregación de enlaces
 ```ini
 S4(config)# interface range f 0/1-3
 S4(config-if-range)# channel-group 1 mode on
@@ -1349,7 +1349,7 @@ S4(config-if)# no shutdown
 S4(config-if)# exit
 ```
 
-EtherChannel 2 modo desirable para agregación de enlaces
+EtherChannel 2 modo `auto` para PAgP
 ```ini
 S4(config)# interface range f 0/4-6
 S4(config-if-range)# channel-group 2 mode auto
@@ -1494,7 +1494,7 @@ S5(config-if)# no shutdown
 S5(config-if)# exit
 ```
 
-EtherChannel 1 modo passive para LACP
+EtherChannel 1 modo `active` para LACP
 ```ini
 S5(config)# interface range f 0/1-3
 S5(config-if-range)# channel-group 1 mode active
@@ -1508,7 +1508,7 @@ S5(config-if)# no shutdown
 S5(config-if)# exit
 ```
 
-EtherChannel 2 modo on para agregación de enlaces
+EtherChannel 2 modo `on` para agregación de enlaces
 ```ini
 S5(config)# interface range f 0/4-6
 S5(config-if-range)# channel-group 2 mode on
@@ -1652,7 +1652,7 @@ S6(config-if)# no shutdown
 S6(config-if)# exit
 ```
 
-EtherChannel 1 modo LACP para agregación de enlaces
+EtherChannel 1 modo `passive` para LACP
 ```ini
 S6(config)# interface range f 0/1-3
 S6(config-if-range)# channel-group 1 mode passive
@@ -1666,7 +1666,7 @@ S6(config-if)# no shutdown
 S6(config-if)# exit
 ```
 
-EtherChannel 2 modo PAgP para agregación de enlaces
+EtherChannel 2 modo `desirable` para PAgP
 ```ini
 S6(config)# interface range f 0/4-6
 S6(config-if-range)# channel-group 2 mode desirable
