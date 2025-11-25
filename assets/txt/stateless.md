@@ -58,7 +58,7 @@ interface range g 0/1-2
 ```
 
 ```ini
-interface range f 0/7,f 0/8
+interface range f 0/7-9
  switchport mode access
  switchport access vlan 15
  switchport port-security 
@@ -70,7 +70,7 @@ interface range f 0/7,f 0/8
 ```
 
 ```ini
-interface range f 0/9,f 0/12
+interface range f 0/10-12
  switchport mode access
  switchport access vlan 45
  switchport port-security 
@@ -193,7 +193,7 @@ interface range g 0/1-2
 ```
 
 ```ini
-interface range f 0/7,f 0/8
+interface range f 0/7-9
  switchport mode access
  switchport access vlan 15
  switchport port-security 
@@ -205,7 +205,7 @@ interface range f 0/7,f 0/8
 ```
 
 ```ini
-interface range f 0/9,f 0/12
+interface range f 0/10-12
  switchport mode access
  switchport access vlan 45
  switchport port-security 
@@ -337,7 +337,7 @@ interface range g 0/1-2
 ```
 
 ```ini
-interface range f 0/7,f 0/8
+interface range f 0/7-9
  switchport mode access
  switchport access vlan 15
  switchport port-security 
@@ -349,7 +349,7 @@ interface range f 0/7,f 0/8
 ```
 
 ```ini
-interface range f 0/9,f 0/12
+interface range f 0/10-12
  switchport mode access
  switchport access vlan 45
  switchport port-security 

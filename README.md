@@ -22,6 +22,9 @@ Archivos de configuración:
         Topología Física
     </summary>
 <img src="assets/img/image01.png" height="500px" />
+
+### Direccionamiento (Hosts):
+
 </details>
 
 <details> 
@@ -30,7 +33,7 @@ Archivos de configuración:
     </summary>
 <img src="assets/img/topologia_logica.webp" height="500px" />
 
-### Direccionamiento:
+### Direccionamiento (para SSH a routers y switchs):
 
 <table>
   <tr>
@@ -498,7 +501,7 @@ S1(config-if-range)# exit
 
 Puertos de acceso para estudiantes con seguridad de puerto
 ```ini
-S1(config)# interface range f 0/7,f 0/8
+S1(config)# interface range f 0/7-9
 S1(config-if-range)# switchport mode access
 S1(config-if-range)# switchport access vlan 15
 S1(config-if-range)# switchport port-security 
@@ -511,7 +514,7 @@ S1(config-if-range)# exit
 
 Puertos de acceso para docentes con seguridad de puerto
 ```ini
-S1(config)# interface range f 0/9,f 0/12
+S1(config)# interface range f 0/10-12
 S1(config-if-range)# switchport mode access
 S1(config-if-range)# switchport access vlan 45
 S1(config-if-range)# switchport port-security 
@@ -645,7 +648,7 @@ S2(config-if-range)# exit
 
 Puertos de acceso para estudiantes con seguridad de puerto
 ```ini
-S2(config)# interface range f 0/7,f 0/8
+S2(config)# interface range f 0/7-9
 S2(config-if-range)# switchport mode access
 S2(config-if-range)# switchport access vlan 15
 S2(config-if-range)# switchport port-security 
@@ -658,7 +661,7 @@ S2(config-if-range)# exit
 
 Puertos de acceso para docentes con seguridad de puerto
 ```ini
-S2(config)# interface range f 0/9,f 0/12
+S2(config)# interface range f 0/10-12
 S2(config-if-range)# switchport mode access
 S2(config-if-range)# switchport access vlan 45
 S2(config-if-range)# switchport port-security 
@@ -801,7 +804,7 @@ S3(config-if-range)# exit
 
 Puertos de acceso para estudiantes con seguridad de puerto
 ```ini
-S3(config)# interface range f 0/7,f 0/8
+S3(config)# interface range f 0/7-9
 S3(config-if-range)# switchport mode access
 S3(config-if-range)# switchport access vlan 15
 S3(config-if-range)# switchport port-security 
@@ -814,7 +817,7 @@ S3(config-if-range)# exit
 
 Puertos de acceso para docentes con seguridad de puerto
 ```ini
-S3(config)# interface range f 0/9,f 0/12
+S3(config)# interface range f 0/10-12
 S3(config-if-range)# switchport mode access
 S3(config-if-range)# switchport access vlan 45
 S3(config-if-range)# switchport port-security 
@@ -1300,7 +1303,7 @@ S4(config-if-range)# exit
 
 Puertos de acceso para estudiantes con seguridad de puerto
 ```ini
-S4(config)# interface range f 0/7,f 0/8
+S4(config)# interface range f 0/7-9
 S4(config-if-range)# switchport mode access
 S4(config-if-range)# switchport access vlan 10
 S4(config-if-range)# switchport port-security 
@@ -1313,7 +1316,7 @@ S4(config-if-range)# exit
 
 Puertos de acceso para docentes con seguridad de puerto
 ```ini
-S4(config)# interface range f 0/9,f 0/12
+S4(config)# interface range f 0/10-12
 S4(config-if-range)# switchport mode access
 S4(config-if-range)# switchport access vlan 20
 S4(config-if-range)# switchport port-security 
@@ -1459,7 +1462,7 @@ S5(config-if-range)# exit
 
 Puertos de acceso para estudiantes con seguridad de puerto
 ```ini
-S5(config)# interface range f 0/7,f 0/8
+S5(config)# interface range f 0/7-9
 S5(config-if-range)# switchport mode access
 S5(config-if-range)# switchport access vlan 10
 S5(config-if-range)# switchport port-security 
@@ -1472,7 +1475,7 @@ S5(config-if-range)# exit
 
 Puertos de acceso para docentes con seguridad de puerto
 ```ini
-S5(config)# interface range f 0/9,f 0/12
+S5(config)# interface range f 0/10-12
 S5(config-if-range)# switchport mode access
 S5(config-if-range)# switchport access vlan 20
 S5(config-if-range)# switchport port-security 
@@ -1617,7 +1620,7 @@ S6(config-if-range)# exit
 
 Puertos de acceso para estudiantes con seguridad de puerto
 ```ini
-S6(config)# interface range f 0/7,f 0/8
+S6(config)# interface range f 0/7-9
 S6(config-if-range)# switchport mode access
 S6(config-if-range)# switchport access vlan 10
 S6(config-if-range)# switchport port-security 
@@ -1630,7 +1633,7 @@ S6(config-if-range)# exit
 
 Puertos de acceso para docentes con seguridad de puerto
 ```ini
-S6(config)# interface range f 0/9,f 0/12
+S6(config)# interface range f 0/10-12
 S6(config-if-range)# switchport mode access
 S6(config-if-range)# switchport access vlan 20
 S6(config-if-range)# switchport port-security 
