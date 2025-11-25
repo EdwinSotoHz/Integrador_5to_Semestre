@@ -543,7 +543,10 @@ interface s 0/0/1
  ipv6 enable
  no shutdown
  exit
-ipv6 route ::/0 s0/0/1 2001:db8:1:1::1
+
+ipv6 route 2001:db8:7:7::/64     2001:db8:1:1::1
+ipv6 route 2001:db8:3:3::/64     2001:db8:1:1::1
+ipv6 route 2001:db8:3c4d::/48    2001:db8:1:1::1
 ```
 
 </details>
@@ -667,7 +670,10 @@ interface s 0/0/0
  ipv6 enable
  no shutdown
  exit
-ipv6 route ::/0 s0/0/1 2001:db8:2:2::1
+
+ipv6 route 2001:db8:7:7::/64     2001:db8:2:2::1
+ipv6 route 2001:db8:3:3::/64     2001:db8:2:2::1
+ipv6 route 2001:db8:3c4d::/48    2001:db8:2:2::1
 ```
 
 </details>
@@ -714,9 +720,10 @@ interface g 0/1
  no shutdown
  exit
 
-ipv6 route ::/0 s0/0/1 2001:db8:1:1::2
-ipv6 route ::/0 s0/0/0 2001:db8:2:2::2
-ipv6 route ::/0 g0/1 2001:DB8:7:7::2
+ipv6 route 2001:db8:cafe::/48    2001:db8:1:1::2
+ipv6 route 2001:db8:3:3::/64     2001:db8:7:7::2
+ipv6 route 2001:db8:4:4::/64     2001:db8:7:7::2
+ipv6 route 2001:db8:3c4d::/48    2001:db8:7:7::2
 ```
 
 ```ini
