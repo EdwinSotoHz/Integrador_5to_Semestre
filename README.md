@@ -25,6 +25,310 @@ Archivos de configuración:
 
 ### Direccionamiento (Hosts):
 
+
+
+<table>
+  <tr>
+   <td colspan="2" >🔴<strong> Equipo 1</strong>
+   </td>
+   <td colspan="2" ><strong>Responsable: </strong>Chema
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Integrante</strong>
+   </td>
+   <td><strong>Dispositivo</strong>
+   </td>
+   <td><strong>Puerto</strong>
+   </td>
+   <td><strong>VLAN</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Chema
+   </td>
+   <td>S3
+   </td>
+   <td>Fa 0/12
+   </td>
+   <td>45
+   </td>
+  </tr>
+  <tr>
+   <td>Liz
+   </td>
+   <td>S4
+   </td>
+   <td>Fa 0/8
+   </td>
+   <td>10
+   </td>
+  </tr>
+  <tr>
+   <td>Carol
+   </td>
+   <td>S2
+   </td>
+   <td>Fa 0/11
+   </td>
+   <td>45
+   </td>
+  </tr>
+  <tr>
+   <td>Gus
+   </td>
+   <td>S2
+   </td>
+   <td>Fa 0/10
+   </td>
+   <td>45
+   </td>
+  </tr>
+  <tr>
+   <td>Ricardo 
+   </td>
+   <td>S5
+   </td>
+   <td>Fa 0/9
+   </td>
+   <td>10
+   </td>
+  </tr>
+  <tr>
+   <td>Irving
+   </td>
+   <td>S6
+   </td>
+   <td>Fa 0/10
+   </td>
+   <td>20
+   </td>
+  </tr>
+</table>
+
+
+
+<table>
+  <tr>
+   <td colspan="2" >🟢<strong> Equipo 2</strong>
+   </td>
+   <td colspan="2" ><strong>Responsable: </strong>Eduardo
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Integrante</strong>
+   </td>
+   <td><strong>Dispositivo</strong>
+   </td>
+   <td><strong>Puerto</strong>
+   </td>
+   <td><strong>VLAN</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Eduardo
+   </td>
+   <td>S1
+   </td>
+   <td>Fa 0/7
+   </td>
+   <td>15
+   </td>
+  </tr>
+  <tr>
+   <td>Frey
+   </td>
+   <td>S2
+   </td>
+   <td>Fa 0/8
+   </td>
+   <td>15
+   </td>
+  </tr>
+  <tr>
+   <td>Diego
+   </td>
+   <td>S5
+   </td>
+   <td>Fa 0/10
+   </td>
+   <td>20
+   </td>
+  </tr>
+  <tr>
+   <td>Dilan
+   </td>
+   <td>S2
+   </td>
+   <td>Fa 0/8
+   </td>
+   <td>15
+   </td>
+  </tr>
+  <tr>
+   <td>Melanie
+   </td>
+   <td>S2
+   </td>
+   <td>Fa 0/7
+   </td>
+   <td>15
+   </td>
+  </tr>
+  <tr>
+   <td>Mari
+   </td>
+   <td>S6
+   </td>
+   <td>Fa 0/9
+   </td>
+   <td>10
+   </td>
+  </tr>
+</table>
+
+
+
+<table>
+  <tr>
+   <td colspan="2" >🟡 <strong>Equipo 3</strong>
+   </td>
+   <td colspan="2" ><strong>Responsable: </strong>Valeria
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Integrante</strong>
+   </td>
+   <td><strong>Dispositivo</strong>
+   </td>
+   <td><strong>Puerto</strong>
+   </td>
+   <td><strong>VLAN</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Valeria 
+   </td>
+   <td>S1
+   </td>
+   <td>Fa 0/10
+   </td>
+   <td>45
+   </td>
+  </tr>
+  <tr>
+   <td>Gerardo
+   </td>
+   <td>S1
+   </td>
+   <td>Fa 0/11
+   </td>
+   <td>45
+   </td>
+  </tr>
+  <tr>
+   <td>Karen 
+   </td>
+   <td>S4
+   </td>
+   <td>Fa 0/9
+   </td>
+   <td>10
+   </td>
+  </tr>
+  <tr>
+   <td>Abraham 
+   </td>
+   <td>S6
+   </td>
+   <td>Fa 0/24
+   </td>
+   <td>40
+   </td>
+  </tr>
+  <tr>
+   <td>Daniel 
+   </td>
+   <td>S6
+   </td>
+   <td>Fa 0/11
+   </td>
+   <td>20
+   </td>
+  </tr>
+</table>
+
+
+
+<table>
+  <tr>
+   <td colspan="2" >🔵<strong> Equipo 4</strong>
+   </td>
+   <td colspan="2" ><strong>Responsable: </strong>Edwin
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Integrante</strong>
+   </td>
+   <td><strong>Dispositivo</strong>
+   </td>
+   <td><strong>Puerto</strong>
+   </td>
+   <td><strong>VLAN</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Edwin
+   </td>
+   <td>S3
+   </td>
+   <td>Fa 0/7
+   </td>
+   <td>15
+   </td>
+  </tr>
+  <tr>
+   <td>Alejandro
+   </td>
+   <td>S3
+   </td>
+   <td>Fa 0/8
+   </td>
+   <td>15
+   </td>
+  </tr>
+  <tr>
+   <td>Brayan
+   </td>
+   <td>S3
+   </td>
+   <td>Fa 0/9
+   </td>
+   <td>15
+   </td>
+  </tr>
+  <tr>
+   <td>Fernando
+   </td>
+   <td>S4
+   </td>
+   <td>Fa 0/7
+   </td>
+   <td>10
+   </td>
+  </tr>
+  <tr>
+   <td>Yael
+   </td>
+   <td>S5
+   </td>
+   <td>Fa 0/24
+   </td>
+   <td>40
+   </td>
+  </tr>
+</table>
+
 </details>
 
 <details> 
