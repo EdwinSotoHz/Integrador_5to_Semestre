@@ -1023,7 +1023,9 @@ R1(config-if)# ipv6 address 2001:db8:1:1::2/64
 R1(config-if)# ipv6 enable
 R1(config-if)# no shutdown
 R1(config-if)# exit
-R1(config)# ipv6 route ::/0 s0/0/1 2001:db8:1:1::1
+R1(config)# ipv6 route 2001:db8:7:7::/64     2001:db8:1:1::1
+R1(config)# ipv6 route 2001:db8:3:3::/64     2001:db8:1:1::1
+R1(config)# ipv6 route 2001:db8:3c4d::/48    2001:db8:1:1::1
 ```
 
 </details>
@@ -1156,7 +1158,9 @@ R2(config-if)# ipv6 address 2001:db8:2:2::2/64
 R2(config-if)# ipv6 enable
 R2(config-if)# no shutdown
 R2(config-if)# exit
-R2(config)# ipv6 route ::/0 s0/0/1 2001:db8:2:2::1
+R2(config)# ipv6 route 2001:db8:7:7::/64     2001:db8:2:2::1
+R2(config)# ipv6 route 2001:db8:3:3::/64     2001:db8:2:2::1
+R2(config)# ipv6 route 2001:db8:3c4d::/48    2001:db8:2:2::1
 ```
 
 </details>
@@ -1204,12 +1208,10 @@ RA(config-if)# ipv6 address fe80::1 link-local
 RA(config-if)# no shutdown
 RA(config-if)# exit
 
-RA(config)# ipv6 route ::/0 s0/0/1 2001:db8:1:1::2
-RA(config)# ipv6 route ::/0 s0/0/0 2001:db8:2:2::2
-RA(config)# ipv6 route ::/0 2001:DB8:7:7::2
-
-RA(config)# ipv6 route ::/0 2001:DB8:7:7::3
-RA(config)# ipv6 route ::/0 2001:DB8:7:7::4
+RA(config)# ipv6 route 2001:db8:cafe::/48    2001:db8:1:1::2
+RA(config)# ipv6 route 2001:db8:3:3::/64     2001:db8:7:7::2
+RA(config)# ipv6 route 2001:db8:4:4::/64     2001:db8:7:7::2
+RA(config)# ipv6 route 2001:db8:3c4d::/48    2001:db8:7:7::2
 ```
 
 Configuración de acceso SSH con autenticación local
@@ -1827,7 +1829,10 @@ R3(config-if)# ipv6 address 2001:db8:3:3::2/64
 R3(config-if)# ipv6 enable
 R3(config-if)# no shutdown
 R3(config-if)# exit
-R3(config)# ipv6 route ::/0 s0/0/1 2001:db8:3:3::1
+
+R3(config)# ipv6 route 2001:db8:7:7::/64     2001:db8:3:3::1
+R3(config)# ipv6 route 2001:db8:1:1::/64     2001:db8:3:3::1
+R3(config)# ipv6 route 2001:db8:cafe::/48    2001:db8:3:3::1
 ```
 
 </details>
@@ -1972,7 +1977,9 @@ R4(config-if)# ipv6 address 2001:db8:4:4::2/64
 R4(config-if)# ipv6 enable
 R4(config-if)# no shutdown
 R4(config-if)# exit
-R4(config)# ipv6 route ::/0 s0/0/0 2001:db8:4:4::1
+R4(config)# ipv6 route 2001:db8:7:7::/64     2001:db8:4:4::1
+R4(config)# ipv6 route 2001:db8:1:1::/64     2001:db8:4:4::1
+R4(config)# ipv6 route 2001:db8:cafe::/48    2001:db8:4:4::1
 ```
 
 </details>
@@ -2020,12 +2027,10 @@ RB(config-if)# ipv6 address fe80::2 link-local
 RB(config-if)# no shutdown
 RB(config-if)# exit
 
-RB(config)# ipv6 route ::/0 s0/0/1 2001:db8:3:3::2
-RB(config)# ipv6 route ::/0 s0/0/0 2001:db8:4:4::2
-RB(config)# ipv6 route ::/0 2001:DB8:7:7::1
-
-RB(config)# ipv6 route ::/0 2001:DB8:7:7::3
-RB(config)# ipv6 route ::/0 2001:DB8:7:7::4
+RB(config)# ipv6 route 2001:db8:cafe::/48   2001:db8:7:7::1
+RB(config)# ipv6 route 2001:db8:1:1::/64    2001:db8:7:7::1
+RB(config)# ipv6 route 2001:db8:2:2::/64    2001:db8:7:7::1
+RB(config)# ipv6 route 2001:db8:3c4d::/48   2001:db8:3:3::2
 ```
 
 Configuración de acceso SSH con autenticación local
