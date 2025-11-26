@@ -363,9 +363,9 @@ Archivos de configuración:
    </td>
   </tr>
   <tr>
-   <td>G0/1.25
+   <td>G0/1.45
    </td>
-   <td>2001:db8:cafe:25::1
+   <td>2001:db8:cafe:45::1
    </td>
   </tr>
   <tr>
@@ -389,9 +389,9 @@ Archivos de configuración:
    </td>
   </tr>
   <tr>
-   <td>G0/1.25
+   <td>G0/1.45
    </td>
-   <td>2001:db8:cafe:25::2
+   <td>2001:db8:cafe:45::2
    </td>
   </tr>
   <tr>
